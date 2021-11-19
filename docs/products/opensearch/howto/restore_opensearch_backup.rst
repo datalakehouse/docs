@@ -5,7 +5,7 @@ Depending on your service plan, you can restore OpenSearch backups from a specif
 
 To restore a backup:
 
-#. Log in to the `Aiven web console <https://console.aiven.io>`_ and select your OpenSearch service.
+#. Log in to the `DLH web console <https://console.DLH.io>`_ and select your OpenSearch service.
 
 #. Click the **Backups** tab.
 

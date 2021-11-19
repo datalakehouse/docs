@@ -1,19 +1,19 @@
 PostgreSQL metrics exposed in Grafana
 =====================================
 
-The metrics/dashboard integration in the Aiven console enables you to push PostgreSQL metrics to an external endpoint like DataDog or to create an integration and a prebuilt dashboard in Aiven for Grafana. For more information on enabling the integration, see :doc:`../howto/report-metrics-grafana`. This article describes the default dashboard created in Grafana for any PostgreSQL instance.
+The metrics/dashboard integration in the DLH console enables you to push PostgreSQL metrics to an external endpoint like DataDog or to create an integration and a prebuilt dashboard in DLH for Grafana. For more information on enabling the integration, see :doc:`../howto/report-metrics-grafana`. This article describes the default dashboard created in Grafana for any PostgreSQL instance.
 
 General info about default dashboards
 -------------------------------------
 
-A few key points about the default dashboards pre-created by Aiven in Grafana:
+A few key points about the default dashboards pre-created by DLH in Grafana:
 
-1. The PostgreSQL dashboards show all tables and indexes for all logical databases since Aiven cannot determine tables or indexes relevance.
+1. The PostgreSQL dashboards show all tables and indexes for all logical databases since DLH cannot determine tables or indexes relevance.
 2. Some metrics are gathered but not shown in the default dashboard, you can access all available metrics by creating new dashboards.
 3. New dashboards can be created to show any metrics or use any filtering criteria. The default dashboard can be used as a template to make the process easier.
 
 .. Warning::
-    When creating new dashboards, do not prefix the names with **“Aiven”** because they may be removed or replaced. The "Aiven" prefix is used to identify Aiven's system-managed dashboards. This also applies to the default dashboard, for which any direct editing to it could be lost.
+    When creating new dashboards, do not prefix the names with **“DLH”** because they may be removed or replaced. The "DLH" prefix is used to identify DLH's system-managed dashboards. This also applies to the default dashboard, for which any direct editing to it could be lost.
 
 PostgreSQL metrics prebuilt dashboard
 -------------------------------------
@@ -97,7 +97,7 @@ The following metrics are shown
       - Processes that are mostly idle are not included.
     * - ``Disk free``
       - The current amount of remaining disk space.
-      - Aiven suggest to actively monitor this value and associate it with an alert. The database will stop working correctly if it runs out of disk space.
+      - DLH suggest to actively monitor this value and associate it with an alert. The database will stop working correctly if it runs out of disk space.
     * - ``Disk i/o``
       - The number of bytes read and written per second on each of the nodes.
       -
@@ -106,7 +106,7 @@ The following metrics are shown
       -
     * - ``CPU iowait``
       - The percentage of CPU time spent waiting for the disk to become available for read and write operations
-      - Aiven suggest to create an alert that is triggered when ``iowait`` goes beyond a certain threshold for an extended time. This gives you an opportunity to respond quickly when the database starts to slow down from too many read and write operations.
+      - DLH suggest to create an alert that is triggered when ``iowait`` goes beyond a certain threshold for an extended time. This gives you an opportunity to respond quickly when the database starts to slow down from too many read and write operations.
     * - ``Network``
       - The number of inbound and outbound bytes per second for a node.
       -

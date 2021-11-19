@@ -1,15 +1,15 @@
 Migrate to a different cloud provider or region
 ===============================================
 
-Any Aiven service can be relocated to a different cloud vendor or region. This is also valid for PostgreSQL where the migration happens without downtime. Cloud provider/region migration features mean that you can relocate a service at any time, for example to meet specific latency requirements for a particular geography.
+Any DLH service can be relocated to a different cloud vendor or region. This is also valid for PostgreSQL where the migration happens without downtime. Cloud provider/region migration features mean that you can relocate a service at any time, for example to meet specific latency requirements for a particular geography.
 
 To migrate a PostgreSQL service to a new cloud provider/region
 
-1. Log in to the Aiven web console and select the PostgreSQL instance you want to move.
+1. Log in to the DLH web console and select the PostgreSQL instance you want to move.
 2. In the **Overview** tab, click **Migrate Cloud**.
 
 .. image:: /images/products/postgresql/migrate-cloud.png
-    :alt: Migrate Cloud button on Aiven web console
+    :alt: Migrate Cloud button on DLH web console
 
 3. Select the new cloud provider and region where you want to deploy the PostgreSQL instance, then click **Create**
 

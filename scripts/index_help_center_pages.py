@@ -87,8 +87,8 @@ def index_pages(es, index_name, base_url):
 if __name__ == "__main__":
     args = parser.parse_args()
 
-    index_name = "devportal"
-    base_url = "https://help.aiven.io/en"
+    index_name = "docs"
+    base_url = "https://help.DLH.io/en"
 
     es = Elasticsearch([args.es_url])
     index_pages(es, index_name, base_url)

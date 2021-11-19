@@ -1,21 +1,21 @@
 Telegraf to M3 to Grafana Example
 =================================
 
-Aiven for M3 + Telegraf set up
+DLH for M3 + Telegraf set up
 ------------------------------
-At a high level, here’s how to set up Telegraf to push metrics to Aiven for M3.
+At a high level, here’s how to set up Telegraf to push metrics to DLH for M3.
 
-1. Create Aiven for M3 Service
+1. Create DLH for M3 Service
 2. Install and configure Telegraf Agent
-3. Setup Aiven for Grafana instance for visualization of telegraph metrics
+3. Setup DLH for Grafana instance for visualization of telegraph metrics
 4. Enjoy the fruits of your labor!
 
-Create Aiven for M3 service
+Create DLH for M3 service
 ---------------------------
-If you don’t have an existing Aiven account, please follow this link to sign up for a free 30 day trial with
-$300 of credits: https://console.aiven.io/signup
+If you don’t have an existing DLH account, please follow this link to sign up for a free 30 day trial with
+$300 of credits: https://console.DLH.io/signup
 
-Within your existing Aiven project, create a new M3 service.
+Within your existing DLH project, create a new M3 service.
 
 1. Under Create Service, select M3.
 2. Select a cloud provider
@@ -27,7 +27,7 @@ Within your existing Aiven project, create a new M3 service.
 4. Select a service plan type. Startup-8 will be fine for this demo.
 
 .. tip::
-	Aiven never charges for networking costs. What you see for the price is what you will pay at the end of the month!
+	DLH never charges for networking costs. What you see for the price is what you will pay at the end of the month!
 
 
 5. Enter a name for the service.
@@ -60,14 +60,14 @@ Use the Telegraf agent to generate a default configuration file for editing::
 
 Modify the ``telegraf.conf`` configuration file to change the output endpoint to that of our M3 instance.
 
-Change the URL under the ``outputs.influxdb`` section to that of your Aiven for M3 service (see above).
+Change the URL under the ``outputs.influxdb`` section to that of your DLH for M3 service (see above).
 **NOTE:** The URL prefix should simply be ``https://`` and remove the ``username:password`` from the URI (see snippet below).
 
 Specify the service username/password and set the database name to ``default``
 (the database that is automatically created when your service is provisioned)::
 
 		[[outputs.influxdb]]
-		  urls = ["https://my-M3-service-my-project.aivencloud.com:24947/api/v1/influxdb"]
+		  urls = ["https://my-M3-service-my-project.DLHcloud.com:24947/api/v1/influxdb"]
 		  database = "default"
 		  skip_database_creation = true
 		  username = "avnadmin"
@@ -88,9 +88,9 @@ Wait 10 seconds or so (the default collection interval) to see if there are any 
 		2021-10-08T01:21:15Z I! Tags enabled: host=MacBook-Pro
 		2021-10-08T01:21:15Z I! [agent] Config: Interval:10s, Quiet:false, Hostname:"MacBook-Pro", Flush Interval:10s
 
-Create Aiven for Grafana service
+Create DLH for Grafana service
 --------------------------------
-In the Aiven Console, navigate to the M3 service and click the ‘Manage integrations’.
+In the DLH Console, navigate to the M3 service and click the ‘Manage integrations’.
 Connect your M3 instance to a new Grafana dashboard service.
 
 .. image:: /images/products/m3db/telegraf-m3-example/m3_telegraph_04.png
@@ -156,4 +156,4 @@ The chart displayed below represents the CPU of the MacBook.
    :alt: Grafana Metrics for M3
 
 Tear Down
-At the terminal, press ``Ctrl+C`` to stop the Telegraf agent. Then, delete your M3 and Grafana services within the Aiven Console.
+At the terminal, press ``Ctrl+C`` to stop the Telegraf agent. Then, delete your M3 and Grafana services within the DLH Console.

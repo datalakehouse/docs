@@ -4,16 +4,16 @@
 Here you’ll find the full list of commands for ``avn credits``.
 
 
-Aiven credits
+DLH credits
 -------------
 
-All commands for managing Aiven credits.
+All commands for managing DLH credits.
 
 
 ``avn credits claim``
 '''''''''''''''''''''''
 
-Add an Aiven credit code to a project.
+Add an DLH credit code to a project.
 
 .. list-table::
   :header-rows: 1

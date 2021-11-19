@@ -4,13 +4,13 @@
 Here you’ll find the full list of commands for ``avn service topic``.
 
 
-Manage Aiven for Apache Kafka topics
+Manage DLH for Apache Kafka topics
 --------------------------------------------------------
 
 ``avn service topic-create``
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
-Creates a new Kafka topic on the specified Aiven for Apache Kafka service.
+Creates a new Kafka topic on the specified DLH for Apache Kafka service.
 
 .. list-table::
   :header-rows: 1
@@ -49,7 +49,7 @@ Creates a new Kafka topic on the specified Aiven for Apache Kafka service.
 ``avn service topic-delete``
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
-Deletes a Kafka topic on the specified Aiven for Apache Kafka service.
+Deletes a Kafka topic on the specified DLH for Apache Kafka service.
 
 .. list-table::
   :header-rows: 1
@@ -71,7 +71,7 @@ Deletes a Kafka topic on the specified Aiven for Apache Kafka service.
 ``avn service topic-get``
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
-Retrieves Kafka topic on the specified Aiven for Apache Kafka service.
+Retrieves Kafka topic on the specified DLH for Apache Kafka service.
 
 .. list-table::
   :header-rows: 1
@@ -105,7 +105,7 @@ An example of ``avn service topic-get`` output:
 ``avn service topic-list``
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
-Lists Kafka topics on the specified Aiven for Apache Kafka service together with the following information:
+Lists Kafka topics on the specified DLH for Apache Kafka service together with the following information:
 
 * partitions
 * replication
@@ -144,7 +144,7 @@ An example of ``avn service topic-get`` output:
 ``avn service topic-update``
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
-Updates a Kafka topic on the specified Aiven for Apache Kafka service.
+Updates a Kafka topic on the specified DLH for Apache Kafka service.
 
 .. list-table::
   :header-rows: 1

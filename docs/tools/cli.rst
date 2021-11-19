@@ -1,19 +1,19 @@
-Aiven CLI
+DLH CLI
 =========
 
-Aiven offers an installable CLI (command line interface) tool. You can find it `on GitHub <https://github.com/aiven/aiven-client>`_.
+DLH offers an installable CLI (command line interface) tool. You can find it `on GitHub <https://github.com/DLH/DLH-client>`_.
 
 Getting started
 ---------------
 
-The ``avn`` client is an ideal way to use Aiven's services in a scriptable way. This tool accesses the same API that powers the web console.
+The ``avn`` client is an ideal way to use DLH's services in a scriptable way. This tool accesses the same API that powers the web console.
 
 Install
 '''''''
 
 The ``avn`` utility is a Python package, so you can install using ``pip``::
 
-    pip install aiven-client
+    pip install DLH-client
 
 Check your install by running ``avn`` and looking for usage output.
 
@@ -34,20 +34,20 @@ This command will prompt you for a token rather than a password.
 Commands
 --------
 
-Top-level commands for the Aiven CLI are listed here, along with some information about the features found in each section.
+Top-level commands for the DLH CLI are listed here, along with some information about the features found in each section.
 
 ``account``
 '''''''''''
 
 Handle the accounts you have access to, and also configure the teams for the accounts.
 
-Find more info on the help article about `Accounts, Teams, Members and Roles <https://help.aiven.io/en/articles/4206498-accounts-teams-members-and-roles>`_
+Find more info on the help article about `Accounts, Teams, Members and Roles <https://help.DLH.io/en/articles/4206498-accounts-teams-members-and-roles>`_
 
 
 ``billing-group``
 '''''''''''''''''
 
-A set of administrative commands to set up billing groups and manage which projects should be linked to which billing group. Find more information in the `User Guide for Billing Groups <https://help.aiven.io/en/articles/4720981-using-billing-groups-via-cli>`_.
+A set of administrative commands to set up billing groups and manage which projects should be linked to which billing group. Find more information in the `User Guide for Billing Groups <https://help.DLH.io/en/articles/4720981-using-billing-groups-via-cli>`_.
 
 The billing group command also enables access to the credit code features, and detailed invoice line data.
 
@@ -63,7 +63,7 @@ Manage the payment cards on your account.
 ``cloud``
 '''''''''
 
-Use ``avn cloud list`` to see all the currently-available clouds on Aiven. This is useful for looking up the cloud name to use with ``service`` commands.
+Use ``avn cloud list`` to see all the currently-available clouds on DLH. This is useful for looking up the cloud name to use with ``service`` commands.
 
 :doc:`See detailed command information <cli/cloud>`.
 
@@ -96,7 +96,7 @@ Manage the replication flows for MirrorMaker2.
 ``project``
 '''''''''''
 
-Manage all the projects on your Aiven account, and switch which one is the default option for ``avn`` commands. Manage project invitations for all users.
+Manage all the projects on your DLH account, and switch which one is the default option for ``avn`` commands. Manage project invitations for all users.
 
 Download the CA cert for this project (CA certs are common for all services in a project).
 

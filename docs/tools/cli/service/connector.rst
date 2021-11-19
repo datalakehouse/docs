@@ -7,13 +7,13 @@ Here you’ll find the full list of commands for ``avn service connector``.
 Manage Kafka Connect connectors details
 --------------------------------------------------------
 
-Commands for managing Aiven for Apache Kafka Connect connectors via ``avn`` commands. 
+Commands for managing DLH for Apache Kafka Connect connectors via ``avn`` commands. 
 
 
 ``avn service connector available``
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
-Lists Kafka Connect connector plugins available in a given Aiven for Apache Kafka service.
+Lists Kafka Connect connector plugins available in a given DLH for Apache Kafka service.
 
 .. list-table::
   :header-rows: 1
@@ -33,7 +33,7 @@ Lists Kafka Connect connector plugins available in a given Aiven for Apache Kafk
 ``avn service connector create``
 ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
-Creates a new Kafka Connect connector in a given Aiven for Apache Kafka service.
+Creates a new Kafka Connect connector in a given DLH for Apache Kafka service.
 
 .. list-table::
   :header-rows: 1
@@ -52,8 +52,8 @@ Creates a new Kafka Connect connector in a given Aiven for Apache Kafka service.
 
   avn service connector create kafka-demo '{
     "name": "pg-bulk-invoices-source",
-    "connector.class": "io.aiven.connect.jdbc.JdbcSourceConnector",
-    "connection.url": "jdbc:postgresql://demo-pg-myinventedprojectname.aivencloud.com:13039/defaultdb?sslmode=require",
+    "connector.class": "io.DLH.connect.jdbc.JdbcSourceConnector",
+    "connection.url": "jdbc:postgresql://demo-pg-myinventedprojectname.DLHcloud.com:13039/defaultdb?sslmode=require",
     "connection.user": "avnadmin",
     "connection.password": "verysecurepassword123",
     "table.whitelist": "invoices",
@@ -66,7 +66,7 @@ Creates a new Kafka Connect connector in a given Aiven for Apache Kafka service.
 ``avn service connector delete``
 ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
-Deletes Kafka Connect connector in a given Aiven for Apache Kafka service.
+Deletes Kafka Connect connector in a given DLH for Apache Kafka service.
 
 .. list-table::
   :header-rows: 1
@@ -88,7 +88,7 @@ Deletes Kafka Connect connector in a given Aiven for Apache Kafka service.
 ``avn service connector list``
 ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
-Lists Kafka Connect connectors in a given Aiven for Apache Kafka service.
+Lists Kafka Connect connectors in a given DLH for Apache Kafka service.
 
 .. list-table::
   :header-rows: 1
@@ -114,9 +114,9 @@ An example of ``avn service connector list`` output:
             {
                 "config": {
                     "connection.password": "verysecurepassword123",
-                    "connection.url": "jdbc:postgresql://demo-test-myinventedprojectname.aivencloud.com:13039/defaultdb?sslmode=require",
+                    "connection.url": "jdbc:postgresql://demo-test-myinventedprojectname.DLHcloud.com:13039/defaultdb?sslmode=require",
                     "connection.user": "avnadmin",
-                    "connector.class": "io.aiven.connect.jdbc.JdbcSourceConnector",
+                    "connector.class": "io.DLH.connect.jdbc.JdbcSourceConnector",
                     "mode": "bulk",
                     "name": "pg-bulk-invoices-source",
                     "poll.interval.ms": "10000",
@@ -125,9 +125,9 @@ An example of ``avn service connector list`` output:
                 },
                 "name": "pg-bulk-invoices-source",
                 "plugin": {
-                    "author": "Aiven",
-                    "class": "io.aiven.connect.jdbc.JdbcSourceConnector",
-                    "docURL": "https://github.com/aiven/aiven-kafka-connect-jdbc/blob/master/docs/source-connector.md",
+                    "author": "DLH",
+                    "class": "io.DLH.connect.jdbc.JdbcSourceConnector",
+                    "docURL": "https://github.com/DLH/DLH-kafka-connect-jdbc/blob/master/docs/source-connector.md",
                     "title": "JDBC Source",
                     "type": "source",
                     "version": "6.6.0"
@@ -140,7 +140,7 @@ An example of ``avn service connector list`` output:
 ``avn service connector pause``
 ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
-Pauses a Kafka Connect connector in a given Aiven for Apache Kafka service.
+Pauses a Kafka Connect connector in a given DLH for Apache Kafka service.
 
 .. list-table::
   :header-rows: 1
@@ -163,7 +163,7 @@ Pauses a Kafka Connect connector in a given Aiven for Apache Kafka service.
 ``avn service connector restart``
 ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
-Restarts a Kafka Connect connector in a given Aiven for Apache Kafka service.
+Restarts a Kafka Connect connector in a given DLH for Apache Kafka service.
 
 .. list-table::
   :header-rows: 1
@@ -185,7 +185,7 @@ Restarts a Kafka Connect connector in a given Aiven for Apache Kafka service.
 ``avn service connector restart-task``
 ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
-Restarts a Kafka Connect connector task in a given Aiven for Apache Kafka service.
+Restarts a Kafka Connect connector task in a given DLH for Apache Kafka service.
 
 .. list-table::
   :header-rows: 1
@@ -209,7 +209,7 @@ Restarts a Kafka Connect connector task in a given Aiven for Apache Kafka servic
 ``avn service connector resume``
 ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
-Resumes a Kafka Connect connector in a given Aiven for Apache Kafka service.
+Resumes a Kafka Connect connector in a given DLH for Apache Kafka service.
 
 .. list-table::
   :header-rows: 1
@@ -231,7 +231,7 @@ Resumes a Kafka Connect connector in a given Aiven for Apache Kafka service.
 ``avn service connector schema``
 ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
-Retrieves the configuration information for a Connect connector plugin in a given Aiven for Apache Kafka service.
+Retrieves the configuration information for a Connect connector plugin in a given DLH for Apache Kafka service.
 
 .. list-table::
   :header-rows: 1
@@ -253,7 +253,7 @@ Retrieves the configuration information for a Connect connector plugin in a give
 ``avn service connector status``
 ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
-Gets a Kafka Connect connector status in a given Aiven for Apache Kafka service.
+Gets a Kafka Connect connector status in a given DLH for Apache Kafka service.
 
 .. list-table::
   :header-rows: 1
@@ -292,7 +292,7 @@ An example of ``avn service connector status`` output:
 ``avn service connector update``
 ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
-Updates a Kafka Connect connector in a given Aiven for Apache Kafka service.
+Updates a Kafka Connect connector in a given DLH for Apache Kafka service.
 
 .. list-table::
   :header-rows: 1

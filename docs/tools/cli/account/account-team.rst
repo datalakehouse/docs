@@ -7,7 +7,7 @@ Here you’ll find the full list of commands for ``avn account team``.
 Manage account teams
 -------------------------
 
-Commands for managing Aiven account teams via ``avn`` commands.
+Commands for managing DLH account teams via ``avn`` commands.
 
 ``avn account team create``
 '''''''''''''''''''''''''''
@@ -103,7 +103,7 @@ Attaches an existing account team to a project.
     - The project to attach to
   * - ``--team-type``
     - The permission level (possible values ``admin``, ``developer``, ``operator``, ``read_only``). 
-      More info at the `dedicated page <https://help.aiven.io/en/articles/4206498-accounts-teams-members-and-roles>`_
+      More info at the `dedicated page <https://help.DLH.io/en/articles/4206498-accounts-teams-members-and-roles>`_
 
 
 **Example:** Attach the team with id ``at3exxxxxxxxx`` belonging to the account ``123456789123`` to the project named ``testing-sandbox`` granting ``operator`` access.
@@ -145,7 +145,7 @@ Detaches an existing account team from a project.
 ``avn account team user-invite``
 '''''''''''''''''''''''''''''''''''
 
-Invites a new user to an Aiven team.
+Invites a new user to an DLH team.
 
 .. list-table::
   :header-rows: 1
@@ -169,7 +169,7 @@ Invites a new user to an Aiven team.
 ``avn account team user-delete``
 '''''''''''''''''''''''''''''''''''
 
-Deletes an existing user from an Aiven team.
+Deletes an existing user from an DLH team.
 
 .. list-table::
   :header-rows: 1
@@ -193,7 +193,7 @@ Deletes an existing user from an Aiven team.
 ``avn account team user-list``
 '''''''''''''''''''''''''''''''''''
 
-Lists the existing users in an Aiven team.
+Lists the existing users in an DLH team.
 
 .. list-table::
   :header-rows: 1
@@ -227,7 +227,7 @@ An example of ``account team user-list`` output:
 ``avn account team user-list-pending``
 ''''''''''''''''''''''''''''''''''''''
 
-Lists the users with pending invitation from an Aiven team. Unacknowledged invitations are automatically deleted in 72 hours.
+Lists the users with pending invitation from an DLH team. Unacknowledged invitations are automatically deleted in 72 hours.
 
 .. list-table::
   :header-rows: 1

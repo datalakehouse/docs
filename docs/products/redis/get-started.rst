@@ -1,14 +1,14 @@
 Getting started
 ===============
 
-Get up and running with Aiven for Redis. This article shows you how to set up a Redis service in Aiven and learn more about the platform.
+Get up and running with DLH for Redis. This article shows you how to set up a Redis service in DLH and learn more about the platform.
 
-Create a new Aiven service
+Create a new DLH service
 --------------------------
 
-To create a new Aiven for Redis service:
+To create a new DLH for Redis service:
 
-1. Log in to the `Aiven web console <https://console.aiven.io/>`_.
+1. Log in to the `DLH web console <https://console.DLH.io/>`_.
 
 2. On the *Services* page, click **Create a new service**.
 
@@ -55,10 +55,10 @@ Code examples for connecting to Redis from your application:
 
 Check out our other resources for more technical information:
 
-* :doc:`High availability in Aiven for Redis <concepts/high-availability-redis>`.
+* :doc:`High availability in DLH for Redis <concepts/high-availability-redis>`.
 
-  Learn about how Aiven for Redis supports high availability.
+  Learn about how DLH for Redis supports high availability.
 
-* :doc:`Memory usage, on-disk persistence and replication in Aiven for Redis <concepts/memory-usage>`.
+* :doc:`Memory usage, on-disk persistence and replication in DLH for Redis <concepts/memory-usage>`.
 
-  See how Aiven for Redis solves the challenges related to high memory usage and high change rate.
+  See how DLH for Redis solves the challenges related to high memory usage and high change rate.

@@ -1,9 +1,9 @@
-Migrate to Aiven for PostgreSQL with ``aiven-db-migrate``
+Migrate to DLH for PostgreSQL with ``DLH-db-migrate``
 ===========================================================
 
-The ``aiven-db-migrate`` tool is an open source project available on `GitHub <https://github.com/aiven/aiven-db-migrate>`_), and it is the preferred way to perform the migration. 
+The ``DLH-db-migrate`` tool is an open source project available on `GitHub <https://github.com/DLH/DLH-db-migrate>`_), and it is the preferred way to perform the migration. 
 
-``aiven-db-migrate`` performs a schema dump and migration first to ensure schema compatibility.
+``DLH-db-migrate`` performs a schema dump and migration first to ensure schema compatibility.
 
 It supports both logical replication, and using a dump and restore process. 
 Logical replication is the default method which keeps the two databases synchronized until the replication is interrupted. 
@@ -21,7 +21,7 @@ What you'll need
 In order to use the **logical replication** method, you'll need the following:
     
 * PostgreSQL version is 10 or higher.
-* Superuser access credentials to the source cluster or the ``aiven-extras`` extension installed. The extension allows you to perform publish/subscribe-style logical replication without a superuser account, and it is preinstalled on Aiven for PostgreSQL servers. See `Aiven Extras on GitHub <https://github.com/aiven/aiven-extras>`_.
+* Superuser access credentials to the source cluster or the ``DLH-extras`` extension installed. The extension allows you to perform publish/subscribe-style logical replication without a superuser account, and it is preinstalled on DLH for PostgreSQL servers. See `DLH Extras on GitHub <https://github.com/DLH/DLH-extras>`_.
 * An available replication slot on the destination cluster for each database migrated from the source cluster.
 
 Additional migration configuration options are available, check the :ref:`pg_migration` section of the configuration reference.
@@ -41,8 +41,8 @@ Variable                Description
 ``SRC_USERNAME``        Username for source PostgreSQL connection
 ``SRC_PASSWORD``        Password for source PostgreSQL connection
 ``SRC_SSL``             SSL setting for source PostgreSQL connection
-``DEST_PG_NAME``        Name of the Aiven destination PostgreSQL service
-``DEST_PG_PLAN``        Aiven plan for the Aiven destination PostgreSQL service
+``DEST_PG_NAME``        Name of the DLH destination PostgreSQL service
+``DEST_PG_PLAN``        DLH plan for the DLH destination PostgreSQL service
 ==================      =======================================================================
   
 .. Warning::
@@ -67,13 +67,13 @@ If the output is not ``logical``, run the following command in ``psql`` and then
     If you are migrating from an AWS RDS PostgreSQL cluster, set the ``rds.logical_replication`` parameter to ``1`` (true) in the parameter group.
 
 
-2. If you don't have an Aiven for PostgreSQL database yet, run the following command to create a couple of PostgreSQL services via :doc:`../../../tools/cli` substituting the parameters accordingly::
+2. If you don't have an DLH for PostgreSQL database yet, run the following command to create a couple of PostgreSQL services via :doc:`../../../tools/cli` substituting the parameters accordingly::
 
     avn service create -t pg -p DEST_PG_PLAN DEST_PG_NAME
 
-3. Once logged in into the destination Aiven for PostgreSQL service, execute the following command via ``psql`` to enable the ``aiven_extras`` extension::
+3. Once logged in into the destination DLH for PostgreSQL service, execute the following command via ``psql`` to enable the ``DLH_extras`` extension::
 
-    CREATE EXTENSION aiven_extras CASCADE;
+    CREATE EXTENSION DLH_extras CASCADE;
 
 4. Set the migration details via :doc:`../../../tools/cli` substituting the parameters accordingly::
 
@@ -89,7 +89,7 @@ If the output is not ``logical``, run the following command in ``psql`` and then
 
     avn --show-http service migration-status DEST_PG_NAME --project test
 
-You should get the following command output which mentions that the ``pg_dump`` migration of the ``defaultdb`` database is ``done`` and the logical ``replication`` of the ``has_aiven_extras`` database is syncing``::
+You should get the following command output which mentions that the ``pg_dump`` migration of the ``defaultdb`` database is ``done`` and the logical ``replication`` of the ``has_DLH_extras`` database is syncing``::
 
     -----Response Begin-----
     {
@@ -100,7 +100,7 @@ You should get the following command output which mentions that the ``pg_dump`` 
         },
         "migration_detail": [
             {
-            "dbname": "has_aiven_extras",
+            "dbname": "has_DLH_extras",
             "error": null,
             "method": "replication",
             "status": "syncing"

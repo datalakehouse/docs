@@ -1,14 +1,14 @@
-Send emails from Aiven for Grafana
+Send emails from DLH for Grafana
 ==================================
 
-Use the Aiven API or the Aiven client to configure the Simple Mail Transfer Protocol (SMTP) server settings and send the following emails from Aiven for Grafana: invite emails, reset password emails, and alert messages.
+Use the DLH API or the DLH client to configure the Simple Mail Transfer Protocol (SMTP) server settings and send the following emails from DLH for Grafana: invite emails, reset password emails, and alert messages.
 
 What you need
 ----------------
 
-* Aiven client installed
+* DLH client installed
 
-* Aiven for Grafana service created
+* DLH for Grafana service created
 
 * SMTP server IP or hostname
 
@@ -26,9 +26,9 @@ What you need
 Configure the SMTP server for Grafana
 -------------------------------------
 
-To configure the Aiven for Grafana service:
+To configure the DLH for Grafana service:
 
-1. Open the Aiven client, and log in::
+1. Open the DLH client, and log in::
 
     $ avn user login <you@example.com> --token
 
@@ -46,4 +46,4 @@ To configure the Aiven for Grafana service:
     avn service types -v
 
 
-You have now set up your Aiven for Grafana to send emails. 
+You have now set up your DLH for Grafana to send emails. 

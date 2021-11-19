@@ -1,4 +1,4 @@
 User-agent: *
 
-Sitemap: https://developer.aiven.io/sitemap.xml
+Sitemap: https://thirsty-carson-e8e5ec.netlify.app//sitemap.xml
 

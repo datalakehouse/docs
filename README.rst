@@ -1,7 +1,7 @@
-Aiven Developer
+DLH Developer
 ===============
 
-This is the source for the Aiven developer documentation at https://developer.aiven.io. We are working to move all of our technical documentation to this platform, and welcome issues and pull requests from everyone.
+This is the source for the DLH developer documentation at https://thirsty-carson-e8e5ec.netlify.app/. We are working to move all of our technical documentation to this platform, and welcome issues and pull requests from everyone.
 
 It is Python-based, with content in `ReStructuredText (rst) <https://docutils.sourceforge.io/rst.html>`_ and rendered by `Sphinx <https://www.sphinx-doc.org/en/master/>`_.
 
@@ -58,7 +58,7 @@ External links are used for external hyperlinks::
 
 To link to another page on the site, use the `:doc: <https://www.sphinx-doc.org/en/master/usage/restructuredtext/roles.html#cross-referencing-documents>`_ role::
 
-    Use the :doc:`cli` for scriptable, repeatable actions with Aiven
+    Use the :doc:`cli` for scriptable, repeatable actions with DLH
 
 
 The ``:doc:`` role uses the page title but if you want to change the link text, you can do so::
@@ -85,7 +85,7 @@ Diagrams use `sphinxcontrib-mermaid <https://github.com/mgaitan/sphinxcontrib-me
 Importing content
 ~~~~~~~~~~~~~~~~~
 
-Some of the content for DevPortal came from a previous incarnation of documentation. There is an import script to help with this process.
+Some of the content for docs came from a previous incarnation of documentation. There is an import script to help with this process.
 
 To set up the import tooling for the first time:
 

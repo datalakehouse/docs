@@ -1,11 +1,11 @@
-﻿Create a new Aiven service
+﻿Create a new DLH service
 ==========================
 
-You can add services for the various Aiven products in the Aiven web console.
+You can add services for the various DLH products in the DLH web console.
 
 To create a new service:
 
-1. Log in to the `Aiven web console <https://console.aiven.io/>`_.
+1. Log in to the `DLH web console <https://console.DLH.io/>`_.
 
 2. On the *Services* page, click **Create a new service**.
 

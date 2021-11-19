@@ -24,7 +24,7 @@ const handler = async (event) => {
     }
 
     const response = await client.search({
-      index: "devportal",
+      index: "docs",
       body: {
         sort: [{ sort_priority: "asc" }, "_score"],
         size: pageSize,

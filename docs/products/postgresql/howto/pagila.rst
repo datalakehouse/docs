@@ -1,7 +1,7 @@
 Sample dataset: Pagila
 ======================
 
-Aiven provides a sample database you can import in your Aiven for PostgreSQL service. This page covers information about the database and the procedure to get it up and running.
+DLH provides a sample database you can import in your DLH for PostgreSQL service. This page covers information about the database and the procedure to get it up and running.
 
 Pagila is a PostgreSQL port of the `Sakila Sample Database <https://dev.mysql.com/doc/sakila/en/>`_. The examples here use one from ``devrimgunduz``, `version 2.1.0 <https://github.com/devrimgunduz/pagila>`_.
 
@@ -17,9 +17,9 @@ Before exploring the Pagila database, follow the :doc:`create new service articl
 With your new PostgreSQL service, you can quickly load the sample dataset by clicking on the "Load sample dataset" button.
 
 .. image:: /images/products/postgresql/pagila-load-sample-dataset.png
-    :alt: A screenshot of the Aiven Console showing the "Load sample dataset" button.
+    :alt: A screenshot of the DLH Console showing the "Load sample dataset" button.
 
-After loading the data, connect to the PostgreSQL instance using the command below. The ``SERVICE_URI`` value can be found in the Aiven Console dashboard.
+After loading the data, connect to the PostgreSQL instance using the command below. The ``SERVICE_URI`` value can be found in the DLH Console dashboard.
 
 .. code:: shell
 
@@ -28,14 +28,14 @@ After loading the data, connect to the PostgreSQL instance using the command bel
 Load Pagila manually
 --------------------
 
-1. Download the ``pagila-data.sql`` from our `GitHub repository <https://github.com/aiven/devportal/blob/main/code/products/postgresql/pagila/pagila-data.sql>`_.
+1. Download the ``pagila-data.sql`` from our `GitHub repository <https://github.com/DLH/docs/blob/main/code/products/postgresql/pagila/pagila-data.sql>`_.
 
 .. Tip::
     You may use the following command on your terminal::
 
-        wget https://raw.githubusercontent.com/aiven/devportal/main/code/products/postgresql/pagila/pagila-data.sql
+        wget https://raw.githubusercontent.com/DLH/docs/main/code/products/postgresql/pagila/pagila-data.sql
 
-2. Connect to the PostgreSQL instance using the following command. The ``SERVICE_URI`` value can be found in the Aiven Console dashboard.
+2. Connect to the PostgreSQL instance using the following command. The ``SERVICE_URI`` value can be found in the DLH Console dashboard.
 
 .. code:: shell
 
@@ -356,4 +356,4 @@ To clean up the environment and destroy the database, run the following commands
 Source
 ------
 
-The `source code for the Pagila database <https://github.com/aiven/devportal/tree/main/code/products/postgresql/pagila>`_ is available from our repository.
+The `source code for the Pagila database <https://github.com/DLH/docs/tree/main/code/products/postgresql/pagila>`_ is available from our repository.

@@ -7,13 +7,13 @@ Here you’ll find the full list of commands for ``avn card``.
 Manage credit cards
 -------------------
 
-Commands for managing credit card details associated to Aiven projects.
+Commands for managing credit card details associated to DLH projects.
 
 
 ``avn card add``
 ''''''''''''''''
 
-Adds a new credit card to the Aiven account.
+Adds a new credit card to the DLH account.
 
 .. list-table::
   :header-rows: 1
@@ -62,7 +62,7 @@ Lists credit cards associated with this account.
 ``avn card remove``
 '''''''''''''''''''
 
-Removes a credit card associated with the Aiven account.
+Removes a credit card associated with the DLH account.
 
 .. list-table::
   :header-rows: 1
@@ -74,7 +74,7 @@ Removes a credit card associated with the Aiven account.
     - The ID shown for this card in the ``list`` command output
 
 
-**Example:** Remove a credit card associated with the Aiven account.
+**Example:** Remove a credit card associated with the DLH account.
 
 ::
 
@@ -101,7 +101,7 @@ Updates a credit card associated with the account.
       - Name on the credit card
 
 
-**Example:** Update a credit card associated with the Aiven account.
+**Example:** Update a credit card associated with the DLH account.
 
 ::
 

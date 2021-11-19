@@ -1,19 +1,19 @@
 {
-  "name": "devportal",
+  "name": "docs",
   "version": "1.0.0",
-  "description": "Aiven Developer Portal",
+  "description": "DLH Developer Portal",
   "private": true,
   "scripts": {
     "dev": "netlify dev"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/aiven/devportal.git"
+    "url": "git+https://github.com/DLH/docs.git"
   },
   "bugs": {
-    "url": "https://github.com/aiven/devportal/issues"
+    "url": "https://github.com/DLH/docs/issues"
   },
-  "homepage": "https://github.com/aiven/devportal#readme",
+  "homepage": "https://github.com/DLH/docs#readme",
   "devDependencies": {
     "netlify-cli": "^3.37.26"
   },

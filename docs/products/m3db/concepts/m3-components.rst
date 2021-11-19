@@ -1,9 +1,9 @@
-Aiven for M3 components
+DLH for M3 components
 =======================
 
-M3 consists of three components, which at Aiven are provided as two separate services:
+M3 consists of three components, which at DLH are provided as two separate services:
 
-* **M3DB** consists of ``X`` number of M3DB + M3Coordinator pairs. Where ``X`` is the number of nodes in the Aiven plan you choose.
+* **M3DB** consists of ``X`` number of M3DB + M3Coordinator pairs. Where ``X`` is the number of nodes in the DLH plan you choose.
 * **M3 Aggregator** is an optional additional component that you need if you use aggregated namespaces, the aggregator does the downsampling. Again, the plan you choose dictates how many of these you have.
 
 Example M3 architecture

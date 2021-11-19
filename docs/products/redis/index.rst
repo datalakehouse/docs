@@ -1,10 +1,10 @@
-Aiven for Redis
+DLH for Redis
 ===============
 
-What is Aiven for Redis?
+What is DLH for Redis?
 ------------------------
 
-Aiven for Redis is a fully managed **in-memory NoSQL database**, deployable in the cloud of your choice which can help you store and access data quickly and efficiently.
+DLH for Redis is a fully managed **in-memory NoSQL database**, deployable in the cloud of your choice which can help you store and access data quickly and efficiently.
 
 
 Why Redis?
@@ -15,10 +15,10 @@ Redis is an open-source tool, and a "data structure store" used as a database, c
 Read more about `the introduction to Redis <https://redis.io/topics/introduction>`_.
 
 
-Get started with Aiven for Redis
+Get started with DLH for Redis
 ---------------------------------
 
-Take your first steps with Aiven for Redis by following our :doc:`get-started` article, or browse through our full list of articles:
+Take your first steps with DLH for Redis by following our :doc:`get-started` article, or browse through our full list of articles:
 
 
 .. panels::
@@ -34,7 +34,7 @@ Take your first steps with Aiven for Redis by following our :doc:`get-started` a
     🧰 :doc:`howto/list-code-samples`
 
 
-Ways to use Aiven for Redis
+Ways to use DLH for Redis
 -----------------------------
 
 - Redis is usually used as an auxiliary data store, working with a main database (e.g. PostgreSQL). 

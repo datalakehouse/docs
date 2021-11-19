@@ -1,7 +1,7 @@
 Monitor PostgreSQL metrics with Grafana
 =======================================
 
-As well as offering PostgreSQL-as-a-service, the Aiven platform gives you access to monitor the database. The metrics/dashboard integration in the Aiven console lets you send PostgreSQL metrics to an external endpoint like DataDog or to create an integration and a :doc:`prebuilt dashboard <../reference/pg-metrics>` in Aiven for Grafana. Get detailed information about the metrics and dashboard sections in :doc:`../reference/pg-metrics`.
+As well as offering PostgreSQL-as-a-service, the DLH platform gives you access to monitor the database. The metrics/dashboard integration in the DLH console lets you send PostgreSQL metrics to an external endpoint like DataDog or to create an integration and a :doc:`prebuilt dashboard <../reference/pg-metrics>` in DLH for Grafana. Get detailed information about the metrics and dashboard sections in :doc:`../reference/pg-metrics`.
 
 
 Push PostgreSQL metrics to InfluxDB, M3DB or PostgreSQL
@@ -14,7 +14,7 @@ To collect metrics about your PostgreSQL service you will need to configure a me
 2. Choose either a new or existing InfluxDB, M3DB or PostgreSQL service.
 
    - A new service will ask you to select the cloud, region and plan to use. You should also give your service a name. The service overview page shows the nodes rebuilding, and then indicates when they are ready.
-   - If you're already using InfluxDB, M3DB or PostgreSQL on Aiven, you can submit your PostgreSQL metrics to the existing service.
+   - If you're already using InfluxDB, M3DB or PostgreSQL on DLH, you can submit your PostgreSQL metrics to the existing service.
 
 .. Warning::
     You can send your PostgreSQL service metrics to the same instance. This is not recommended since it increases the load on the monitored system and could also be affected in the event of problems with the database.
@@ -26,7 +26,7 @@ Provision and configure Grafana
 
 4. Choose either a new or existing Grafana service.
     - A new service will ask you to select the cloud, region and plan to use. You should also give your service a name. The service overview page shows the nodes rebuilding, and then indicates when they are ready.
-    - If you're already using Grafana on Aiven, you can integrate your M3DB as an additional data source for that existing Grafana.
+    - If you're already using Grafana on DLH, you can integrate your M3DB as an additional data source for that existing Grafana.
 
 5. On the service overview page for your Grafana service, click the "Service URI" link. The username and password for your Grafana service is also available on the service overview page.
 

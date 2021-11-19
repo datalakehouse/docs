@@ -1,7 +1,7 @@
-Perform DBA-type tasks in Aiven for PostgreSQL
+Perform DBA-type tasks in DLH for PostgreSQL
 ==============================================
 
-Aiven doesn't allow superuser access to Aiven for PostgreSQL services. However, most DBA-type actions are still available through other methods.
+DLH doesn't allow superuser access to DLH for PostgreSQL services. However, most DBA-type actions are still available through other methods.
 
 ``avnadmin`` user privileges
 ----------------------------
@@ -15,20 +15,20 @@ By default, in every PostgreSQL instance, an ``avnadmin`` database user is creat
 * Logical replication with the ``REPLICATION`` privilege
 
 .. Tip::
-    You can also manage databases and users in the Aiven web console or though our :doc:`REST API <../../../tools/api/index>`.
+    You can also manage databases and users in the DLH web console or though our :doc:`REST API <../../../tools/api/index>`.
 
-``aiven_extras`` extension
+``DLH_extras`` extension
 --------------------------
 
-The ``aiven_extras`` extension, developed and maintained by Aiven, enables the ``avnadmin`` to perform superuser-like functionalities like:
+The ``DLH_extras`` extension, developed and maintained by DLH, enables the ``avnadmin`` to perform superuser-like functionalities like:
 
 * Manage `subscriptions <https://www.postgresql.org/docs/current/catalog-pg-subscription.html>`_
 * Manage ``auto_explain`` `functionality <https://www.postgresql.org/docs/current/auto-explain.html>`_
 * Manage `publications <https://www.postgresql.org/docs/current/sql-createpublication.html>`_
 * :doc:`Claim public schema ownership <../howto/claim-public-schema-ownership>`
 
-You can install the ``aiven_extras`` extension executing the following command with the ``avnadmin`` user::
+You can install the ``DLH_extras`` extension executing the following command with the ``avnadmin`` user::
 
-    CREATE EXTENSION aiven_extras CASCADE;
+    CREATE EXTENSION DLH_extras CASCADE;
 
-For more information about ``aiven_extras`` check the `GitHub repository <https://github.com/aiven/aiven-extras>`_ for the project.
+For more information about ``DLH_extras`` check the `GitHub repository <https://github.com/DLH/DLH-extras>`_ for the project.

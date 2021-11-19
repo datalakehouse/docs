@@ -1,26 +1,26 @@
-Get started with Aiven for Grafana
+Get started with DLH for Grafana
 ===================================
 
-Get up and running with Aiven for Grafana. This article shows you how to set up a Grafana service in Aiven, connect to it, view your default dashboards.
+Get up and running with DLH for Grafana. This article shows you how to set up a Grafana service in DLH, connect to it, view your default dashboards.
 
 
 .. Add Step 1: Check the basics
  
 
 
-Step 1: Create a new Aiven service
+Step 1: Create a new DLH service
 -----------------------------------
 
-You can add services for Grafana in the Aiven web console.
+You can add services for Grafana in the DLH web console.
 
 
 .. image:: /images/products/grafana/get-started-grafana.gif
     :width: 500px
 
 
-To create a new Aiven for Grafana service:
+To create a new DLH for Grafana service:
 
-1. Log in to the `Aiven web console <https://console.aiven.io/>`_.
+1. Log in to the `DLH web console <https://console.DLH.io/>`_.
 
 2. On the *Services* page, click **Create a new service**.
 
@@ -61,6 +61,6 @@ To create a new Aiven for Grafana service:
 Step 2: Log in to Grafana
 --------------------------
 
-You can log in easily to your Aiven for Grafana service from the console. See :doc:`how to log in <howto/log-in>`.
+You can log in easily to your DLH for Grafana service from the console. See :doc:`how to log in <howto/log-in>`.
 
-.. Add the following (Step 4: Display default dashboards in Aiven for Grafana)
+.. Add the following (Step 4: Display default dashboards in DLH for Grafana)

@@ -7,12 +7,12 @@ Here you’ll find the full list of commands for ``avn account authentication-me
 Manage account authentication methods
 -------------------------------------
 
-Commands for managing Aiven accounts authentication methods.
+Commands for managing DLH accounts authentication methods.
 
 ``avn account authentication-method create``
 ''''''''''''''''''''''''''''''''''''''''''''
 
-Creates a new authentication method. More information about authentication methods creation is available at the `dedicated page <https://help.aiven.io/en/articles/3376377-saml-authentication>`_
+Creates a new authentication method. More information about authentication methods creation is available at the `dedicated page <https://help.DLH.io/en/articles/3376377-saml-authentication>`_
 
 .. list-table::
   :header-rows: 1

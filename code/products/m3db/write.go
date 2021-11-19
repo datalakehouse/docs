@@ -13,7 +13,7 @@ func main() {
 	cfg := promremote.NewConfig(
 		promremote.WriteURLOption(PROM_WRITE_URL),
 		promremote.HTTPClientTimeoutOption(60*time.Second),
-		promremote.UserAgent("aiven-docs/0.1"),
+		promremote.UserAgent("DLH-docs/0.1"),
 	)
 	client, err := promremote.NewClient(cfg)
 	if err != nil {

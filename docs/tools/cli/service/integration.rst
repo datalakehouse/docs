@@ -4,7 +4,7 @@
 Here you’ll find the full list of commands for ``avn service integration``.
 
 
-Manage Aiven internal and external integrations
+Manage DLH internal and external integrations
 --------------------------------------------------------
 
 ``avn service integration-create``
@@ -40,7 +40,7 @@ Creates a new service integration.
 
     ERROR	command failed: UserError: -c (user config) and --user-config-json parameters can not be used at the same time
 
-**Example:** Create a new ``kafka_logs`` service integration to send the logs of the service named ``demo-pg`` to an Aiven for Kafka service named ``demo-kafka`` in the topic ``test_log``.
+**Example:** Create a new ``kafka_logs`` service integration to send the logs of the service named ``demo-pg`` to an DLH for Kafka service named ``demo-kafka`` in the topic ``test_log``.
 
 ::
 
@@ -281,7 +281,7 @@ Updates an existing service integration.
     - The custom configuration settings. 
   
 
-**Example:** Update the service integration with ID  ``8e752fa9-a0c1-4332-892b-f1757390d53f`` changing the Aiven for Kafka topic storing the logs to ``test_pg_log``.
+**Example:** Update the service integration with ID  ``8e752fa9-a0c1-4332-892b-f1757390d53f`` changing the DLH for Kafka topic storing the logs to ``test_pg_log``.
 
 ::
 

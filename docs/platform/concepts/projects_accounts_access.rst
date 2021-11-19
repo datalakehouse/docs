@@ -1,9 +1,9 @@
 Projects, accounts, and managing access permissions
 ===================================================
 
-The Aiven platform uses accounts and projects to organize services and access to those services. This article describes those terms and how you can use them effectively based on your organization structure, deployment environments, and service security requirements.
+The DLH platform uses accounts and projects to organize services and access to those services. This article describes those terms and how you can use them effectively based on your organization structure, deployment environments, and service security requirements.
 
-There are two ways that you can manage access to Aiven services:
+There are two ways that you can manage access to DLH services:
 
 * Direct access via projects
 * Indirectly via role-based access controls (RBAC)
@@ -20,7 +20,7 @@ Smaller teams usually favor direct access while larger teams favor RBAC to simpl
         Team-->Project;
         Project-->Service;
 
-You can use accounts and teams within the Aiven platform to implement Security Assertion Markup Language single sign-on (SAML SSO) using an identity provider such as Okta, GSuite, or AzureAD. Security-conscious teams usually favor a combination of SAML and RBAC regardless of the size of team.
+You can use accounts and teams within the DLH platform to implement Security Assertion Markup Language single sign-on (SAML SSO) using an identity provider such as Okta, GSuite, or AzureAD. Security-conscious teams usually favor a combination of SAML and RBAC regardless of the size of team.
 
 Projects
 --------
@@ -33,15 +33,15 @@ Projects are a collection of services and user permissions. You can organize you
 
 * **Project-based**: A project that contains all the services for an internal project, with a suffix that highlights the relevant environment, for example ``customer-success-prod`` and ``business-analytics-test``.
 
-Each project must have a unique name within the Aiven platform. The project name is combined with the service names to create the host URLs for your deployed services.
+Each project must have a unique name within the DLH platform. The project name is combined with the service names to create the host URLs for your deployed services.
 
 
 Accounts
 --------
 
-An account is a collection of projects. When you first sign up to Aiven, there are no accounts, as you can use standalone projects without ever needing accounts.
+An account is a collection of projects. When you first sign up to DLH, there are no accounts, as you can use standalone projects without ever needing accounts.
 
-If you have several different departments that are using Aiven, you can use accounts to separate access between projects and departments.
+If you have several different departments that are using DLH, you can use accounts to separate access between projects and departments.
 
 For example, you could use different accounts for different departments and their projects, or you could use accounts to separate the projects related to customer-specific systems.
 
@@ -49,9 +49,9 @@ For example, you could use different accounts for different departments and thei
 Project members and roles
 -------------------------
 
-You can invite people to work with you on a project, but you may not always want to give them the same access that you have. You can specify the email addresses and permissions for members in the *Members* section of the Aiven web console, which you can find in the main menu on the left of the page.
+You can invite people to work with you on a project, but you may not always want to give them the same access that you have. You can specify the email addresses and permissions for members in the *Members* section of the DLH web console, which you can find in the main menu on the left of the page.
 
-The roles and corresponding permissions that Aiven supports are:
+The roles and corresponding permissions that DLH supports are:
 
 * **Administrator**: When you create a project, you automatically receive this access level. You can change and view billing information, remove members, and create, edit, and delete services.
 

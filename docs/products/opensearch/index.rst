@@ -1,12 +1,12 @@
-Aiven for OpenSearch
+DLH for OpenSearch
 ====================
 
-`OpenSearch <https://opensearch.org>`_ is an open source search and analytics suite including search engine, NoSQL document database, and visualization interface. OpenSearch offers a distributed, full-text search engine based on `Apache Lucene <https://lucene.apache.org/>`_ with a RESTful API interface and support for JSON documents. Aiven for OpenSearch and Aiven for OpenSearch Dashboards are available on a cloud of your choice.
+`OpenSearch <https://opensearch.org>`_ is an open source search and analytics suite including search engine, NoSQL document database, and visualization interface. OpenSearch offers a distributed, full-text search engine based on `Apache Lucene <https://lucene.apache.org/>`_ with a RESTful API interface and support for JSON documents. DLH for OpenSearch and DLH for OpenSearch Dashboards are available on a cloud of your choice.
 
 .. note::
     OpenSearch and OpenSearch Dashboards projects were forked in 2021 from the formerly open source projects Elasticsearch and Kibana.
 
-Aiven for OpenSearch comes with OpenSearch Dashboards included, giving a fully-featured user interface and visualization platform for your data.
+DLH for OpenSearch comes with OpenSearch Dashboards included, giving a fully-featured user interface and visualization platform for your data.
 
 Why OpenSearch?
 ---------------
@@ -15,7 +15,7 @@ OpenSearch is a very useful addition to almost any data platform. It is designed
 
 OpenSearch is widely used for log ingestion and analysis, particularly because it can handle the data volumes involved, and because OpenSearch Dashboards provides a powerful interface to the data, including search, aggregation and analysis functionality.
 
-Get started with Aiven for OpenSearch
+Get started with DLH for OpenSearch
 -------------------------------------
 
 Try the :doc:`sample recipes dataset <howto/sample-dataset>` or browse the other articles available:
@@ -53,6 +53,6 @@ OpenSearch resources
 
 * Check the `API documentation <https://opensearch.org/docs/opensearch/rest-api/index>`_ for detailed information about the HTTP endpoints.
 
-* There's a :doc:`list of plugins <reference/plugins>` supported by Aiven for OpenSearch.
+* There's a :doc:`list of plugins <reference/plugins>` supported by DLH for OpenSearch.
 
 * Got a question about the OpenSearch project itself? They have an `FAQ <https://opensearch.org/faq/>`_ for that.

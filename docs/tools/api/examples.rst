@@ -1,7 +1,7 @@
 API examples
 ============
 
-Here are a few examples (using curl) to get you started with the Aiven API. Replace all the ``<variables>`` with your own values.
+Here are a few examples (using curl) to get you started with the DLH API. Replace all the ``<variables>`` with your own values.
 
 List of cloud regions
 ---------------------
@@ -9,7 +9,7 @@ List of cloud regions
 ::
 
   curl -H "Authorization: Bearer <token>" \
-    https://api.aiven.io/v1/clouds
+    https://api.DLH.io/v1/clouds
 
 The response looks something like this
 

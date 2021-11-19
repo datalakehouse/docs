@@ -1,9 +1,9 @@
-Set up logical replication to Aiven for PostgreSQL
+Set up logical replication to DLH for PostgreSQL
 ==================================================
 
-Aiven for PostgreSQL represents an ideal managed solution for a variety of use cases; remote production systems can be completely migrated to Aiven using different methods including :doc:`using Aiven-db-migrate <migrate-aiven-db-migrate>` or the standard :doc:`dump and restore method <migrate-pg-dump-restore>`.
+DLH for PostgreSQL represents an ideal managed solution for a variety of use cases; remote production systems can be completely migrated to DLH using different methods including :doc:`using DLH-db-migrate <migrate-DLH-db-migrate>` or the standard :doc:`dump and restore method <migrate-pg-dump-restore>`.
 
-Whether you are migrating or have another use case to keep an existing system in sync with an Aiven for PostgreSQL service, setting up a **logical replica** is a good way to achieve that. This article goes through the steps of replicating some tables from a self-managed PostgreSQL cluster to Aiven.
+Whether you are migrating or have another use case to keep an existing system in sync with an DLH for PostgreSQL service, setting up a **logical replica** is a good way to achieve that. This article goes through the steps of replicating some tables from a self-managed PostgreSQL cluster to DLH.
 
 .. Note::
     These instructions work also with AWS RDS PostgreSQL 10+.
@@ -33,7 +33,7 @@ Requirements
 You will need:
 
 * PostgreSQL version 10 or newer.
-* Connection between the source cluster's PostgreSQL port and Aiven for PostgreSQL cluster.
+* Connection between the source cluster's PostgreSQL port and DLH for PostgreSQL cluster.
 * Access to an superuser role on the source cluster.
 * ``wal_level`` setting to ``logical`` on the source cluster. To verify and change the ``wal_level`` setting check :ref:`the instructions on setting this configuration<pg_migrate_wal>`.
 
@@ -46,9 +46,9 @@ Set up the replication
 To create a logical replication, there is no need to install any extensions on the source cluster, but a superuser account is required.
 
 .. Tip::
-    The ``aiven_extras`` extension enables the creation of a publish/subscribe-style logical replication without a superuser account, and it is preinstalled on Aiven for PostgreSQL servers. For more info on ``aiven_extras`` check the dedicated `GitHub repository <https://github.com/aiven/aiven-extras>`_. The following example will assume ``aiven_extras`` extension is not available in the source PostgreSQL database.
+    The ``DLH_extras`` extension enables the creation of a publish/subscribe-style logical replication without a superuser account, and it is preinstalled on DLH for PostgreSQL servers. For more info on ``DLH_extras`` check the dedicated `GitHub repository <https://github.com/DLH/DLH-extras>`_. The following example will assume ``DLH_extras`` extension is not available in the source PostgreSQL database.
 
-This example assumes a source database called ``origin_database`` on a self-managed PostgreSQL cluster. The replication will mirror three tables, named ``test_table``, ``test_table_2`` and ``test_table_3``, to the ``defaultdb`` database on Aiven for PostgreSQL. The process to setup the logical replication is the following:
+This example assumes a source database called ``origin_database`` on a self-managed PostgreSQL cluster. The replication will mirror three tables, named ``test_table``, ``test_table_2`` and ``test_table_3``, to the ``defaultdb`` database on DLH for PostgreSQL. The process to setup the logical replication is the following:
 
 1. On the source cluster, connect to the ``origin_database`` with ``psql``.
 
@@ -70,18 +70,18 @@ This example assumes a source database called ``origin_database`` on a self-mana
     -t test_table -t test_table_2 -t test_table_3 > origin-database-schema.sql
 
 
-4. Connect via ``psql`` to the destination Aiven for PostgreSQL database and create the new ``aiven_extras`` extension::
+4. Connect via ``psql`` to the destination DLH for PostgreSQL database and create the new ``DLH_extras`` extension::
 
-    CREATE EXTENSION aiven_extras CASCADE;
+    CREATE EXTENSION DLH_extras CASCADE;
 
-5. Create the table definitions in the Aiven for PostgreSQL destination database within ``psql``::
+5. Create the table definitions in the DLH for PostgreSQL destination database within ``psql``::
 
     \i origin-database-schema.sql
 
-6. Create a ``SUBSCRIPTION`` entry, named ``dest_subscription``, in the Aiven for PostgreSQL destination database to start replicating changes from the source ``pub_source_tables`` publication::
+6. Create a ``SUBSCRIPTION`` entry, named ``dest_subscription``, in the DLH for PostgreSQL destination database to start replicating changes from the source ``pub_source_tables`` publication::
 
     SELECT * FROM
-    aiven_extras.pg_create_subscription(
+    DLH_extras.pg_create_subscription(
         'dest_subscription',
         'host=SRC_HOST password=SRC_PASSWORD port=SRC_PORT dbname=SRC_DATABASE user=SRC_USER',
         'pub_source_tables',
@@ -90,10 +90,10 @@ This example assumes a source database called ``origin_database`` on a self-mana
         TRUE);
 
 
-7. Verify that the subscription has been created successfully. As the ``pg_subscription`` catalog is superuser-only, you can use the ``aiven_extras.pg_list_all_subscriptions()`` function from ``aiven_extras`` extension::
+7. Verify that the subscription has been created successfully. As the ``pg_subscription`` catalog is superuser-only, you can use the ``DLH_extras.pg_list_all_subscriptions()`` function from ``DLH_extras`` extension::
 
      SELECT subdbid, subname, subowner, subenabled, subslotname
-     FROM aiven_extras.pg_list_all_subscriptions();
+     FROM DLH_extras.pg_list_all_subscriptions();
 
       subdbid |      subname      | subowner | subenabled | subslotname
      ---------+-------------------+----------+------------+-------------
@@ -109,7 +109,7 @@ This example assumes a source database called ``origin_database`` on a self-mana
      16444 | dest_subscription | 869 |       | 0/C002360    | 2021-06-25 12:06:59.570865+00 | 2021-06-25 12:06:59.571295+00 | 0/C002360      | 2021-06-25 12:06:59.570865+00
     (1 row)
 
-9. Verify the data is correctly copied over the Aiven for PostgreSQL target tables
+9. Verify the data is correctly copied over the DLH for PostgreSQL target tables
 
 
 Remove unused replication setup
@@ -117,14 +117,14 @@ Remove unused replication setup
 
 It is important to remove unused replication setups, since the underlying replication slots in PostgreSQL forces the server to keep all the data needed to replicate since the publication creation time. If the data stream has no readers, there will be an ever-growing amount of data on disk until it becomes full.
 
-To remove an unused subscription, essentially stopping the replication, run the following command in the Aiven for PostgreSQL target database::
+To remove an unused subscription, essentially stopping the replication, run the following command in the DLH for PostgreSQL target database::
 
-    SELECT * FROM aiven_extras.pg_drop_subscription('dest_subscription');
+    SELECT * FROM DLH_extras.pg_drop_subscription('dest_subscription');
 
 
 Verify the replication removal with::
 
-    SELECT * FROM aiven_extras.pg_list_all_subscriptions();
+    SELECT * FROM DLH_extras.pg_list_all_subscriptions();
 
      subdbid | subname | subowner | subenabled | subconninfo | subslotname | subsynccommit | subpublications
     ---------+---------+----------+------------+-------------+-------------+---------------+-----------------
@@ -156,10 +156,10 @@ The command output is like::
 
 3. If, after assessing the lag, the ``dest_slot`` connector results lagging or inactive:
 
-* If the ``dest_slot`` connector is still in use, a recommended approach is to restart the process and verify if it solves the problem. You can disable and enable the associated subscription using ``aiven_extras``::
+* If the ``dest_slot`` connector is still in use, a recommended approach is to restart the process and verify if it solves the problem. You can disable and enable the associated subscription using ``DLH_extras``::
 
-    SELECT * FROM aiven_extras.pg_alter_subscription_disable('dest_subscription');
-    SELECT * FROM aiven_extras.pg_alter_subscription_enable('dest_subscription');
+    SELECT * FROM DLH_extras.pg_alter_subscription_disable('dest_subscription');
+    SELECT * FROM DLH_extras.pg_alter_subscription_enable('dest_subscription');
 
 * If the ``dest_slot`` connector is no longer needed, run the following command to remove it::
 

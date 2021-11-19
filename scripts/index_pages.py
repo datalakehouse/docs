@@ -35,7 +35,7 @@ def parse_pages(html_build_dir):
                 'title': title,
                 'content': content.replace("¶", ""),
                 'url': relative_path,
-                'source': 'devportal',
+                'source': 'docs',
                 'sort_priority': 1
             })
 
@@ -75,7 +75,7 @@ def index_pages(es, index_name, pages):
     es.delete_by_query(index=index_name,
                        body={'query': {
                            'term': {
-                               'source': 'devportal'
+                               'source': 'docs'
                            }
                        }})
 
@@ -89,7 +89,7 @@ def index_pages(es, index_name, pages):
 if __name__ == '__main__':
     args = parser.parse_args()
 
-    index_name = 'devportal'
+    index_name = 'docs'
 
     es = Elasticsearch([args.es_url])
     create_es_base(es, index_name)

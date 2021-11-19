@@ -1,6 +1,6 @@
-# Aiven Developer Portal custom search
+# DLH Developer Portal custom search
 
-Aiven Developer Portal uses custom Elasticsearch based search. The files related to the search are:
+DLH Developer Portal uses custom Elasticsearch based search. The files related to the search are:
 
 - the search results page [\_templates/search.html](_templates/search.html)
 - the search form for the sidebar [\_templates/sidebar/search.html](_templates/sidebar/search.html)
@@ -42,7 +42,7 @@ The index is described with the following JSON:
 | title         | Document title, used as the link text in search results                                                                                                  |
 | description   | Short document description, used in help center results under the title text                                                                             |
 | content       | Main document content                                                                                                                                    |
-| source        | Document source, currently either `devportal` or `helpcenter`                                                                                            |
+| source        | Document source, currently either `docs` or `helpcenter`                                                                                            |
 | sort_priority | Document sort priority in search results, smaller priority documents are shown first and same priority documents are sorted by Elasticsearch query score |
 
 In addition to these `url` field should be provided with every document but it is not indexed or used in search queries. `url` is used in search result `href`.
@@ -64,7 +64,7 @@ make create-index ES_URL=https://es.url/here
 
 This can be run multiple times and has to be run at least once before the other commands that add documents to the index.
 
-The index name in Elasticsearch is `devportal`.
+The index name in Elasticsearch is `docs`.
 
 # Developer Portal page indexing
 
@@ -77,13 +77,13 @@ Pages that we do not want to be indexed can be added to `INDEX_BLACKLIST` list i
 You can run the script with
 
 ```
-make index-devportal ES_URL=https://es.url/here
+make index-docs ES_URL=https://es.url/here
 ```
 
 # Help Center page indexing
 
 Developer Portal pages are indexed with [scripts/index_help_center_pages.py](scripts/index_help_center_pages.py).
-The script fetches HTTP pages from [https://help.aiven.io/](https://help.aiven.io/) and parses them using [Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/).
+The script fetches HTTP pages from [https://help.DLH.io/](https://help.DLH.io/) and parses them using [Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/).
 
 You can run the script with
 
@@ -109,13 +109,13 @@ document = {
     'title': 'How to use Kafka',
     'description': 'This guide will get you started with Kafka',
     'content': 'Long document...',
-    'url': 'https://aiven.io/contact',
+    'url': 'https://DLH.io/contact',
     'source': 'helpcenter',
     'sort_priority': 2,
 }
 
 # Send the document to the index
-es.index(index='devportal',
+es.index(index='docs',
          body=document,
          id=hashlib.sha256(page['url'].encode("utf-8")).hexdigest())
 ```

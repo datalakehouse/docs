@@ -1,12 +1,12 @@
-Migrate to Aiven for PostgreSQL with ``pg_dump`` and ``pg_restore``
+Migrate to DLH for PostgreSQL with ``pg_dump`` and ``pg_restore``
 ===================================================================
 
 .. Tip::
-    We recommend to migrate your PostgreSQL database to Aiven by using :doc:`aiven-db-migrate <migrate-aiven-db-migrate>`.
+    We recommend to migrate your PostgreSQL database to DLH by using :doc:`DLH-db-migrate <migrate-DLH-db-migrate>`.
 
-Aiven for PostgreSQL supports the same tools as a regular PostgreSQL database, so you can migrate using the standard ``pg_dump`` and ``pg_restore`` tools.
+DLH for PostgreSQL supports the same tools as a regular PostgreSQL database, so you can migrate using the standard ``pg_dump`` and ``pg_restore`` tools.
 
-The `pg_dump <https://www.postgresql.org/docs/current/app-pgdump.html>`_ tool can be used to extract the data from your existing PostgreSQL database and `pg_restore <https://www.postgresql.org/docs/current/app-pgrestore.html>`_ can then insert that data into your Aiven for PostgreSQL database.
+The `pg_dump <https://www.postgresql.org/docs/current/app-pgdump.html>`_ tool can be used to extract the data from your existing PostgreSQL database and `pg_restore <https://www.postgresql.org/docs/current/app-pgrestore.html>`_ can then insert that data into your DLH for PostgreSQL database.
 The duration of the process depends on the size of your existing database.
 
 During the migration no new data written to the database is included. You should turn off all write operations to your source database server before you run the ``pg_dump``.
@@ -24,22 +24,22 @@ Variable                  Description
 ====================      =======================================================================================
 ``SRC_SERVICE_URI``       Service URI for the source PostgreSQL connection
 ``DUMP_FOLDER``           Local Folder used to store the source database dump files
-``DEST_PG_NAME``          Name of the destination Aiven for PostgreSQL service
-``DEST_PG_PLAN``          Aiven plan for the destination Aiven for PostgreSQL service
-``DEST_SERVICE_URI``      Service URI for the destination PostgreSQL connection, available from the Aiven Console
+``DEST_PG_NAME``          Name of the destination DLH for PostgreSQL service
+``DEST_PG_PLAN``          DLH plan for the destination DLH for PostgreSQL service
+``DEST_SERVICE_URI``      Service URI for the destination PostgreSQL connection, available from the DLH Console
 ====================      =======================================================================================
 
 Perform the migration
 '''''''''''''''''''''
 
-1. If you don't have an Aiven for PostgreSQL database yet, run the following command to create a couple of PostgreSQL services via :doc:`../../../tools/cli` substituting the parameters accordingly::
+1. If you don't have an DLH for PostgreSQL database yet, run the following command to create a couple of PostgreSQL services via :doc:`../../../tools/cli` substituting the parameters accordingly::
 
     avn service create -t pg -p DEST_PG_PLAN DEST_PG_NAME
 
 .. Tip::
-    Aiven for PostgreSQL allows you to easily switch between different service plans, but for the duration of the initial migration process using ``pg_dump``, we recommend that you choose a service plan that is large enough for the task. This allows you to limit downtime during the migration process. Once migrated, you can scale the plan size up or down as needed.
+    DLH for PostgreSQL allows you to easily switch between different service plans, but for the duration of the initial migration process using ``pg_dump``, we recommend that you choose a service plan that is large enough for the task. This allows you to limit downtime during the migration process. Once migrated, you can scale the plan size up or down as needed.
 
-Aiven automatically creates a ``defaultdb`` database and ``avnadmin`` user account, which are used by default.
+DLH automatically creates a ``defaultdb`` database and ``avnadmin`` user account, which are used by default.
 
 
 2. Run the ``pg_dump`` command substituting the ``SRC_SERVICE_URI`` with the service URI of your source PostgreSQL service, and ``DUMP_FOLDER`` with the folder where you want to store the dump in::
@@ -49,7 +49,7 @@ Aiven automatically creates a ``defaultdb`` database and ``avnadmin`` user accou
 The ``--jobs`` option in this command instructs the operation to use 4 CPUs to dump the database. Depending on the number of CPUs you have available, you can use this option to adjust the performance to better suit your server.
 
 .. Tip::
-    If you encounter problems with restoring your previous object ownerships to users that do not exist in your Aiven database, use the ``--no-owner`` option in the ``pg_dump`` command. You can create the ownership hierarchy after the data is migrated.
+    If you encounter problems with restoring your previous object ownerships to users that do not exist in your DLH database, use the ``--no-owner`` option in the ``pg_dump`` command. You can create the ownership hierarchy after the data is migrated.
 
 
 3. Run ``pg_restore`` to load the data into the new database::
@@ -60,10 +60,10 @@ The ``--jobs`` option in this command instructs the operation to use 4 CPUs to d
     If you have more than one database to migrate, repeat the ``pg_dump`` and ``pg_restore`` steps for each database.
 
 
-4. Switch the connection settings in your applications to use the new Aiven database once you have migrated all of your data.
+4. Switch the connection settings in your applications to use the new DLH database once you have migrated all of your data.
 
 .. Warning::
-    The user passwords are different from those on the server that you migrated from. Go to the **Users** tab for your service in the Aiven web console to check the new passwords.
+    The user passwords are different from those on the server that you migrated from. Go to the **Users** tab for your service in the DLH web console to check the new passwords.
 
 5. Connect to the target database via ``psql``::
 
@@ -73,12 +73,12 @@ The ``--jobs`` option in this command instructs the operation to use 4 CPUs to d
 
     newdb=> ANALYZE;
 
-If you got this far, then all went well and your Aiven for PostgreSQL database is now ready to use.
+If you got this far, then all went well and your DLH for PostgreSQL database is now ready to use.
 
 Handle ``pg_restore`` errors
 ''''''''''''''''''''''''''''
 
-When migrating PostgreSQL databases to Aiven via ``pg_restore`` you could encounter errors like::
+When migrating PostgreSQL databases to DLH via ``pg_restore`` you could encounter errors like::
 
     could not execute query: ERROR: must be owner of extension <extension>
 

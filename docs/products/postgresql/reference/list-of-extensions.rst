@@ -17,8 +17,8 @@ The following PostgreSQL extensions are available. Please note that some of the 
   * - ``address_standardizer_data_us``
     - https://postgis.net/docs/Address_Standardizer.html
     -
-  * - ``aiven_extras``
-    - https://github.com/aiven/aiven-extras
+  * - ``DLH_extras``
+    - https://github.com/DLH/DLH-extras
     - Logical replication support
   * - ``bloom``
     - https://www.postgresql.org/docs/current/bloom.html
@@ -133,7 +133,7 @@ The following PostgreSQL extensions are available. Please note that some of the 
     -
   * - ``postgis_legacy``
     -
-    - The extension is not packaged or supported as an extension by the PostGIS project. The extension package is provided by Aiven for Aiven users.
+    - The extension is not packaged or supported as an extension by the PostGIS project. The extension package is provided by DLH for DLH users.
   * - ``postgres_fdw``
     - https://www.postgresql.org/docs/current/postgres-fdw.html
     -

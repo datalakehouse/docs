@@ -4,7 +4,7 @@
 Here you’ll find the full list of commands for ``avn service user``.
 
 
-Manage Aiven users and credentials
+Manage DLH users and credentials
 --------------------------------------------------------
 
 ``avn service user-create``
@@ -23,15 +23,15 @@ Creates a new user for the selected service.
   * - ``--username``
     - The new username to be created
   * - ``--m3-group``
-    - The name of the group the user belongs to (for Aiven for M3 services only)
+    - The name of the group the user belongs to (for DLH for M3 services only)
   * - ``--redis-acl-keys``
-    - The ACL rules for keys (Aiven for Redis services only)
+    - The ACL rules for keys (DLH for Redis services only)
   * - ``--redis-acl-commands``
-    - The ACL rules for commands (Aiven for Redis services only)
+    - The ACL rules for commands (DLH for Redis services only)
   * - ``--redis-acl-categories``
-    - The ACL rules for categories (Aiven for Redis services only)
+    - The ACL rules for categories (DLH for Redis services only)
   * - ``--redis-acl-channels``
-    - The ACL rules for channels (Aiven for Redis services only)
+    - The ACL rules for channels (DLH for Redis services only)
 
 **Example:** Create a new user named ``janedoe`` for a service named ``pg-demo``.
 
@@ -66,7 +66,7 @@ Downloads the SSL certificate, key and CA certificate for the selected service.
 ``avn service user-delete``
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
-Delete a service in a given Aiven service.
+Delete a service in a given DLH service.
 
 .. list-table::
   :header-rows: 1
@@ -88,7 +88,7 @@ Delete a service in a given Aiven service.
 ``avn service user-get``
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
-Retrieves the details for a single user in a given Aiven service.
+Retrieves the details for a single user in a given DLH service.
 
 .. list-table::
   :header-rows: 1

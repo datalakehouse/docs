@@ -16,9 +16,9 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'Aiven Developer'
-copyright = '2021, Aiven Team'
-author = 'Aiven Team'
+project = 'DLH Developer'
+copyright = '2021, DLH Team'
+author = 'DLH Team'
 
 # -- General configuration ---------------------------------------------------
 
@@ -37,7 +37,7 @@ extensions = [
 
 # OpenGraph configuration
 # see all options at https://github.com/wpilibsuite/sphinxext-opengraph#options
-ogp_site_url = 'https://developer.aiven.io/'
+ogp_site_url = 'https://thirsty-carson-e8e5ec.netlify.app/'
 ogp_description_length = 200
 ogp_image = '/_static/images/site-preview.png'
 
@@ -59,7 +59,7 @@ exclude_patterns = [
 gitstamp_fmt = "%B %Y"
 
 # sitemap config
-html_baseurl = 'https://developer.aiven.io'
+html_baseurl = 'https://thirsty-carson-e8e5ec.netlify.app/'
 
 # -- Options for HTML output -------------------------------------------------
 
@@ -115,7 +115,7 @@ pygments_style = "monokai"
 language = "en"
 html_extra_path = ['robots.txt']
 html_static_path = ['_static']
-html_css_files = ['css/aiven.css']
+html_css_files = ['css/DLH.css']
 
 # -- Replacements -----------------------------------------------------------
 rst_epilog = """

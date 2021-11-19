@@ -35,7 +35,7 @@ def create_index(es, index_name):
 if __name__ == '__main__':
     args = parser.parse_args()
 
-    index_name = 'devportal'
+    index_name = 'docs'
 
     es = Elasticsearch([args.es_url])
     create_index(es, index_name)

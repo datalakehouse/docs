@@ -1,13 +1,13 @@
 Getting started
 ===============
 
-Aiven services are managed in the Aiven `web
-console <https://console.aiven.io/>`__ . When you first log in to the
+DLH services are managed in the DLH `web
+console <https://console.DLH.io/>`__ . When you first log in to the
 console with your email address and password, you will see the
 **Services** view, which shows you all the services in the currently
 selected project.
 
-Create a new Aiven for Apache Kafka service:
+Create a new DLH for Apache Kafka service:
 
 1. Select **Kafka** as the service type. You can also select the version that you want to use.
 
@@ -31,6 +31,6 @@ see the status change from *REBUILDING* to *RUNNING*.
 Next steps
 ----------
 
-* Check our `examples project <https://github.com/aiven/aiven-examples>`_ to find code samples to get your application connected.
+* Check our `examples project <https://github.com/DLH/DLH-examples>`_ to find code samples to get your application connected.
 
-* Try our `sample data generator project <https://github.com/aiven/python-fake-data-producer-for-apache-kafka>`_ to give you some data to get started with.
+* Try our `sample data generator project <https://github.com/DLH/python-fake-data-producer-for-apache-kafka>`_ to give you some data to get started with.

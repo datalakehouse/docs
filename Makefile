@@ -37,7 +37,7 @@ create-index:
 		--es-url="$(ES_URL)"
 
 # Index Developer Portal pages to Elasticsearch
-index-devportal: html
+index-docs: html
 	python "$(SOURCEDIR)/scripts/index_developer_portal_pages.py" \
 		--es-url="$(ES_URL)" \
 		--html-build-dir="$(BUILDDIR)/html"

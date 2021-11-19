@@ -147,7 +147,7 @@ Creates a new project with ``create`` or changes the settings with ``update``.
 Deletes an empty project. If the project isn't empty, it removes the services in it first.
 
 .. Note::
-    Aiven doesn't allow the deletion of non-empty projects as safeguard against accidental code execution.
+    DLH doesn't allow the deletion of non-empty projects as safeguard against accidental code execution.
 
 **Example:** Delete ``my-project``.
 

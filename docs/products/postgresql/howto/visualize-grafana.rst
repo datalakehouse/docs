@@ -1,7 +1,7 @@
 Visualize PostgreSQL data with Grafana
 ======================================
 
-PostgreSQL can hold a wide variety of types of data, and creating visualisations helps gather insights on top of raw figures. Luckily, Aiven can set up the Grafana and the integration between the two services for you.
+PostgreSQL can hold a wide variety of types of data, and creating visualisations helps gather insights on top of raw figures. Luckily, DLH can set up the Grafana and the integration between the two services for you.
 
 
 Integrate PostgreSQL and Grafana
@@ -12,7 +12,7 @@ Integrate PostgreSQL and Grafana
 2. Choose either a new or existing Grafana service.
 
    - A new service will ask you to select the cloud, region and plan to use. You should also give your service a name. The service overview page shows the nodes rebuilding, and then indicates when they are ready.
-   - If you're already using Grafana on Aiven, you can integrate your PostgreSQL as a data source for that existing Grafana.
+   - If you're already using Grafana on DLH, you can integrate your PostgreSQL as a data source for that existing Grafana.
 
 3. On the service overview page for your Grafana service, click the "Service URI" link. The username and password for your Grafana service is also available on the service overview page.
 

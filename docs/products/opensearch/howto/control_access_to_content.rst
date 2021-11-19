@@ -1,14 +1,14 @@
 Control access to content in your service
 =========================================
 
-This article shows you how to set up access control lists (ACL) for content in Aiven for OpenSearch services.
+This article shows you how to set up access control lists (ACL) for content in DLH for OpenSearch services.
 
 See the :doc:`related documentation <../concepts/access_control>` for more information on the permissions and patterns that are supported in ACL rules.
 
 Switch on ACL support for your service
 --------------------------------------
 
-1. Log in to the `Aiven web console <https://console.aiven.io>`_ and select your OpenSearch service.
+1. Log in to the `DLH web console <https://console.DLH.io>`_ and select your OpenSearch service.
 
 2. Click the **ACL** tab.
 
@@ -28,7 +28,7 @@ Define ACLs
 
 When you have switched on ACL support in your service, define the new ACLs:
 
-1. Log in to the `Aiven web console <https://console.aiven.io>`_ and select your OpenSearch service.
+1. Log in to the `DLH web console <https://console.DLH.io>`_ and select your OpenSearch service.
 2. Click the **ACL** tab.
 3. Click **Create user ACL**.
 4. Select the service user that you want to use.

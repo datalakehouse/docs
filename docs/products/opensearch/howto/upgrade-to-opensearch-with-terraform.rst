@@ -12,7 +12,7 @@ To accomplish this, you will need to take the following steps:
 .. code-block::
 
     # Existing Elasticsearch Resource
-    resource "aiven_elasticsearch" "es" {
+    resource "DLH_elasticsearch" "es" {
       project = "project-name"
       cloud_name = "google-us-east4"
       plan = "business-4"
@@ -26,7 +26,7 @@ To accomplish this, you will need to take the following steps:
 .. code-block::
 
     # Modified Elasticsearch Resource
-    resource "aiven_elasticsearch" "es" {
+    resource "DLH_elasticsearch" "es" {
       project = "project-name"
       cloud_name = "google-us-east4"
       plan = "business-4"
@@ -41,13 +41,13 @@ To accomplish this, you will need to take the following steps:
 
 .. code-block::
 
-    terraform state rm 'aiven_elasticsearch.<service-name>'
+    terraform state rm 'DLH_elasticsearch.<service-name>'
 
 3. Finally, add the OpenSearch service to the Terraform state using an OpenSearch resource. The above example would become:
 
 .. code-block::
 
-    resource "aiven_opensearch" "os" {
+    resource "DLH_opensearch" "os" {
       project = "project-name"
       cloud_name = "google-us-east4"
       plan = "business-4"
@@ -60,4 +60,4 @@ To accomplish this, you will need to take the following steps:
 
 .. code-block::
 
-    terraform import 'aiven_opensearch.os' <project-name>/<service-name>
+    terraform import 'DLH_opensearch.os' <project-name>/<service-name>
