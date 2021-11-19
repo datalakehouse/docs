@@ -1,6 +1,6 @@
 Concepts
 ========
 
-Learn more about some of the key concepts for working with DLH for OpenSearch:
+Learn more about some of the key concepts for working with datalakehouse for OpenSearch:
 
 .. tableofcontents::

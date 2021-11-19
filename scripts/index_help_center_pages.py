@@ -88,7 +88,7 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     index_name = "docs"
-    base_url = "https://help.DLH.io/en"
+    base_url = "https://help.datalakehouse.io/en"
 
     es = Elasticsearch([args.es_url])
     index_pages(es, index_name, base_url)

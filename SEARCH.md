@@ -1,6 +1,6 @@
-# DLH Developer Portal custom search
+# datalakehouse Developer Portal custom search
 
-DLH Developer Portal uses custom Elasticsearch based search. The files related to the search are:
+datalakehouse Developer Portal uses custom Elasticsearch based search. The files related to the search are:
 
 - the search results page [\_templates/search.html](_templates/search.html)
 - the search form for the sidebar [\_templates/sidebar/search.html](_templates/sidebar/search.html)
@@ -83,7 +83,7 @@ make index-docs ES_URL=https://es.url/here
 # Help Center page indexing
 
 Developer Portal pages are indexed with [scripts/index_help_center_pages.py](scripts/index_help_center_pages.py).
-The script fetches HTTP pages from [https://help.DLH.io/](https://help.DLH.io/) and parses them using [Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/).
+The script fetches HTTP pages from [https://help.datalakehouse.io/](https://help.datalakehouse.io/) and parses them using [Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/).
 
 You can run the script with
 
@@ -109,7 +109,7 @@ document = {
     'title': 'How to use Kafka',
     'description': 'This guide will get you started with Kafka',
     'content': 'Long document...',
-    'url': 'https://DLH.io/contact',
+    'url': 'https://datalakehouse.io/contact',
     'source': 'helpcenter',
     'sort_priority': 2,
 }

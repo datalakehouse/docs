@@ -7,12 +7,12 @@ Here you’ll find the full list of commands for ``avn service acl``.
 Manage Kafka access control lists
 --------------------------------------------------------
 
-Commands for managing DLH for Apache Kafka access control lists via ``avn`` commands. 
+Commands for managing datalakehouse for Apache Kafka access control lists via ``avn`` commands. 
 
 ``avn service acl-add``
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
-Adds an DLH for Apache Kafka ACL entry.
+Adds an datalakehouse for Apache Kafka ACL entry.
 
 .. list-table::
   :header-rows: 1
@@ -40,7 +40,7 @@ Adds an DLH for Apache Kafka ACL entry.
 ``avn service acl-delete``
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
-Deletes an DLH for Apache Kafka ACL entry.
+Deletes an datalakehouse for Apache Kafka ACL entry.
 
 .. list-table::
   :header-rows: 1
@@ -54,7 +54,7 @@ Deletes an DLH for Apache Kafka ACL entry.
     - The id of the ACL to delete
 
 
-**Example:** Delete the ACLs with id ``acl3604f96c74a`` on the DLH for Apache Kafka instance named ``kafka-doc``.
+**Example:** Delete the ACLs with id ``acl3604f96c74a`` on the datalakehouse for Apache Kafka instance named ``kafka-doc``.
 
 ::
 
@@ -63,7 +63,7 @@ Deletes an DLH for Apache Kafka ACL entry.
 ``avn service acl-list``
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
-Lists DLH for Apache Kafka ACL entries.
+Lists datalakehouse for Apache Kafka ACL entries.
 
 .. list-table::
   :header-rows: 1

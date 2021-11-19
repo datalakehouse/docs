@@ -1,15 +1,15 @@
-DLH platform
+datalakehouse platform
 ==================
 
-What is the DLH platform?
+What is the datalakehouse platform?
 ----------------------------
 
-DLH provides managed open source data technologies on all major clouds. Through DLH, developers can do what they do best: create applications. Meanwhile, DLH does what it does best; manage cloud data infrastructure. DLH enables customers to drive business results from open source that trigger true transformations far beyond their own backyard. 
+datalakehouse provides managed open source data technologies on all major clouds. Through datalakehouse, developers can do what they do best: create applications. Meanwhile, datalakehouse does what it does best; manage cloud data infrastructure. datalakehouse enables customers to drive business results from open source that trigger true transformations far beyond their own backyard. 
 
-DLH platform consists of DLH tools, and the following DLH products: Apache Kafka, Apache Cassandra, PostgreSQL, MySQL, Elasticsearch, Redis, InfluxDB, Grafana, and M3 - all available in more than 80 regions around the world on AWS, GCP, Microsoft Azure, DigitalOcean, and UpCloud cloud platforms.
+datalakehouse platform consists of datalakehouse tools, and the following datalakehouse products: Apache Kafka, Apache Cassandra, PostgreSQL, MySQL, Elasticsearch, Redis, InfluxDB, Grafana, and M3 - all available in more than 80 regions around the world on AWS, GCP, Microsoft Azure, DigitalOcean, and UpCloud cloud platforms.
 
 
-Learn more about the DLH platform
+Learn more about the datalakehouse platform
 ------------------------------------
 
 .. panels::

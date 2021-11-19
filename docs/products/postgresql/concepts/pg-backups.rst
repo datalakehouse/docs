@@ -1,7 +1,7 @@
 PostgreSQL backups
 ==================
 
-DLH for PostgreSQL databases are automatically backed up, with **full backups** made daily, and **write-ahead logs (WAL)** copied at 5 minute intervals, or for every new file generated. All backups are encrypted using ``pghoard``, an open source tool developed and maintained by DLH, that you can find `on GitHub <https://github.com/DLH/pghoard>`_.
+datalakehouse for PostgreSQL databases are automatically backed up, with **full backups** made daily, and **write-ahead logs (WAL)** copied at 5 minute intervals, or for every new file generated. All backups are encrypted using ``pghoard``, an open source tool developed and maintained by datalakehouse, that you can find `on GitHub <https://github.com/datalakehouse/pghoard>`_.
 
 The time of day when the daily backups are made is initially randomly selected, but can be customised by setting the ``backup_hour`` and ``backup_minute`` advanced parameters, see :doc:`../reference/list-of-advanced-params`.
 
@@ -56,6 +56,6 @@ Differences between logical and full backups
       - Long restoration process, replay of all SQL statements is needed to generate schema object and insert data
 
 .. Tip::
-    The size of backups and the DLH backup size shown on the DLH web console differ, in some cases significantly. The backup sizes shown in the DLH web console are for daily backups, before encryption and compression.
+    The size of backups and the datalakehouse backup size shown on the datalakehouse web console differ, in some cases significantly. The backup sizes shown in the datalakehouse web console are for daily backups, before encryption and compression.
 
 To restore a backup, see :doc:`../howto/restore-backup`.

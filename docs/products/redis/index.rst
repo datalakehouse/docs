@@ -1,10 +1,10 @@
-DLH for Redis
+datalakehouse for Redis
 ===============
 
-What is DLH for Redis?
+What is datalakehouse for Redis?
 ------------------------
 
-DLH for Redis is a fully managed **in-memory NoSQL database**, deployable in the cloud of your choice which can help you store and access data quickly and efficiently.
+datalakehouse for Redis is a fully managed **in-memory NoSQL database**, deployable in the cloud of your choice which can help you store and access data quickly and efficiently.
 
 
 Why Redis?
@@ -15,10 +15,10 @@ Redis is an open-source tool, and a "data structure store" used as a database, c
 Read more about `the introduction to Redis <https://redis.io/topics/introduction>`_.
 
 
-Get started with DLH for Redis
+Get started with datalakehouse for Redis
 ---------------------------------
 
-Take your first steps with DLH for Redis by following our :doc:`get-started` article, or browse through our full list of articles:
+Take your first steps with datalakehouse for Redis by following our :doc:`get-started` article, or browse through our full list of articles:
 
 
 .. panels::
@@ -34,7 +34,7 @@ Take your first steps with DLH for Redis by following our :doc:`get-started` art
     🧰 :doc:`howto/list-code-samples`
 
 
-Ways to use DLH for Redis
+Ways to use datalakehouse for Redis
 -----------------------------
 
 - Redis is usually used as an auxiliary data store, working with a main database (e.g. PostgreSQL). 

@@ -57,7 +57,7 @@ Follow the steps below to obtain the dataset and then load the sample data into 
 4. In this step you will create the script that reads the data file you downloaded and puts the records into the OpenSearch service. Create a file named ``epicurious_recipes_import.py``, and add the following code; you will need to edit it to add the connection details for your OpenSearch service.
 
 .. Tip::
-    You can find the ``SERVICE_URI`` on DLH's dashboard.
+    You can find the ``SERVICE_URI`` on datalakehouse's dashboard.
 
 .. code:: python
 

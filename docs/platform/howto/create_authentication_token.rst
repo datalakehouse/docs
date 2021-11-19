@@ -1,11 +1,11 @@
 Create an authentication token
 ==============================
 
-You can use the DLH web console to create an authentication token for use with the DLH command-line interface (CLI) or API.
+You can use the datalakehouse web console to create an authentication token for use with the datalakehouse command-line interface (CLI) or API.
 
 To create an authentication token:
 
-1. Log in to the `DLH web console <https://console.DLH.io/>`_.
+1. Log in to the `datalakehouse web console <https://console.datalakehouse.io/>`_.
 
 2. Click the user icon in the top-right corner of the page.
 
@@ -26,4 +26,4 @@ To create an authentication token:
 
 9. Click **Close**.
 
-You can now use the authentication token to access your account in the DLH CLI or API.
+You can now use the authentication token to access your account in the datalakehouse CLI or API.

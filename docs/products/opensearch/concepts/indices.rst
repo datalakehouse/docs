@@ -5,7 +5,7 @@ OpenSearch uses indices to organize data into types, similarly to databases and 
 
 The data is distributed within your cluster by mapping each index to a primary shard, which is copied to one or more replica shards to protect your data against hardware failure and to provide additional capacity for read requests.
 
-DLH for OpenSearch does not place additional restrictions on the number of indices or shards that you can use for your service, but OpenSearch does have a default limit of 1024 shards.
+datalakehouse for OpenSearch does not place additional restrictions on the number of indices or shards that you can use for your service, but OpenSearch does have a default limit of 1024 shards.
 
 
 Choosing when to create new indices
@@ -46,14 +46,14 @@ These are only rough suggestions; the optimal values depend heavily on how you u
 Performance impact
 -------------------
 
-Having a large number of indices or shards affects the performance of your OpenSearch service. As an example, here are some figures from a three-node DLH for OpenSearch business-8 cluster:
+Having a large number of indices or shards affects the performance of your OpenSearch service. As an example, here are some figures from a three-node datalakehouse for OpenSearch business-8 cluster:
 
 * 1,000 shards: No visible effect in performance.
 * 10,000 shards: Creating new shards starts to take more time. Increased variation in performance.
 * 15,000 shards: Creating new shards takes significantly longer, often tens of seconds.
 * 20,000 shards: Inserting new data randomly takes significantly more time (20 times more than the mean average). Significantly increased variation in performance.
 
-DLH for OpenSearch takes a snapshot once every hour. With 10,000 shards, the cluster is continuously taking new backups and deleting old backups from storage. This naturally affects the service performance, as part of the capacity is continuously allocated to managing backups.
+datalakehouse for OpenSearch takes a snapshot once every hour. With 10,000 shards, the cluster is continuously taking new backups and deleting old backups from storage. This naturally affects the service performance, as part of the capacity is continuously allocated to managing backups.
 
 
 Using patterns to set index retention
@@ -61,7 +61,7 @@ Using patterns to set index retention
 
 The standard approach for index retention is to set the maximum number of indices to store, and once that number is exceeded, the oldest index is deleted. However, this has some limitations. For example, you might want to set the maximum to 5 for one type of index and 8 for another type.
 
-DLH for OpenSearch services give you the option to create `glob-style <https://en.wikipedia.org/wiki/Glob_(programming)>`_ patterns and set a unique maximum for each pattern.
+datalakehouse for OpenSearch services give you the option to create `glob-style <https://en.wikipedia.org/wiki/Glob_(programming)>`_ patterns and set a unique maximum for each pattern.
 
 Here are some examples of the patterns that you can use:
 
@@ -78,7 +78,7 @@ If you then create a ``logs.*`` pattern with the maximum set to 8 and a ``*`` pa
 
 Additionally, setting the maximum to 0 means that your pattern has no effect. The system ignores the maximum setting and does not delete anything. You can use this if you want to disable the pattern temporarily.
 
-If you use log integration with integration-specific retention times, note that DLH for OpenSearch applies both index patterns and integration retention times. If you use both log integrations and custom index patterns in your OpenSearch service, we recommend that you use only one of them to clean up indices:
+If you use log integration with integration-specific retention times, note that datalakehouse for OpenSearch applies both index patterns and integration retention times. If you use both log integrations and custom index patterns in your OpenSearch service, we recommend that you use only one of them to clean up indices:
 
 * Set the retention time for log integrations to the maximum value (10000)
 * Do not add index patterns for index prefixes managed by log integrations
@@ -89,7 +89,7 @@ You can set both, in which case the smaller setting takes effect.
 Automatic adjustment of replication factors
 -------------------------------------------
 
-DLH for OpenSearch automatically adjusts the index replication factor (the number of replica shards) to ensure data availability and service functionality.
+datalakehouse for OpenSearch automatically adjusts the index replication factor (the number of replica shards) to ensure data availability and service functionality.
 
 The replication factor is adjusted automatically:
 

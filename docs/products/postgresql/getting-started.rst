@@ -1,7 +1,7 @@
 Getting started
 ===============
 
-DLH for PostgreSQL is available in the `DLH console <https://console.DLH.io>`_.
+datalakehouse for PostgreSQL is available in the `datalakehouse console <https://console.datalakehouse.io>`_.
 
 Choose the PostgreSQL version, your cloud provider and location to deploy to, then choose which plan to use.
 
@@ -11,7 +11,7 @@ Choose the PostgreSQL version, your cloud provider and location to deploy to, th
 Finally, give the service a name and then select "Create Service", and your shiny new PostgreSQL database will start building. While it does that, you can already visit the service overview page to see the details of the service.
 
 .. image:: /images/products/postgresql/pg-connection-details.png
-    :alt: PostgreSQL service overview tab in DLH's console
+    :alt: PostgreSQL service overview tab in datalakehouse's console
 
 
 Connect to PostgreSQL with ``psql``
@@ -77,7 +77,7 @@ Here are some more resources to help you on your PostgreSQL journey:
 * Code examples for connecting to PostgreSQL from your application:
     * :doc:`Go <howto/connect-go>`
     * :doc:`Python <howto/connect-python>`
-* How to :doc:`use PgAdmin <howto/connect-pgadmin>` with DLH for PostgreSQL
-* How to :doc:`migrate your PostgreSQL to DLH <concepts/DLH-db-migrate>`
+* How to :doc:`use PgAdmin <howto/connect-pgadmin>` with datalakehouse for PostgreSQL
+* How to :doc:`migrate your PostgreSQL to datalakehouse <concepts/datalakehouse-db-migrate>`
 * Learn PostgreSQL with some `PostgreSQL Exercises <https://pgexercises.com/>`_
 * The `awesome PostgreSQL ecosystem <https://github.com/dhamaniasad/awesome-postgres>`_ of tools and solutions

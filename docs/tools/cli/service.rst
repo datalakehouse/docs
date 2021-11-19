@@ -7,13 +7,13 @@ Here you’ll find the full list of commands for ``avn service``.
 Manage service details
 -------------------------
 
-Commands for managing DLH services via ``avn`` commands. 
+Commands for managing datalakehouse services via ``avn`` commands. 
 
 
 ``avn service acl``
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
-Manages the DLH for Apache Kafka ACL entries. 
+Manages the datalakehouse for Apache Kafka ACL entries. 
 
 More information on ``acl-add``, ``acl-delete`` and ``acl-list`` can be found in :doc:`the dedicated page <service/acl>`.
 
@@ -43,7 +43,7 @@ Retrieves the project CA that the selected service belongs to.
 ``avn service cli``
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
-Opens an interactive shell to the given service. Supported only for DLH for InfluxDB and DLH for PostgreSQL services.
+Opens an interactive shell to the given service. Supported only for datalakehouse for InfluxDB and datalakehouse for PostgreSQL services.
 
 .. list-table::
   :header-rows: 1
@@ -54,7 +54,7 @@ Opens an interactive shell to the given service. Supported only for DLH for Infl
   * - ``service_name``
     - The name of the service
 
-**Example:** Open a new ``psql`` shell connecting to an DLH for PostgreSQL service named ``pg-doc``.
+**Example:** Open a new ``psql`` shell connecting to an datalakehouse for PostgreSQL service named ``pg-doc``.
 
 ::
 
@@ -70,7 +70,7 @@ More information on ``connection-pool-add``, ``connection-pool-delete``, ``conne
 ``avn service connector``
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
-Set of commands for managing DLH for Apache Kafka Connect connectors. 
+Set of commands for managing datalakehouse for Apache Kafka Connect connectors. 
 
 More information on ``connector available``, ``connector create``, ``connector delete``, ``connector list``, ``connector pause``, ``connector restart``, ``connector restart-task``, ``connector resume``, ``connector schema``, ``connector status`` and ``connector update`` can be found in the :doc:`dedicated page <service/connector>`.
 
@@ -92,7 +92,7 @@ Creates a new service.
   * - ``--service-type``
     - The type of service; the :ref:`service types command <avn-cli-service-type>` has the available values
   * - ``--plan``
-    - DLH subscription plan name; check :ref:`avn-cloud-list` for more information
+    - datalakehouse subscription plan name; check :ref:`avn-cloud-list` for more information
   * - ``--cloud``
     - The cloud region name; check :ref:`avn-cloud-list` for more information
   * - ``--no-fail-if-exists``
@@ -106,7 +106,7 @@ Creates a new service.
   * - ``-c KEY=VALUE``
     - Any additional configuration settings for your service; check our documentation for more information, or use the :ref:`service types command <avn-cli-service-type>` which has a verbose mode that shows all options.
 
-**Example:** Create a new DLH for Kafka service named ``kafka-demo`` in the region ``google-europe-west3`` with the plan ``business-4`` and enable Kafka Connect.
+**Example:** Create a new datalakehouse for Kafka service named ``kafka-demo`` in the region ``google-europe-west3`` with the plan ``business-4`` and enable Kafka Connect.
 
 ::
   
@@ -141,7 +141,7 @@ Resets the service credentials. More information on user password change is prov
 ``avn service current-queries``
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
-List current service connections/queries for an DLH for PostgreSQL, DLH for MySQL or DLH for Redis service.
+List current service connections/queries for an datalakehouse for PostgreSQL, datalakehouse for MySQL or datalakehouse for Redis service.
 
 .. list-table::
   :header-rows: 1
@@ -161,7 +161,7 @@ List current service connections/queries for an DLH for PostgreSQL, DLH for MySQ
 ``avn service database``
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
-Manages databases within an DLH for PostgreSQL, DLH for MySQL or DLH for InfluxDB service.
+Manages databases within an datalakehouse for PostgreSQL, datalakehouse for MySQL or datalakehouse for InfluxDB service.
 
 More information on ``database-add``, ``database-delete`` and ``database-list`` can be found in :doc:`the dedicated page <service/database>`.
 
@@ -176,7 +176,7 @@ More information on ``es-acl-add``, ``es-acl-del``, ``es-acl-disable``, ``es-acl
 ``avn service flink``
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
-Manages DLH for Apache Flink tables and jobs.
+Manages datalakehouse for Apache Flink tables and jobs.
 
 More info on ``flink table create``, ``flink table delete``, ``flink table get``, ``flink table list``, ``flink job create``, ``flink job cancel``, ``flink job get`` and ``flink job list`` can be found in :doc:`the dedicated page <service/flink>`.
 
@@ -219,7 +219,7 @@ More information on ``index-delete`` and  ``index-list`` can be found in :doc:`t
 ``avn service integration``
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
-Manages DLH internal and external services integrations.
+Manages datalakehouse internal and external services integrations.
 
 More information on ``integration-delete``, ``integration-endpoint-create``, ``integration-endpoint-delete``, ``integration-endpoint-list``, ``integration-endpoint-types-list``, ``integration-endpoint-update``, ``integration-list``, ``integration-types-list`` and ``integration-update`` can be found in :doc:`the dedicated page <service/integration>`.
 
@@ -231,7 +231,7 @@ Service keypair commands
 ``avn service list``
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
-Lists services within an DLH project.
+Lists services within an datalakehouse project.
 
 .. list-table::
   :header-rows: 1
@@ -415,13 +415,13 @@ Service Privatelink commands
 ``avn service queries``
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
-Lists the service connections/queries statistics for an DLH for PostgreSQL or DLH for MySQL. 
+Lists the service connections/queries statistics for an datalakehouse for PostgreSQL or datalakehouse for MySQL. 
 The list of queries data points retrievable includes:
 
-* the ``public.pg_stat_statements`` `columns <https://www.postgresql.org/docs/current/pgstatstatements.html>`_, for DLH for PostgreSQL services.
-* the ``performance_schema.events_statements_summary_by_digest`` `columns <https://dev.mysql.com/doc/refman/8.0/en/performance-schema-statement-summary-tables.html>`_, for DLH for MySQL services.
+* the ``public.pg_stat_statements`` `columns <https://www.postgresql.org/docs/current/pgstatstatements.html>`_, for datalakehouse for PostgreSQL services.
+* the ``performance_schema.events_statements_summary_by_digest`` `columns <https://dev.mysql.com/doc/refman/8.0/en/performance-schema-statement-summary-tables.html>`_, for datalakehouse for MySQL services.
 
-A description of the retrieved columns for DLH for PostgreSQL can be found in the dedicated `PostgreSQL documentation <https://www.postgresql.org/docs/current/pgstatstatements.html>`_ .
+A description of the retrieved columns for datalakehouse for PostgreSQL can be found in the dedicated `PostgreSQL documentation <https://www.postgresql.org/docs/current/pgstatstatements.html>`_ .
 
 .. list-table::
   :header-rows: 1
@@ -434,7 +434,7 @@ A description of the retrieved columns for DLH for PostgreSQL can be found in th
   * - ``--format``
     - The format string for output defining the query metrics to retrieve, e.g. ``'{calls} {total_time}'`` 
 
-**Example:** List the queries for an DLH for PostgreSQL service named ``pg-demo`` including the query blurb, number of calls and both total and mean execution time.
+**Example:** List the queries for an datalakehouse for PostgreSQL service named ``pg-demo`` including the query blurb, number of calls and both total and mean execution time.
 
 ::
   
@@ -444,7 +444,7 @@ A description of the retrieved columns for DLH for PostgreSQL can be found in th
 ``avn service queries-reset``
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
-Resets service connections/queries statistics for an DLH for PostgreSQL or DLH for MySQL service. 
+Resets service connections/queries statistics for an datalakehouse for PostgreSQL or datalakehouse for MySQL service. 
 Resetting query statistics could be useful to measure database behaviour in a precise point in time or after a change has been deployed.
 
 .. list-table::
@@ -516,7 +516,7 @@ Permanently deletes a service.
 ``avn service topic``
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
-Manages DLH for Apache Kafka topics.
+Manages datalakehouse for Apache Kafka topics.
 
 More information on ``topic-create``, ``topic-delete``, ``topic-list`` and  ``topic-update`` can be found in :doc:`the dedicated page <service/topic>`.
 
@@ -526,7 +526,7 @@ More information on ``topic-create``, ``topic-delete``, ``topic-list`` and  ``to
 ``avn service types``
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
-Lists the DLH service types available in a project.
+Lists the datalakehouse service types available in a project.
 
 
 **Example:** Retrieve all the services types available in the currently selected project.
@@ -566,7 +566,7 @@ You might find it helpful to pipe the output to ``less`` since there are a large
 ``avn service update``
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
-Updates the settings for an DLH service.
+Updates the settings for an datalakehouse service.
 
 .. list-table::
   :header-rows: 1
@@ -611,7 +611,7 @@ Updates the settings for an DLH service.
 ``avn service user``
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
-Manages DLH users and credentials.
+Manages datalakehouse users and credentials.
 
 More information on ``user-create``, ``user-creds-download``, ``user-delete``, ``user-get``, ``user-kafka-java-creds``, ``user-list``, ``user-password-reset`` and  ``user-set-access-control`` can be found in :doc:`the dedicated page <service/user>`.
 
@@ -623,7 +623,7 @@ For each service, lists the versions available together with:
 
 * ``STATE``: if the version is ``available`` or ``unavailable``
 * ``AVAILABILITY_START_TIME`` and ``AVAILABILITY_END_TIME``: Period in which the specific version is available
-* ``DLH_END_OF_LIFE_TIME``: DLH deprecation date for the specific version
+* ``datalakehouse_END_OF_LIFE_TIME``: datalakehouse deprecation date for the specific version
 * ``UPSTREAM_END_OF_LIFE_TIME``: Upstream deprecation date for the specific version 
 * ``TERMINATION_TIME``: Termination time of the active instances
 * ``END_OF_LIFE_HELP_ARTICLE_URL``: URL to "End of Life" documentation
@@ -638,18 +638,18 @@ An example of ``account service versions`` output:
 
 .. code:: text
 
-    SERVICE_TYPE   MAJOR_VERSION  STATE        AVAILABILITY_START_TIME  AVAILABILITY_END_TIME  DLH_END_OF_LIFE_TIME  UPSTREAM_END_OF_LIFE_TIME  TERMINATION_TIME  END_OF_LIFE_HELP_ARTICLE_URL
+    SERVICE_TYPE   MAJOR_VERSION  STATE        AVAILABILITY_START_TIME  AVAILABILITY_END_TIME  datalakehouse_END_OF_LIFE_TIME  UPSTREAM_END_OF_LIFE_TIME  TERMINATION_TIME  END_OF_LIFE_HELP_ARTICLE_URL
     =============  =============  ===========  =======================  =====================  ======================  =========================  ================  ====================================================================================================
     cassandra      3.11           available    2018-11-08T00:00:00Z     null                   null                    null                       null              null
-    OpenSearch     7              unavailable  2020-08-27T00:00:00Z     2021-09-23T00:00:00Z   2022-03-23T00:00:00Z    null                       null              https://help.DLH.io/en/articles/5424825
-    OpenSearch     7.10           unavailable  2021-02-22T00:00:00Z     2021-09-23T00:00:00Z   2022-03-23T00:00:00Z    null                       null              https://help.DLH.io/en/articles/5424825
-    OpenSearch     7.9            unavailable  2020-08-27T00:00:00Z     2021-09-23T00:00:00Z   2022-03-23T00:00:00Z    null                       null              https://help.DLH.io/en/articles/5424825
-    kafka          2.3            unavailable  2019-09-05T00:00:00Z     2021-08-13T00:00:00Z   2021-08-13T00:00:00Z    null                       null              https://help.DLH.io/en/articles/4472730-eol-instructions-for-DLH-for-kafka
-    kafka          2.4            unavailable  2019-10-21T00:00:00Z     2021-08-13T00:00:00Z   2021-08-13T00:00:00Z    null                       null              https://help.DLH.io/en/articles/4472730-eol-instructions-for-DLH-for-kafka
+    OpenSearch     7              unavailable  2020-08-27T00:00:00Z     2021-09-23T00:00:00Z   2022-03-23T00:00:00Z    null                       null              https://help.datalakehouse.io/en/articles/5424825
+    OpenSearch     7.10           unavailable  2021-02-22T00:00:00Z     2021-09-23T00:00:00Z   2022-03-23T00:00:00Z    null                       null              https://help.datalakehouse.io/en/articles/5424825
+    OpenSearch     7.9            unavailable  2020-08-27T00:00:00Z     2021-09-23T00:00:00Z   2022-03-23T00:00:00Z    null                       null              https://help.datalakehouse.io/en/articles/5424825
+    kafka          2.3            unavailable  2019-09-05T00:00:00Z     2021-08-13T00:00:00Z   2021-08-13T00:00:00Z    null                       null              https://help.datalakehouse.io/en/articles/4472730-eol-instructions-for-datalakehouse-for-kafka
+    kafka          2.4            unavailable  2019-10-21T00:00:00Z     2021-08-13T00:00:00Z   2021-08-13T00:00:00Z    null                       null              https://help.datalakehouse.io/en/articles/4472730-eol-instructions-for-datalakehouse-for-kafka
     ...
-    pg             12             available    2019-11-18T00:00:00Z     2024-05-14T00:00:00Z   2024-11-14T00:00:00Z    2024-11-14T00:00:00Z       null              https://help.DLH.io/en/articles/2461799-how-to-perform-a-postgresql-in-place-major-version-upgrade
-    pg             13             available    2021-02-15T00:00:00Z     2025-05-13T00:00:00Z   2025-11-13T00:00:00Z    2025-11-13T00:00:00Z       null              https://help.DLH.io/en/articles/2461799-how-to-perform-a-postgresql-in-place-major-version-upgrade
-    pg             9.6            unavailable  2016-09-29T00:00:00Z     2021-05-11T00:00:00Z   2021-11-11T00:00:00Z    2021-11-11T00:00:00Z       null              https://help.DLH.io/en/articles/2461799-how-to-perform-a-postgresql-in-place-major-version-upgrade
+    pg             12             available    2019-11-18T00:00:00Z     2024-05-14T00:00:00Z   2024-11-14T00:00:00Z    2024-11-14T00:00:00Z       null              https://help.datalakehouse.io/en/articles/2461799-how-to-perform-a-postgresql-in-place-major-version-upgrade
+    pg             13             available    2021-02-15T00:00:00Z     2025-05-13T00:00:00Z   2025-11-13T00:00:00Z    2025-11-13T00:00:00Z       null              https://help.datalakehouse.io/en/articles/2461799-how-to-perform-a-postgresql-in-place-major-version-upgrade
+    pg             9.6            unavailable  2016-09-29T00:00:00Z     2021-05-11T00:00:00Z   2021-11-11T00:00:00Z    2021-11-11T00:00:00Z       null              https://help.datalakehouse.io/en/articles/2461799-how-to-perform-a-postgresql-in-place-major-version-upgrade
 
 ``avn service wait``
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''

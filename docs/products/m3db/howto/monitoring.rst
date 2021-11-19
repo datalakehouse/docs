@@ -1,9 +1,9 @@
-Monitor DLH services with M3DB
+Monitor datalakehouse services with M3DB
 ================================
 
-M3DB is a perfect fit for a monitoring platform. It is designed to handle large volumes of metrics, and it's very good at that. Whether you are already working at scale or just curious about M3DB and monitoring, setting up an M3DB to monitor your existing DLH services (or new ones if you like) is a really nice way to get started with this platform.
+M3DB is a perfect fit for a monitoring platform. It is designed to handle large volumes of metrics, and it's very good at that. Whether you are already working at scale or just curious about M3DB and monitoring, setting up an M3DB to monitor your existing datalakehouse services (or new ones if you like) is a really nice way to get started with this platform.
 
-Start from the **Service Overview** page of the service you would like to monitor with M3. So if you're going to track the metrics of your PostgreSQL service on DLH, then start on the PostgreSQL service overview page.
+Start from the **Service Overview** page of the service you would like to monitor with M3. So if you're going to track the metrics of your PostgreSQL service on datalakehouse, then start on the PostgreSQL service overview page.
 
 1. Under "Manage Integrations", look for "Metrics" (not available on all services yet).
 

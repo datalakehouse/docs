@@ -1,15 +1,15 @@
-Configure ACL permissions in DLH for Redis
+Configure ACL permissions in datalakehouse for Redis
 ==============================================
 
-Use the DLH console or the DLH client to create custom Access Control Lists (ACLs). 
+Use the datalakehouse console or the datalakehouse client to create custom Access Control Lists (ACLs). 
 
-Redis uses `ACLs <https://redis.io/topics/acl>`_ to restrict the usage of commands and keys available for connecting for a specific username and password. DLH for Redis, however, does not allow use of the  `ACL * <https://redis.io/commands/acl-list>`_ commands directly in order to guarantee the reliability of replication, configuration management, or backups for disaster recovery for the default user. You can use the console or the client to create custom ACLs instead.
+Redis uses `ACLs <https://redis.io/topics/acl>`_ to restrict the usage of commands and keys available for connecting for a specific username and password. datalakehouse for Redis, however, does not allow use of the  `ACL * <https://redis.io/commands/acl-list>`_ commands directly in order to guarantee the reliability of replication, configuration management, or backups for disaster recovery for the default user. You can use the console or the client to create custom ACLs instead.
 
 
-Create an ACL using the DLH console
+Create an ACL using the datalakehouse console
 -------------------------------------
 
-1. Log in to the `DLH web console <https://console.DLH.io/>`_.
+1. Log in to the `datalakehouse web console <https://console.datalakehouse.io/>`_.
 
 2. From the *Services* page, select the Redis service you want to create an ACL for.
 
@@ -31,7 +31,7 @@ Create an ACL using the DLH console
 6. Click **Save**. 
 
 
-Create an ACL using the DLH CLI
+Create an ACL using the datalakehouse CLI
 ---------------------------------
 
 1. Set up the :doc:`CLI tool </docs/tools/cli>` if you don't have it already.
@@ -42,9 +42,9 @@ Create an ACL using the DLH CLI
 
 3. Confirm the ACL is applied by connecting to the service using the new username and password::
 
-    redis-cli --user mynewuser --pass ... --tls -h myservice-myproject.DLHcloud.com -p 12719
+    redis-cli --user mynewuser --pass ... --tls -h myservice-myproject.datalakehousecloud.com -p 12719
 
-    myservice-myproject.DLHcloud.com:12719> get mykeys.hello
+    myservice-myproject.datalakehousecloud.com:12719> get mykeys.hello
     (nil)
-    myservice-myproject.DLHcloud.com:12719> set mykeys.hello world
+    myservice-myproject.datalakehousecloud.com:12719> set mykeys.hello world
     (error) NOPERM this user has no permissions to run the 'set' command or its subcommand

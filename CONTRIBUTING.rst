@@ -3,7 +3,7 @@ Contributing to this repository
 
 |:smile:| |:heart_eyes:| First off, thanks for taking the time to contribute! With your help, we’re making developers' lives easier. |:heart_eyes:| |:smile:|
 
-The following is a set of tips and guidelines that will help you improve the DLH developer portal.
+The following is a set of tips and guidelines that will help you improve the datalakehouse developer portal.
 
 
 What should I know before I contribute?
@@ -11,7 +11,7 @@ What should I know before I contribute?
 
 **What is docs?**
 
-docs is DLH’s developer portal. Its goal is to provide a comprehensive set of help articles aimed at developers using DLH’s products. 
+docs is datalakehouse’s developer portal. Its goal is to provide a comprehensive set of help articles aimed at developers using datalakehouse’s products. 
 
 
 **How does docs work?**
@@ -23,8 +23,8 @@ It is Python-based, with content in ReStructuredText (rst) and rendered by Sphin
 
 docs contains the following content types:
 - *Concept* - Conceptual content helps people understand a feature or topic by providing a clear, high-level overview, explanation of how the feature or topic can help them on their journey, and context like use cases or examples. 
-- *Task* - Task content helps people complete a task from start to finish while they're using DLH’s products.
-- *Reference* - Referential content provides detailed information that people need while they're actively using DLH's products.
+- *Task* - Task content helps people complete a task from start to finish while they're using datalakehouse’s products.
+- *Reference* - Referential content provides detailed information that people need while they're actively using datalakehouse's products.
 - *Tutorial* - Tutorials help people learn about products, and solve real world problems by guiding them through the entire workflow to complete a task.
 
 .. tip::
@@ -40,8 +40,8 @@ It is driven by a plugin called `Sphinx external TOC <https://sphinx-external-to
 
 You can find the current structure in ``_toc.yml``.
 
-If you have an article about any of the DLH tools (API, CLI, console, Terraform provider, Kubernetes operator), place it in the **DLH tools** section.
-If you have an article about any specific DLH product (M3, Kafka, Grafana, etc.), nest it in the product-specific section. 
+If you have an article about any of the datalakehouse tools (API, CLI, console, Terraform provider, Kubernetes operator), place it in the **datalakehouse tools** section.
+If you have an article about any specific datalakehouse product (M3, Kafka, Grafana, etc.), nest it in the product-specific section. 
 If you have an article with general reference information, place it in the **Resources** section. 
 
 
@@ -107,7 +107,7 @@ Templates for docs content (by type)
 **Concept**::
 
     ---
-    title: *About [subject]* (if this is a background information for a task, e.g. *About migrating to DLH*) / *Subject* (use noun or noun phrase, e.g. *Authentication*, *High availability*)
+    title: *About [subject]* (if this is a background information for a task, e.g. *About migrating to datalakehouse*) / *Subject* (use noun or noun phrase, e.g. *Authentication*, *High availability*)
     short description: Answer the question "What is this?" and "Why do I care about this?" If the concept is unfamiliar, start with a brief definition.
     ---
 
@@ -174,4 +174,4 @@ Styleguides and more info
 
 |:pray:|  Thanks again for contributing! |:pray:|
 
-DLH Team
+datalakehouse Team

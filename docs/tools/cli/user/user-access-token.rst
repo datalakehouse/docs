@@ -78,7 +78,7 @@ An example of user information:
 
     EXPIRY_TIME           TOKEN_PREFIX  DESCRIPTION                       MAX_AGE_SECONDS  EXTEND_WHEN_USED  LAST_USED_TIME        LAST_IP      LAST_USER_AGENT
     ====================  ============  ================================  ===============  ================  ====================  ===========  ===================
-    2021-09-15T15:29:14Z  XCJ3+bgWywIh  Test token                        2592000          true              2021-08-16T15:29:14Z  192.168.1.1  DLH-client/2.12.0
+    2021-09-15T15:29:14Z  XCJ3+bgWywIh  Test token                        2592000          true              2021-08-16T15:29:14Z  192.168.1.1  datalakehouse-client/2.12.0
     2021-08-16T16:26:10Z  6JsKDclT3OMQ  To be used with Python Notebooks  3600             true              null                  null         null
 
 

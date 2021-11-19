@@ -1,7 +1,7 @@
-Tag your DLH resources
+Tag your datalakehouse resources
 ========================
 
-Tags can add metadata to DLH resources like projects and services. Adding tags can be useful to categorize services, store specific information to your application or business and to group services or bills depending on custom logic.
+Tags can add metadata to datalakehouse resources like projects and services. Adding tags can be useful to categorize services, store specific information to your application or business and to group services or bills depending on custom logic.
 
 Tag details
 -----------
@@ -13,11 +13,11 @@ Tag values can be at most 64 UTF-8 characters long.
 
 .. Note::
 
-    Any single DLH resource can have **at most 10 tags attached**. Within a resource, the tag keys are unique, meaning that there can't be a duplicated key.
+    Any single datalakehouse resource can have **at most 10 tags attached**. Within a resource, the tag keys are unique, meaning that there can't be a duplicated key.
 
-Tags are supported for DLH projects and services. You currently need to either use the DLH client, or call the tag APIs by some other means, to use tags. DLH-client version 2.14.0 or later is required for tagging support.
+Tags are supported for datalakehouse projects and services. You currently need to either use the datalakehouse client, or call the tag APIs by some other means, to use tags. datalakehouse-client version 2.14.0 or later is required for tagging support.
 
-Add and modify service tags with the DLH client
+Add and modify service tags with the datalakehouse client
 -------------------------------------------------
 
 1. Select the service you want to tag.

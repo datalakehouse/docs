@@ -1,11 +1,11 @@
-DLH Terraform provider
+datalakehouse Terraform provider
 =========================
 
     Terraform is an open-source infrastructure as code software tool that provides a consistent CLI workflow to manage hundreds of cloud services. Terraform codifies cloud APIs into declarative configuration files. `Terraform website <https://www.terraform.io/>`_.
 
-With DLH's Terraform Provider you can manage all your services programmatically.
+With datalakehouse's Terraform Provider you can manage all your services programmatically.
 
-See the `official documentation <https://registry.terraform.io/providers/DLH/DLH/latest/docs>`_ to learn about all the possible services and resources and the `GitHub repository <https://github.com/DLH/terraform-provider-DLH>`_ for reporting issues and contributing.
+See the `official documentation <https://registry.terraform.io/providers/datalakehouse/datalakehouse/latest/docs>`_ to learn about all the possible services and resources and the `GitHub repository <https://github.com/datalakehouse/terraform-provider-datalakehouse>`_ for reporting issues and contributing.
 
 .. caution::
   Recreating stateful services with Terraform will possibly delete the service and all its data before creating it again. Whenever the Terraform plan indicates that a service will be deleted or replaced, a catastrophic action is possibly about to happen.
@@ -16,13 +16,13 @@ See the `official documentation <https://registry.terraform.io/providers/DLH/DLH
 
 Getting started
 ---------------
-Let's get started by configuring DLH's Terraform provider and deploying a PostgreSQL database.
+Let's get started by configuring datalakehouse's Terraform provider and deploying a PostgreSQL database.
 
 Requirements 
 ''''''''''''
 - `Download and install Terraform <https://www.terraform.io/downloads.html>`_
-- `Sign up <https://console.DLH.io/signup?utm_source=github&utm_medium=organic&utm_campaign=docs&utm_content=repo>`_ for DLH if you haven't already
-- `Generate an authentication token <https://help.DLH.io/en/articles/2059201-authentication-tokens>`_ on DLH's console or CLI
+- `Sign up <https://console.datalakehouse.io/signup?utm_source=github&utm_medium=organic&utm_campaign=docs&utm_content=repo>`_ for datalakehouse if you haven't already
+- `Generate an authentication token <https://help.datalakehouse.io/en/articles/2059201-authentication-tokens>`_ on datalakehouse's console or CLI
 
 Set up the provider
 '''''''''''''''''''
@@ -34,14 +34,14 @@ Create a file named `main.tf` and add the content below:
 
     terraform {
       required_providers {
-        DLH = {
-          source  = "DLH/DLH"
+        datalakehouse = {
+          source  = "datalakehouse/datalakehouse"
           version = "2.1.12" # check out the latest version in the github release section
         }
       }
     }
 
-    provider "DLH" {
+    provider "datalakehouse" {
       api_token = "your-api-token"
     }
 
@@ -51,13 +51,13 @@ Run the command below to initialize Terraform. It will create a directory struct
 
 Deploy a PostgreSQL database
 ''''''''''''''''''''''''''''
-Now let's deploy a fully managed PostgreSQL database on the GCP Frankfurt region. You can also see other services and available regions `on our pricing page <https://DLH.io/pricing>`_.
+Now let's deploy a fully managed PostgreSQL database on the GCP Frankfurt region. You can also see other services and available regions `on our pricing page <https://datalakehouse.io/pricing>`_.
 
 Add the following block of code to the `main.tf` file:
 
 .. code:: bash
 
-    resource "DLH_pg" "postgresql" {
+    resource "datalakehouse_pg" "postgresql" {
       project                = "your-project-name"
       service_name           = "postgresql"
       cloud_name             = "google-europe-west3"
@@ -65,7 +65,7 @@ Add the following block of code to the `main.tf` file:
     }
     
     output "postgresql_service_uri" {
-      value     = DLH_pg.postgresql.service_uri
+      value     = datalakehouse_pg.postgresql.service_uri
       sensitive = true
     }
 
@@ -89,8 +89,8 @@ Learn more
 Check out these resources to learn more about Terraform and our Provider:
 
 * `Learn Terraform <https://learn.hashicorp.com/collections/terraform/aws-get-started>`_
-* `DLH Terraform Provider documentation <https://registry.terraform.io/providers/DLH/DLH/latest/docs>`_
+* `datalakehouse Terraform Provider documentation <https://registry.terraform.io/providers/datalakehouse/datalakehouse/latest/docs>`_
 
 Get involved
 ------------
-If you have any comments or want to contribute to the tool, please join us on the `GitHub repository <https://github.com/DLH/terraform-provider-DLH>`_.
+If you have any comments or want to contribute to the tool, please join us on the `GitHub repository <https://github.com/datalakehouse/terraform-provider-datalakehouse>`_.

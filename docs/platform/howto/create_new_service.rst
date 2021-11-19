@@ -1,11 +1,11 @@
-﻿Create a new DLH service
+﻿Create a new datalakehouse service
 ==========================
 
-You can add services for the various DLH products in the DLH web console.
+You can add services for the various datalakehouse products in the datalakehouse web console.
 
 To create a new service:
 
-1. Log in to the `DLH web console <https://console.DLH.io/>`_.
+1. Log in to the `datalakehouse web console <https://console.datalakehouse.io/>`_.
 
 2. On the *Services* page, click **Create a new service**.
 

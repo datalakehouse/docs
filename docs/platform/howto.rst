@@ -1,7 +1,7 @@
 HowTo
 =====
 
-Browse through instructions for common DLH platform tasks.
+Browse through instructions for common datalakehouse platform tasks.
 
 .. tableofcontents::
 

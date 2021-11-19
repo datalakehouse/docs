@@ -16,9 +16,9 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'DLH Developer'
-copyright = '2021, DLH Team'
-author = 'DLH Team'
+project = 'datalakehouse Developer'
+copyright = '2021, datalakehouse Team'
+author = 'datalakehouse Team'
 
 # -- General configuration ---------------------------------------------------
 
@@ -115,7 +115,7 @@ pygments_style = "monokai"
 language = "en"
 html_extra_path = ['robots.txt']
 html_static_path = ['_static']
-html_css_files = ['css/DLH.css']
+html_css_files = ['css/datalakehouse.css']
 
 # -- Replacements -----------------------------------------------------------
 rst_epilog = """

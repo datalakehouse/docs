@@ -1,17 +1,17 @@
 Monitor PostgreSQL metrics with pgwatch2
 ========================================
 
-`pgwatch2`_ is an open source monitoring solution for PostgreSQL, created by CYBERTEC and can be used to monitor instances of DLH for PostgreSQL collecting key PostgreSQL metrics and also gathering data from a wide range of PostgreSQL extensions.
+`pgwatch2`_ is an open source monitoring solution for PostgreSQL, created by CYBERTEC and can be used to monitor instances of datalakehouse for PostgreSQL collecting key PostgreSQL metrics and also gathering data from a wide range of PostgreSQL extensions.
 
 .. Note::
 
-    DLH for PostgreSQL supports the most popular extensions, but, due to security implications, can't support all the available extensions.
-    Check :doc:`../reference/list-of-extensions` and :doc:`../howto/manage-extensions` for details on the supported PostgreSQL extensions on the DLH platform.
+    datalakehouse for PostgreSQL supports the most popular extensions, but, due to security implications, can't support all the available extensions.
+    Check :doc:`../reference/list-of-extensions` and :doc:`../howto/manage-extensions` for details on the supported PostgreSQL extensions on the datalakehouse platform.
 
-Prepare an DLH for PostgreSQL instance for pgwatch2
+Prepare an datalakehouse for PostgreSQL instance for pgwatch2
 -------------------------------------------------------
 
-The following steps need to be executed on the DLH for PostgreSQL instance to be monitored with pgwatch2:
+The following steps need to be executed on the datalakehouse for PostgreSQL instance to be monitored with pgwatch2:
 
 1. Create a user for pgwatch2 (with a sensible password)::
 
@@ -42,10 +42,10 @@ pgwatch2 has multiple `installation options`_ to choose from. For the sake of si
         -e PW2_ADHOC_CONN_STR='postgres://pgwatch2:password@HOST:PORT/defaultdb?sslmode=require' \
         -e PW2_ADHOC_CONFIG='rds' --name pw2 cybertec/pgwatch2-postgres
 
-This runs pgwatch2 with the container image provided by CYBERTEC. ``PW2_ADHOC_CONN_STR`` is set to the connection string of the PostgreSQL instance to be monitored, copied from the `DLH web console`_ replacing the username/password have been replaced by the ones specifically created for pgwatch2. Please consult the `pgwatch2 documentation`_ to decide on the best way to set up pgwatch2 in your environment.
+This runs pgwatch2 with the container image provided by CYBERTEC. ``PW2_ADHOC_CONN_STR`` is set to the connection string of the PostgreSQL instance to be monitored, copied from the `datalakehouse web console`_ replacing the username/password have been replaced by the ones specifically created for pgwatch2. Please consult the `pgwatch2 documentation`_ to decide on the best way to set up pgwatch2 in your environment.
 
 .. Note::
-    pgwatch2 contains several dashboards that rely on extensions not available in DLH for PostgreSQL, so it is to be expected that some dashboards are either empty or display error symbols.
+    pgwatch2 contains several dashboards that rely on extensions not available in datalakehouse for PostgreSQL, so it is to be expected that some dashboards are either empty or display error symbols.
 
 .. image:: /images/products/postgresql/pgwatch2.png
    :alt: Screenshot of a pgwatch2 Dashboard
@@ -55,4 +55,4 @@ This runs pgwatch2 with the container image provided by CYBERTEC. ``PW2_ADHOC_CO
 .. _installation options: https://pgwatch2.readthedocs.io/en/latest/installation_options.html
 .. _ad-hoc mode: https://pgwatch2.readthedocs.io/en/latest/installation_options.html#ad-hoc-mode
 .. _PostgreSQL documentation: https://www.postgresql.org/docs/current/runtime-config-statistics.html
-.. _DLH web console: https://console.DLH.io/
+.. _datalakehouse web console: https://console.datalakehouse.io/

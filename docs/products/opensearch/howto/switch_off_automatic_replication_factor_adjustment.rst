@@ -1,7 +1,7 @@
 ﻿Switch off automatic replication factor adjustment
 ==================================================
 
-For multi-node clusters, DLH for OpenSearch automatically increases the ``number_of_replicas`` value to 1 if it is set to 0. This is done to avoid data loss if one node is lost.
+For multi-node clusters, datalakehouse for OpenSearch automatically increases the ``number_of_replicas`` value to 1 if it is set to 0. This is done to avoid data loss if one node is lost.
 
 Consider switching this off if:
 
@@ -9,7 +9,7 @@ Consider switching this off if:
 * you can easily regenerate all the data on the indices that are set to ``number_of_replicas = 1``, and
 * you are running a multi-node cluster.
 
-To switch off automatic increases to the ``number_of_replicas`` value, run the following command in the `DLH command-line client <https://github.com/DLH/DLH-client>`_::
+To switch off automatic increases to the ``number_of_replicas`` value, run the following command in the `datalakehouse command-line client <https://github.com/datalakehouse/datalakehouse-client>`_::
 
     avn service update -c disable_replication_factor_adjustment=true <your service name>
 

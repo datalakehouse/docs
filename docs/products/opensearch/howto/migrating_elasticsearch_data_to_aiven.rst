@@ -1,14 +1,14 @@
-Migrate Elasticsearch data to DLH for OpenSearch
+Migrate Elasticsearch data to datalakehouse for OpenSearch
 ==================================================
 
-We recommend migrating to DLH for OpenSearch by reindexing from
-your remote cluster. The same process works for migrating from DLH for
+We recommend migrating to datalakehouse for OpenSearch by reindexing from
+your remote cluster. The same process works for migrating from datalakehouse for
 OpenSearch to a self-hosted Elasticsearch service.
 
 .. tip::
     For a larger number of indexes, we recommend that you create a script to run these steps automatically.
 
-As DLH for OpenSearch does not support joining external
+As datalakehouse for OpenSearch does not support joining external
 Elasticsearch servers to the same cluster, online migration is not
 currently possible.
 
@@ -22,13 +22,13 @@ currently possible.
 
 To migrate or copy data:
 
-#. Create a hosted DLH for OpenSearch service.
+#. Create a hosted datalakehouse for OpenSearch service.
 
-#. Use the `DLH CLI client <https://github.com/DLH/DLH-client>`_ to set the ``reindex.remote.whitelist`` parameter to point to your source Elasticsearch service:
+#. Use the `datalakehouse CLI client <https://github.com/datalakehouse/datalakehouse-client>`_ to set the ``reindex.remote.whitelist`` parameter to point to your source Elasticsearch service:
 
    ::
 
-      avn service update your-service-name -c elasticsearch.reindex_remote_whitelist=your.non-DLH-service.example.com:9200 
+      avn service update your-service-name -c elasticsearch.reindex_remote_whitelist=your.non-datalakehouse-service.example.com:9200 
 
    Replace the port number with the one where your source Elasticsearch service is listening.
 
@@ -46,7 +46,7 @@ To migrate or copy data:
 
       ::
 
-         curl https://avnadmin:yourpassword@os-123-demoprj.DLHcloud.com:23125/logs-2024-09-21/_mapping > mapping.json
+         curl https://avnadmin:yourpassword@os-123-demoprj.datalakehousecloud.com:23125/logs-2024-09-21/_mapping > mapping.json
    
 
       if you have ``jq`` you can run the following or else you need to manually edit ``mapping.json`` to remove the wrapping ``{"logs-2024-09-21":{"mappings": ... }}`` and keep ``{"properties":...}}``
@@ -60,26 +60,26 @@ To migrate or copy data:
 
       ::
 
-         curl -XPUT https://avnadmin:yourpassword@os-123-demoprj.DLHcloud.com:23125/logs-2024-09-21
+         curl -XPUT https://avnadmin:yourpassword@os-123-demoprj.datalakehousecloud.com:23125/logs-2024-09-21
 
    #. Import mapping on your destination OpenSearch index.
 
       ::
 
-         curl -XPUT https://avnadmin:yourpassword@os-123-demoprj.DLHcloud.com:23125/logs-2024-09-21 \
+         curl -XPUT https://avnadmin:yourpassword@os-123-demoprj.datalakehousecloud.com:23125/logs-2024-09-21 \
          -H 'Content-type: application/json' -T src_mapping.json
    #. Submit the reindexing request.
 
       ::
 
-         curl -XPOST https://avnadmin:yourpassword@os-123-demoprj.DLHcloud.com:23125/_reindex \
+         curl -XPOST https://avnadmin:yourpassword@os-123-demoprj.datalakehousecloud.com:23125/_reindex \
            -H 'Content-type: application/json' \
            -d '{"source": 
                    {"index": "logs-2024-09-21", 
                     "remote": 
                         {"username": "your-remote-username",
                          "password": "your-remote-password",
-                         "host": "https://your.non-DLH-service.example.com:9200"
+                         "host": "https://your.non-datalakehouse-service.example.com:9200"
                         }
                    }, 
                 "dest": 
@@ -91,11 +91,11 @@ To migrate or copy data:
 
       ::
 
-         [your.non-DLH-service.example.com:9200] not whitelisted in reindex.remote.whitelist
+         [your.non-datalakehouse-service.example.com:9200] not whitelisted in reindex.remote.whitelist
 
       Depending on the amount of data that you have, reindexing may take a significant amount of time.
 
-   #. Point clients to use that index from DLH for OpenSearch for both read and write operations and resume any write activity.
+   #. Point clients to use that index from datalakehouse for OpenSearch for both read and write operations and resume any write activity.
 
    #. Delete the source index if necessary.
 

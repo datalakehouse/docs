@@ -1,7 +1,7 @@
-Get Started with DLH for OpenSearch
+Get Started with datalakehouse for OpenSearch
 =====================================
 
-DLH for OpenSearch is available in the `DLH console <https://console.DLH.io>`_.
+datalakehouse for OpenSearch is available in the `datalakehouse console <https://console.datalakehouse.io>`_.
 
 Choose the OpenSearch version, your cloud provider and location to deploy to, then choose which plan to use.
 
@@ -10,7 +10,7 @@ Finally, give the service a name and then select **Create Service**, and your sh
 OpenSearch Dashboards is included
 ---------------------------------
 
-When you create an DLH for OpenSearch service, you will also get an OpenSearch Dashboards service alongside it. This means you can quickly and easily visualize the data in an OpenSearch service.
+When you create an datalakehouse for OpenSearch service, you will also get an OpenSearch Dashboards service alongside it. This means you can quickly and easily visualize the data in an OpenSearch service.
 
 Get up and running
 ------------------

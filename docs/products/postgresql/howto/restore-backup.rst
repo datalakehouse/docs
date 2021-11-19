@@ -1,10 +1,10 @@
 Restore PostgreSQL from a backup
 ================================
 
-DLH for PostgreSQL databases are automatically backed up and can be restored from a backup at any point in time within the **backup retention period**, which :doc:`varies by plan <../concepts/pg-backups>`. The restore is created by "Forking": a new PostgreSQL instance is created and content from the original database is restored into it.
+datalakehouse for PostgreSQL databases are automatically backed up and can be restored from a backup at any point in time within the **backup retention period**, which :doc:`varies by plan <../concepts/pg-backups>`. The restore is created by "Forking": a new PostgreSQL instance is created and content from the original database is restored into it.
 
 .. Note::
-    DLH for PostgreSQL doesn't allow a service to be rolled back to a backup in-place since it creates alternative timelines for the database, adding complexity for the user.
+    datalakehouse for PostgreSQL doesn't allow a service to be rolled back to a backup in-place since it creates alternative timelines for the database, adding complexity for the user.
 
 To restore a PostgreSQL database:
 
@@ -23,7 +23,7 @@ Once the new service is running, you can change your application’s connection 
 Manual restores
 ---------------
 
-Manual restoration should only be necessary when data is accidentally corrupted by the pointing applications. DLH automatically handles outages and software failures by replacing broken nodes with new ones that resume correctly from the point of failure.
+Manual restoration should only be necessary when data is accidentally corrupted by the pointing applications. datalakehouse automatically handles outages and software failures by replacing broken nodes with new ones that resume correctly from the point of failure.
 
 .. Note::
     The Hobbyist service plan does not support database forking, so you have to use an external tool, such as ``pg_dump``, to perform a backup.

@@ -1,10 +1,10 @@
 Download a CA certificate
 =========================
 
-If your service needs a CA certificate, download it through the DLH `web console <https://console.DLH.io>`_ by accessing the overview page for the specific service, and clicking on the ``Download`` button on the ``CA Certificate`` line.
+If your service needs a CA certificate, download it through the datalakehouse `web console <https://console.datalakehouse.io>`_ by accessing the overview page for the specific service, and clicking on the ``Download`` button on the ``CA Certificate`` line.
 
 .. image:: /images/platform/ca-download.png
-    :alt: A screenshot of the DLH web console service page, showing where is the CA certificate download button.
+    :alt: A screenshot of the datalakehouse web console service page, showing where is the CA certificate download button.
 
 Or, you can use the ``avn`` :doc:`command-line tool </docs/tools/cli>` with the following command::
 

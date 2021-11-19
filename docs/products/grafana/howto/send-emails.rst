@@ -1,14 +1,14 @@
-Send emails from DLH for Grafana
+Send emails from datalakehouse for Grafana
 ==================================
 
-Use the DLH API or the DLH client to configure the Simple Mail Transfer Protocol (SMTP) server settings and send the following emails from DLH for Grafana: invite emails, reset password emails, and alert messages.
+Use the datalakehouse API or the datalakehouse client to configure the Simple Mail Transfer Protocol (SMTP) server settings and send the following emails from datalakehouse for Grafana: invite emails, reset password emails, and alert messages.
 
 What you need
 ----------------
 
-* DLH client installed
+* datalakehouse client installed
 
-* DLH for Grafana service created
+* datalakehouse for Grafana service created
 
 * SMTP server IP or hostname
 
@@ -26,9 +26,9 @@ What you need
 Configure the SMTP server for Grafana
 -------------------------------------
 
-To configure the DLH for Grafana service:
+To configure the datalakehouse for Grafana service:
 
-1. Open the DLH client, and log in::
+1. Open the datalakehouse client, and log in::
 
     $ avn user login <you@example.com> --token
 
@@ -46,4 +46,4 @@ To configure the DLH for Grafana service:
     avn service types -v
 
 
-You have now set up your DLH for Grafana to send emails. 
+You have now set up your datalakehouse for Grafana to send emails. 

@@ -1,7 +1,7 @@
 Backups
 =======
 
-DLH for OpenSearch databases are automatically backed up, `encrypted <https://help.DLH.io/en/articles/977466-cloud-security-overview>`_, and stored securely in object storage.
+datalakehouse for OpenSearch databases are automatically backed up, `encrypted <https://help.datalakehouse.io/en/articles/977466-cloud-security-overview>`_, and stored securely in object storage.
 
 Depending on the service plan, we offer single backups for disaster recovery or daily backups with different retention periods:
 
@@ -14,10 +14,10 @@ Depending on the service plan, we offer single backups for disaster recovery or 
 -  Premium plans: daily backups with a 30-day retention period
 
 
-To allow returning to an earlier point in time, DLH for OpenSearch uses two kinds of backups - hourly and daily. Each type has its own
+To allow returning to an earlier point in time, datalakehouse for OpenSearch uses two kinds of backups - hourly and daily. Each type has its own
 backup frequency interval and retention period. Currently, you cannot configure these settings.
 
 .. note::
-    DLH for OpenSearch currently only supports restoring from daily backups or hourly backups from the previous day.
+    datalakehouse for OpenSearch currently only supports restoring from daily backups or hourly backups from the previous day.
 
 Find out more about using your backups in our guide: :doc:`/docs/products/opensearch/howto/restore_opensearch_backup`

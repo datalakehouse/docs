@@ -10,7 +10,7 @@ Manage databases
 ``avn service database-create``
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
-Creates a database within an DLH for PostgreSQL, DLH for MySQL or DLH for InfluxDB service.
+Creates a database within an datalakehouse for PostgreSQL, datalakehouse for MySQL or datalakehouse for InfluxDB service.
 
 .. list-table::
   :header-rows: 1
@@ -32,7 +32,7 @@ Creates a database within an DLH for PostgreSQL, DLH for MySQL or DLH for Influx
 ``avn service database-delete``
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
-Removes a specific database within an DLH for PostgreSQL, DLH for MySQL or DLH for InfluxDB service.
+Removes a specific database within an datalakehouse for PostgreSQL, datalakehouse for MySQL or datalakehouse for InfluxDB service.
 
 .. list-table::
   :header-rows: 1
@@ -54,7 +54,7 @@ Removes a specific database within an DLH for PostgreSQL, DLH for MySQL or DLH f
 ``avn service database-list``
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
-Lists the service databases available in an DLH for PostgreSQL, DLH for MySQL or DLH for InfluxDB service.
+Lists the service databases available in an datalakehouse for PostgreSQL, datalakehouse for MySQL or datalakehouse for InfluxDB service.
 
 .. list-table::
   :header-rows: 1

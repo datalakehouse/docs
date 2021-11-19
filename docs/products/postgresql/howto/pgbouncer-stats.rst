@@ -1,12 +1,12 @@
 Access PgBouncer statistics
 ===========================
 
-PgBouncer is used at DLH for :doc:`../concepts/pg-connection-pooling`.
+PgBouncer is used at datalakehouse for :doc:`../concepts/pg-connection-pooling`.
 
 Get PgBouncer URL
 ------------------
 
-PgBouncer URL can be seen under **Pools** in the PostgreSQL service web interface. Alternatively it can be extracted via :doc:`DLH Command Line interface<../../../tools/cli>`, using `pg <https://stedolan.github.io/jq/>`_ to parse the JSON response.
+PgBouncer URL can be seen under **Pools** in the PostgreSQL service web interface. Alternatively it can be extracted via :doc:`datalakehouse Command Line interface<../../../tools/cli>`, using `pg <https://stedolan.github.io/jq/>`_ to parse the JSON response.
 
 Execute the following command replacing the ``INSTANCE_NAME`` parameter with the name of your instance::
 
@@ -14,7 +14,7 @@ Execute the following command replacing the ``INSTANCE_NAME`` parameter with the
 
 The output will be similar to the below::
 
-    postgres://avnadmin:xxxxxxxxxxx@demo-pg-dev-advocates.DLHcloud.com:13040/pgbouncer?sslmode=require
+    postgres://avnadmin:xxxxxxxxxxx@demo-pg-dev-advocates.datalakehousecloud.com:13040/pgbouncer?sslmode=require
 
 Connect to PgBouncer
 --------------------
@@ -32,4 +32,4 @@ Depending on the load of your database, the output will be similar to::
 
 
 .. Tip::
-    Run ``SHOW HELP`` to see all available commands. Only read-only access is available, as PgBouncer pools are automatically managed by DLH.
+    Run ``SHOW HELP`` to see all available commands. Only read-only access is available, as PgBouncer pools are automatically managed by datalakehouse.

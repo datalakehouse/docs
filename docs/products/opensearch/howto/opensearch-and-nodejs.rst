@@ -6,14 +6,14 @@ Learn how the OpenSearch JavaScript client gives a clear and useful interface to
 Prerequisites
 *************
 
-To be able to use OpenSearch and its JavaScript client together we'll create an OpenSearch cluster and set up an empty NodeJS project. Feel free to skip this section if you're only interested in the code samples. The final demo project can be cloned from `GitHub repository <https://github.com/DLH/demo-open-search-node-js>`_.
+To be able to use OpenSearch and its JavaScript client together we'll create an OpenSearch cluster and set up an empty NodeJS project. Feel free to skip this section if you're only interested in the code samples. The final demo project can be cloned from `GitHub repository <https://github.com/datalakehouse/demo-open-search-node-js>`_.
 
 Create an OpenSearch cluster
 ----------------------------
 
-Start by creating an OpenSearch cluster. You can either `set up OpenSearch manually <https://opensearch.org/docs/opensearch/install/index/>`_ or use a fully managed OpenSearch service from DLH. We’ll do the latter and use DLH for OpenSearch to quickly create a cluster. If you don’t have an DLH account yet, `register for a free 30 day trial <https://console.DLH.io/signup>`_.
+Start by creating an OpenSearch cluster. You can either `set up OpenSearch manually <https://opensearch.org/docs/opensearch/install/index/>`_ or use a fully managed OpenSearch service from datalakehouse. We’ll do the latter and use datalakehouse for OpenSearch to quickly create a cluster. If you don’t have an datalakehouse account yet, `register for a free 30 day trial <https://console.datalakehouse.io/signup>`_.
 
-To create an OpenSearch cluster we’ll use the `DLH command line interface <https://github.com/DLH/DLH-client>`_ . To install and set it up follow the instructions in `its GitHub page <https://github.com/DLH/DLH-client/>`_. However, if you prefer a visual interface, we also have a `web-based console <https://console.DLH.io/>`_ which you can use instead. Read the :doc:`getting started guide <../getting-started>` for more information.
+To create an OpenSearch cluster we’ll use the `datalakehouse command line interface <https://github.com/datalakehouse/datalakehouse-client>`_ . To install and set it up follow the instructions in `its GitHub page <https://github.com/datalakehouse/datalakehouse-client/>`_. However, if you prefer a visual interface, we also have a `web-based console <https://console.datalakehouse.io/>`_ which you can use instead. Read the :doc:`getting started guide <../getting-started>` for more information.
 
 Run the command below to create an OpenSearch cluster named ``demo-open-search``, hosted in **Google Europe (Warsaw) Region**. A single-node setup is sufficient for this tutorial, that's why we'll use **hobbyist** plan.
 
@@ -603,7 +603,7 @@ Resources
 
 We've created an OpenSearch cluster, connected to it and tried out different types of search queries. But this is just a tip of the iceberg. Here are some resources to help you learn other features of OpenSearch and its JavaScript client
 
-* `Demo repository <https://github.com/DLH/demo-open-search-node-js>`_ - All the examples we've run in this tutorial can be found in
+* `Demo repository <https://github.com/datalakehouse/demo-open-search-node-js>`_ - All the examples we've run in this tutorial can be found in
 * `OpenSearch JavaScript client  <https://github.com/opensearch-project/opensearch-js>`_
 *  `Kaggle recipes dataset <https://www.kaggle.com/hugodarwood/epirecipes?select=full_format_recipes.json>`_ - great for a playground
 * :doc:`How to use OpenSearch with curl <opensearch-with-curl>`

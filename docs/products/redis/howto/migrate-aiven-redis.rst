@@ -1,9 +1,9 @@
-Migrate from Redis to DLH for Redis
+Migrate from Redis to datalakehouse for Redis
 =====================================
 
-Move your data from a source, standalone Redis data store to an DLH-managed Redis service. The migration first attempts to use the ``replication`` method, and if it fails, it uses ``scan``. 
+Move your data from a source, standalone Redis data store to an datalakehouse-managed Redis service. The migration first attempts to use the ``replication`` method, and if it fails, it uses ``scan``. 
 
-In the following steps, we show you how to create a new DLH for Redis service, and migrate data from AWS ElastiCache Redis. The DLH project name is ``test``, and the service name for the target DLH for Redis is ``redis``.
+In the following steps, we show you how to create a new datalakehouse for Redis service, and migrate data from AWS ElastiCache Redis. The datalakehouse project name is ``test``, and the service name for the target datalakehouse for Redis is ``redis``.
 
 .. Important::
         Migrating from Google Cloud Memorystore for Redis is not currently supported.
@@ -12,7 +12,7 @@ In the following steps, we show you how to create a new DLH for Redis service, a
 What you'll need
 ----------------
 
-* A target DLH for Redis service. See :doc:`/docs/products/redis/get-started` to create one, or follow the instructions below.
+* A target datalakehouse for Redis service. See :doc:`/docs/products/redis/get-started` to create one, or follow the instructions below.
 
 * The hostname, port and password of the source Redis service. 
 
@@ -28,9 +28,9 @@ What you'll need
 Create a service and perform the migration
 -------------------------------------------------
 
-1. Check the DLH configuration options and Redis connection details:
+1. Check the datalakehouse configuration options and Redis connection details:
 
-   - for DLH configuration options, type::
+   - for datalakehouse configuration options, type::
 
          avn service types -v
 
@@ -61,7 +61,7 @@ Create a service and perform the migration
    .. Note::
           Here are your required values for the hostname, port and password of the source Redis service, as well as the VPD ID and cloud name. 
 
-2. Create the DLH for Redis service (if you don't have one yet), and migrate::
+2. Create the datalakehouse for Redis service (if you don't have one yet), and migrate::
 
     avn service create --project test -t redis -p hobbyist --cloud aws-eu-west-1 --project-vpc-id 40ddf681-0e89-4bce-bd89-25e246047731 -c migration.host="master.jappja-redis.kdrxxz.euw1.cache.amazonaws.com" -c migration.port=6379 -c migration.password=<password> redis
 
@@ -87,10 +87,10 @@ Create a service and perform the migration
             failed  scan    invalid password
 
 
-Migrate to an existing DLH for Redis service
+Migrate to an existing datalakehouse for Redis service
 ----------------------------------------------------
 
-Migrate to an existing DLH for Redis service by updating the service configuration::
+Migrate to an existing datalakehouse for Redis service by updating the service configuration::
 
     avn service update --project test -c migration.host="master.jappja-redis.kdrxxz.euw1.cache.amazonaws.com" -c migration.port=6379 -c migration.password=<password> redis
 

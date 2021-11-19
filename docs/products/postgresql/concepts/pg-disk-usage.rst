@@ -1,12 +1,12 @@
 ﻿About PostgreSQL disk usage
 =============================
 
-When you create your first DLH for PostgreSQL service, you may see the disk usage gradually increasing even though you are not yet inserting or updating much data.
+When you create your first datalakehouse for PostgreSQL service, you may see the disk usage gradually increasing even though you are not yet inserting or updating much data.
 
 .. image:: /images/products/postgresql/initial-disk-usage.png
    :alt: Disk space usage graph showing % growing over an hour
 
-This is completely normal within the first 24 hours of operation for DLH for PostgreSQL services because of our WAL (Write-Ahead Logging) archiving settings.
+This is completely normal within the first 24 hours of operation for datalakehouse for PostgreSQL services because of our WAL (Write-Ahead Logging) archiving settings.
 
 To prevent loss of data due to node failure on Hobbyist and Startup plans, we set the ``archive_timeout`` configuration to write WAL segments to disk at regular intervals. The WAL segments are then backed up to cloud storage. Even if your service is idle, each WAL segment occupies the same amount of space on disk, which is why the disk usage grows steadily over time.
 

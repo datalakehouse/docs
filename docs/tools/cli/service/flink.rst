@@ -10,7 +10,7 @@ Manage a Flink table
 ``avn service flink table create``
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
-Creates a new DLH for Apache Flink table.
+Creates a new datalakehouse for Apache Flink table.
 
 .. list-table::
   :header-rows: 1
@@ -25,9 +25,9 @@ Creates a new DLH for Apache Flink table.
   * - ``--table-name``
     - The Flink table name
   * - ``--kafka-topic``
-    - The DLH for Apache Kafka topic to be used as source/sink (Only for Kafka integrations)
+    - The datalakehouse for Apache Kafka topic to be used as source/sink (Only for Kafka integrations)
   * - ``--jdbc-table``
-    - The DLH for PostgreSQL table name to be used as source/sink (Only for PostgreSQL integrations)
+    - The datalakehouse for PostgreSQL table name to be used as source/sink (Only for PostgreSQL integrations)
   * - ``partitioned-by``
     - A column from the table schema to use as Flink table partition definition
   * - ``--like-options``
@@ -51,7 +51,7 @@ Creates a new DLH for Apache Flink table.
 ``avn service flink table delete``
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
-Deletes an existing DLH for Apache Flink table.
+Deletes an existing datalakehouse for Apache Flink table.
 
 .. list-table::
   :header-rows: 1
@@ -64,7 +64,7 @@ Deletes an existing DLH for Apache Flink table.
   * - ``table_id``
     - The ID of the table to delete
 
-**Example:** Delete the Flink table with ID ``8b8ac2fe-b6eb-46bc-b327-fb4b84d27276`` belonging to the DLH for Flink service ``flink-docs-demo``.
+**Example:** Delete the Flink table with ID ``8b8ac2fe-b6eb-46bc-b327-fb4b84d27276`` belonging to the datalakehouse for Flink service ``flink-docs-demo``.
 
 ::
   
@@ -73,7 +73,7 @@ Deletes an existing DLH for Apache Flink table.
 ``avn service flink table get``
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
-Retrieves the definition of an existing DLH for Apache Flink table.
+Retrieves the definition of an existing datalakehouse for Apache Flink table.
 
 .. list-table::
   :header-rows: 1
@@ -86,7 +86,7 @@ Retrieves the definition of an existing DLH for Apache Flink table.
   * - ``table_id``
     - The ID of the table to retrieve
 
-**Example:** Retrieve the definition of the Flink table with ID ``8b8ac2fe-b6eb-46bc-b327-fb4b84d27276`` belonging to the DLH for Flink service ``flink-docs-demo``.
+**Example:** Retrieve the definition of the Flink table with ID ``8b8ac2fe-b6eb-46bc-b327-fb4b84d27276`` belonging to the datalakehouse for Flink service ``flink-docs-demo``.
 
 ::
   
@@ -97,7 +97,7 @@ Retrieves the definition of an existing DLH for Apache Flink table.
 ``avn service flink table list``
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
-Lists all the DLH for Apache Flink tables in a selected service.
+Lists all the datalakehouse for Apache Flink tables in a selected service.
 
 .. list-table::
   :header-rows: 1
@@ -108,7 +108,7 @@ Lists all the DLH for Apache Flink tables in a selected service.
   * - ``service_name``
     - The name of the service
 
-**Example:** List all the Flink tables available in the DLH for Flink service ``flink-docs-demo``.
+**Example:** List all the Flink tables available in the datalakehouse for Flink service ``flink-docs-demo``.
 
 ::
   
@@ -128,7 +128,7 @@ Manage a Flink job
 ``avn service flink job create``
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
-Creates a new DLH for Apache Flink job.
+Creates a new datalakehouse for Apache Flink job.
 
 .. list-table::
   :header-rows: 1
@@ -161,7 +161,7 @@ Creates a new DLH for Apache Flink job.
 ``avn service flink job cancel``
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
-Cancels an existing DLH for Apache Flink job.
+Cancels an existing datalakehouse for Apache Flink job.
 
 .. list-table::
   :header-rows: 1
@@ -174,7 +174,7 @@ Cancels an existing DLH for Apache Flink job.
   * - ``job_id``
     - The ID of the job to delete
 
-**Example:** Cancel the Flink job with ID ``8b8ac2fe-b6eb-46bc-b327-fb4b84d27276`` belonging to the DLH for Flink service ``flink-docs-demo``.
+**Example:** Cancel the Flink job with ID ``8b8ac2fe-b6eb-46bc-b327-fb4b84d27276`` belonging to the datalakehouse for Flink service ``flink-docs-demo``.
 
 ::
   
@@ -183,7 +183,7 @@ Cancels an existing DLH for Apache Flink job.
 ``avn service flink job get``
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
-Retrieves the definition of an existing DLH for Apache Flink job.
+Retrieves the definition of an existing datalakehouse for Apache Flink job.
 
 .. list-table::
   :header-rows: 1
@@ -196,7 +196,7 @@ Retrieves the definition of an existing DLH for Apache Flink job.
   * - ``job_id``
     - The ID of the table to retrieve
 
-**Example:** Retrieve the definition of the Flink job with ID ``8b8ac2fe-b6eb-46bc-b327-fb4b84d27276`` belonging to the DLH for Flink service ``flink-docs-demo``.
+**Example:** Retrieve the definition of the Flink job with ID ``8b8ac2fe-b6eb-46bc-b327-fb4b84d27276`` belonging to the datalakehouse for Flink service ``flink-docs-demo``.
 
 ::
   
@@ -213,7 +213,7 @@ An example of ``avn service flink job get`` output:
 ``avn service flink job list``
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
-Lists all the DLH for Apache Flink jobs in a selected service.
+Lists all the datalakehouse for Apache Flink jobs in a selected service.
 
 .. list-table::
   :header-rows: 1
@@ -224,7 +224,7 @@ Lists all the DLH for Apache Flink jobs in a selected service.
   * - ``service_name``
     - The name of the service
 
-**Example:** List all the Flink jobs available in the DLH for Flink service ``flink-docs-demo``.
+**Example:** List all the Flink jobs available in the datalakehouse for Flink service ``flink-docs-demo``.
 
 ::
   

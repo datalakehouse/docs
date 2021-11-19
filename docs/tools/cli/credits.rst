@@ -4,16 +4,16 @@
 Here you’ll find the full list of commands for ``avn credits``.
 
 
-DLH credits
+datalakehouse credits
 -------------
 
-All commands for managing DLH credits.
+All commands for managing datalakehouse credits.
 
 
 ``avn credits claim``
 '''''''''''''''''''''''
 
-Add an DLH credit code to a project.
+Add an datalakehouse credit code to a project.
 
 .. list-table::
   :header-rows: 1

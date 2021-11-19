@@ -1,10 +1,10 @@
-Log in to DLH for Grafana
+Log in to datalakehouse for Grafana
 ===========================
 
-Log in to DLH for Grafana to start monitoring your data sources. 
+Log in to datalakehouse for Grafana to start monitoring your data sources. 
 
 .. Tip::
-        Your InfluxDB or OpenSearch services in the same DLH project are automatically configured as data sources, and you can easily start visualizing the data from them.
+        Your InfluxDB or OpenSearch services in the same datalakehouse project are automatically configured as data sources, and you can easily start visualizing the data from them.
 
 
 .. image:: /images/products/grafana/log-in-grafana.gif
@@ -13,7 +13,7 @@ Log in to DLH for Grafana to start monitoring your data sources.
 
 To log in:
 
-1. Log in to the `DLH web console <https://console.DLH.io/>`_.
+1. Log in to the `datalakehouse web console <https://console.datalakehouse.io/>`_.
 
 2. On the *Services* page, click the Grafana service you want to log in to.
 

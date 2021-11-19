@@ -1,12 +1,12 @@
-DLH for M3
+datalakehouse for M3
 ============
 
-What is DLH for M3?
+What is datalakehouse for M3?
 ---------------------
 
-DLH for M3 is a fully managed **distributed time series database**, deployable in the cloud of your choice which can bring unlimited scalability and high-availability to your monitoring environment and other time series applications.
+datalakehouse for M3 is a fully managed **distributed time series database**, deployable in the cloud of your choice which can bring unlimited scalability and high-availability to your monitoring environment and other time series applications.
 
-DLH for M3 consists of  ``n`` number of **M3DB** and **M3 Coordinator** pairs (where  ``n`` is the number of nodes as chosen for your DLH plan). 
+datalakehouse for M3 consists of  ``n`` number of **M3DB** and **M3 Coordinator** pairs (where  ``n`` is the number of nodes as chosen for your datalakehouse plan). 
 
 
 Why M3?
@@ -15,15 +15,15 @@ Why M3?
 M3 is a specialized time series store which is a great choice if your organization has a very large volume of metrics to handle, and it can be used as part of your observability solution. It is optimized for storing and serving time series through associated pairs of times and values. It also provides a reverse index of time series. 
 
 .. note::
-   DLH offers M3 because we ourselves needed a solution that would work with the size of our own metrics - and we love it!
+   datalakehouse offers M3 because we ourselves needed a solution that would work with the size of our own metrics - and we love it!
 
 Read more about `the M3 components <https://m3db.io/docs/overview/components/>`_.
 
 
-Get started with DLH for M3
+Get started with datalakehouse for M3
 -----------------------------
 
-Take your first steps with DLH for M3 by following our :doc:`getting-started` article, or browse through our full list of articles:
+Take your first steps with datalakehouse for M3 by following our :doc:`getting-started` article, or browse through our full list of articles:
 
 
 .. panels::
@@ -38,7 +38,7 @@ Take your first steps with DLH for M3 by following our :doc:`getting-started` ar
 Integrates with your existing tools
 ------------------------------------
 
-M3 is highly compatible with other DLH products for the following tasks:
+M3 is highly compatible with other datalakehouse products for the following tasks:
 
 - To collect metrics with Prometheus, M3 is designed as a scalable storage backend.
 
@@ -46,16 +46,16 @@ M3 is highly compatible with other DLH products for the following tasks:
 
 - To create dashboards and query available features using Grafana and PromQL.
 
-Check out all the features on our `M3 product page <https://DLH.io/m3#full-feature-list>`_. 
+Check out all the features on our `M3 product page <https://datalakehouse.io/m3#full-feature-list>`_. 
 
 
 
 
-Ways to use DLH for M3
+Ways to use datalakehouse for M3
 ------------------------
 Handle and analyse the time-stamped data from multiple connected devices and services, scale up as needed, and compare datasets to provide insights into past and present.
 
-With DLH for M3, you can set up the following example solutions:
+With datalakehouse for M3, you can set up the following example solutions:
 
 - Monitor IoT deployments, applications performance, financial trends.
 

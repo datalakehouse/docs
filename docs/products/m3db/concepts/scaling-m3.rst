@@ -70,7 +70,7 @@ Read more about this configuration `in the M3DB documentation <https://m3db.io/d
 Number of files
 '''''''''''''''
 
-There is a limit to the number of files that each DLH M3DB node can support. The number of files increases with the number of :ref:`block shards <Terminology Shard>` that your namespace configuration requires. To increase the number of total blocks available, we recommend increasing the number of nodes in your setup.
+There is a limit to the number of files that each datalakehouse M3DB node can support. The number of files increases with the number of :ref:`block shards <Terminology Shard>` that your namespace configuration requires. To increase the number of total blocks available, we recommend increasing the number of nodes in your setup.
 
 CPU usage
 ---------
@@ -123,7 +123,7 @@ Scaling recommendations
 
 Have as few namespaces as you can, with as few points per block as you can afford (to minimize memory usage) to achieve what you want. Or filter the data that enters namespaces. If dealing only with short-term data, avoiding aggregation altogether may be the most resource effective choice.
 
-Real-world example: DLH production configuration
+Real-world example: datalakehouse production configuration
 --------------------------------------------------
 
 At the moment we use with 30 second typical scrape interval with following namespace configuration:

@@ -1,19 +1,19 @@
-Plugins available with DLH for OpenSearch
+Plugins available with datalakehouse for OpenSearch
 ===========================================
 
-DLH for OpenSearch includes a standard set of plugins. In addition to the plugins that were previously available in DLH for Elasticsearch, DLH for OpenSearch also includes plugins that are designed and developed specifically for OpenSearch.
+datalakehouse for OpenSearch includes a standard set of plugins. In addition to the plugins that were previously available in datalakehouse for Elasticsearch, datalakehouse for OpenSearch also includes plugins that are designed and developed specifically for OpenSearch.
 
 .. tip::
 
     If you 
-    are upgrading from DLH for Elasticsearch, all the existing `supported 
-    plugins <https://help.DLH.io/en/articles/511872-elasticsearch-plugins>`__
+    are upgrading from datalakehouse for Elasticsearch, all the existing `supported 
+    plugins <https://help.datalakehouse.io/en/articles/511872-elasticsearch-plugins>`__
     are included. 
 
 Included plugins
 ----------------
 
-These plugins are enabled on all DLH for OpenSearch services by default:
+These plugins are enabled on all datalakehouse for OpenSearch services by default:
 
 * `ICU Analysis <https://www.elastic.co/guide/en/elasticsearch/plugins/current/analysis-icu.html>`_
 * `Phonetic Analysis <https://www.elastic.co/guide/en/elasticsearch/plugins/current/analysis-phonetic.html>`_

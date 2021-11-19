@@ -1,7 +1,7 @@
 Install or update an extension
 =====================================
 
-DLH for PostgreSQL allows a series of pre-approved extensions to be installed.
+datalakehouse for PostgreSQL allows a series of pre-approved extensions to be installed.
 
 Install an extension
 --------------------

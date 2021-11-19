@@ -1,7 +1,7 @@
-Use DLH for OpenSearch with cURL
+Use datalakehouse for OpenSearch with cURL
 ==================================
 
-Connect to your DLH for OpenSearch service with `cURL <https://curl.se/>`_.
+Connect to your datalakehouse for OpenSearch service with `cURL <https://curl.se/>`_.
 
 Variables
 ---------
