@@ -1,4 +1,0 @@
-Replication and migration
-=========================
-
-.. tableofcontents::
