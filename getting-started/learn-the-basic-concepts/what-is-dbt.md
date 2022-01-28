@@ -9,3 +9,5 @@ ELT has become commonplace because of the power of modern analytic databases. Da
 dbt is a tool to help you write and execute the data transformation jobs that run inside your warehouse. **dbt’s only function is to take code, compile it to SQL, and then run against your database.**
 
 dbt is made up of Jinja, custom Jinja extensions, a compiler, a runner, and a package manager. Combine those elements together and you get a complete programming environment for your database. There is no better way to write SQL-based data transformation logic against a data warehouse today.
+
+DataLakeHouse leverages dbt for transformations within Snowflake and we absolutely love tool!&#x20;
