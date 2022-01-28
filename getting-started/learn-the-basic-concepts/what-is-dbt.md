@@ -10,4 +10,4 @@ dbt is a tool to help you write and execute the data transformation jobs that ru
 
 dbt is made up of Jinja, custom Jinja extensions, a compiler, a runner, and a package manager. Combine those elements together and you get a complete programming environment for your database. There is no better way to write SQL-based data transformation logic against a data warehouse today.
 
-DataLakeHouse leverages dbt for transformations within Snowflake and we absolutely love tool!&#x20;
+DataLakeHouse leverages dbt for transformations within Snowflake and we absolutely love the tool! If you decide to extend the dbt models yourself you too will see how powerful and easy dbt is to use.&#x20;
