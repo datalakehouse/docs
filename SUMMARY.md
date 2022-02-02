@@ -15,7 +15,7 @@
   * [What is Business Value?](getting-started/learn-the-basic-concepts/what-is-business-value.md)
   * [What is Usage-Based Pricing?](getting-started/learn-the-basic-concepts/what-is-usage-based-pricing.md)
   * [What is ELT?](getting-started/learn-the-basic-concepts/what-is-elt.md)
-  * [What is DataForm?](getting-started/learn-the-basic-concepts/what-is-dataform.md)
+  * [What is Dataform?](getting-started/learn-the-basic-concepts/what-is-dataform.md)
   * [What is dbt?](getting-started/learn-the-basic-concepts/what-is-dbt.md)
   * [What are Analytic Models?](getting-started/learn-the-basic-concepts/what-are-analytic-models.md)
 * [Architecture](getting-started/architecture/README.md)
