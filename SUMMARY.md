@@ -33,7 +33,7 @@
 
 * [Operations Applications](applications-and-sources/operations-applications/README.md)
   * [McLeod Transportation Software](applications-and-sources/operations-applications/mcleod-transportation-software.md)
-  * [Quickbooks](applications-and-sources/operations-applications/quickbooks.md)
+  * [QuickBooks](applications-and-sources/operations-applications/quickbooks.md)
   * [Square](applications-and-sources/operations-applications/square/README.md)
     * [Setup Overview](applications-and-sources/operations-applications/square/setup-overview.md)
     * [Change Log / Notes](applications-and-sources/operations-applications/square/change-log-notes.md)
