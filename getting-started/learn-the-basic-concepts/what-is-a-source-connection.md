@@ -9,27 +9,30 @@ description: >-
 
 Source connections are either SaaS applications, spreadsheets, or Databases (NoSQL, RDBMS, etc.) .
 
-DataLakeHouse is the only _**full-modern-data-stack**_ platform that focuses on Business Value pipelines to analytics. Pick an application such as Salesforce.com, Quickbooks, McLeod Software,  Aloha POS, Optimum HR, etc. (See all Source Connectors) and our opinionated analytics to get insights 90% faster than building custom pipelines.
+DataLakeHouse is the only _**full-modern-data-stack**_ platform that focuses on Business Value pipelines to analytics. Pick an application such as Salesforce, QuickBooks, McLeod Software, Aloha POS, Optimum HR, etc. (See all Source Connectors) and our opinionated analytics to get insights 90% faster than building custom pipelines.
 
 #### Currently Available Source Connectors:
 
 * Applications:
   * Aloha POS
   * McLeod Software
+  * NetSuite
   * Optimum HR
-  * Quickbooks
-  * Salesforce.com
-  * Xero
+  * QuickBooks
+  * Salesforce
   * Shopify
   * Square
   * Stripe
+  * Xero
 * Databases:
   * Aloha POS
-  * SQL Server
   * MongoDB
+  * MongoDB (Sharded)
   * MySQL
     * Aiven.io MySQL
-  * PostgreSQL
-    * Aiven.io PostgreSQL
   * MySQL
   * Oracle
+  * PostgreSQL
+    * Aiven.io PostgreSQL
+  * Snowflake
+  * SQL Server
