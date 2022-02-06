@@ -30,8 +30,6 @@
   * [McLeod Analytics](analytic-dw-models/all/mcleod-analytics.md)
 
 ## Applications & Sources
-
-* [Databases](applications-and-sources/databases.md)
 * [Operations Applications](applications-and-sources/operations-applications/README.md)
   * [McLeod Transportation Software](applications-and-sources/operations-applications/mcleod-transportation-software.md)
   * [QuickBooks](applications-and-sources/operations-applications/quickbooks.md)
@@ -41,8 +39,28 @@
   * [Xero](applications-and-sources/operations-applications/xero.md)
 * [Snowflake](applications-and-sources/snowflake.md)
 
-## Use Cases
+## [Databases](applications-and-sources/README.md)
+* [MongoDB](datababses/mongodb/README.md)
+  * [Basic MongoDB setup](datababses/mongodb/setup-basic-mongodb.md)
+  * [MongoDB FAQs](datababses/mongodb/faq.md)
 
+* [MySQL](datababses/mysql/README.md)
+  * [Basic MySQL setup](datababses/mysql/setup-basic-mysql.md)
+  * [MySQL FAQs](datababses/mysql/faq.md)
+
+* [PostgreSQL](datababses/postgresql/README.md)
+  * [Basic PostgreSQL setup](datababses/postgresql/setup-basic-postgresql.md)
+  * [PostgreSQL FAQs](datababses/postgresql/faq.md)
+
+* [SQL Server](datababses/sql-server/README.md)
+  * [Basic SQL Server setup](datababses/sql-server/setup-basic-sql-server.md)
+  * ---
+  * [SQL Server Change Log](datababses/sql-server/change-log.md)
+  * [SQL Server FAQs](datababses/sql-server/faq.md)
+
+
+
+## Use Cases
 * [CFO & VP of Finance](use-cases/cfo-and-vp-of-finance/README.md)
   * [Why a Finance DataLakeHouse?](use-cases/cfo-and-vp-of-finance/why-a-finance-datalakehouse.md)
   * [Case Study](use-cases/cfo-and-vp-of-finance/case-study.md)
