@@ -24,41 +24,45 @@
   * [Connect your Target](getting-started/get-started/connect-your-target.md)
   * [Connect your Source](getting-started/get-started/connect-your-source.md)
 
-## Analytic DW Models
+## Data Warehouse Models
 
 * [All](analytic-dw-models/all/README.md)
   * [McLeod Analytics](analytic-dw-models/all/mcleod-analytics.md)
+### [testing](analytic-dw-models/all/README.md)
+* nothing
 
 ## Applications & Sources
-* [Operations Applications](applications-and-sources/operations-applications/README.md)
-  * [McLeod Transportation Software](applications-and-sources/operations-applications/mcleod-transportation-software.md)
-  * [QuickBooks](applications-and-sources/operations-applications/quickbooks.md)
-  * [Square](applications-and-sources/operations-applications/square/README.md)
-    * [Setup Overview](applications-and-sources/operations-applications/square/setup-overview.md)
-    * [Change Log / Notes](applications-and-sources/operations-applications/square/change-log-notes.md)
-  * [Xero](applications-and-sources/operations-applications/xero.md)
-* [Snowflake](applications-and-sources/snowflake.md)
+* [Operations Applications](applications-and-sources/operations/README.md)
+  * [McLeod Transportation Software](applications-and-sources/operations/mcleod-transportation-software.md)
+  * [QuickBooks](applications-and-sources/operations/quickbooks.md)
+  * [Square](applications-and-sources/operations/square/README.md)
+    * [Setup Overview](applications-and-sources/operations/square/setup-overview.md)
+    * [Change Log / Notes](applications-and-sources/operations/square/change-log-notes.md)
+  * [Xero](applications-and-sources/operations/xero.md)
 
-## [Databases](applications-and-sources/README.md)
-* [MongoDB](datababses/mongodb/README.md)
-  * [Basic MongoDB setup](datababses/mongodb/setup-basic-mongodb.md)
-  * [MongoDB FAQs](datababses/mongodb/faq.md)
+* [Databases](applications-and-sources/README.md)
+  * [MongoDB](datababses/mongodb/README.md)
+    * [Basic MongoDB setup](datababses/mongodb/setup-basic-mongodb.md)
+    * [MongoDB FAQs](datababses/mongodb/faq.md)
 
-* [MySQL](datababses/mysql/README.md)
-  * [Basic MySQL setup](datababses/mysql/setup-basic-mysql.md)
-  * [MySQL FAQs](datababses/mysql/faq.md)
+  * [MySQL](datababses/mysql/README.md)
+    * [Basic MySQL setup](datababses/mysql/setup-basic-mysql.md)
+    * [MySQL FAQs](datababses/mysql/faq.md)
 
-* [PostgreSQL](datababses/postgresql/README.md)
-  * [Basic PostgreSQL setup](datababses/postgresql/setup-basic-postgresql.md)
-  * [PostgreSQL FAQs](datababses/postgresql/faq.md)
+  * [PostgreSQL](datababses/postgresql/README.md)
+    * [Basic PostgreSQL setup](datababses/postgresql/setup-basic-postgresql.md)
+    * [PostgreSQL FAQs](datababses/postgresql/faq.md)
 
-* [SQL Server](datababses/sql-server/README.md)
-  * [Basic SQL Server setup](datababses/sql-server/setup-basic-sql-server.md)
-  * ---
-  * [SQL Server Change Log](datababses/sql-server/change-log.md)
-  * [SQL Server FAQs](datababses/sql-server/faq.md)
+  * [SQL Server](datababses/sql-server/README.md)
+    * [Basic SQL Server setup](datababses/sql-server/setup-basic-sql-server.md)
+    * [SQL Server Change Log](datababses/sql-server/change-log.md)
+    * [SQL Server FAQs](datababses/sql-server/faq.md)
 
+## Data Warehouses
+* [Snowflake](data-warehousing/snowflake.md)
 
+## Transformations
+* [SQL Transformations]()
 
 ## Use Cases
 * [CFO & VP of Finance](use-cases/cfo-and-vp-of-finance/README.md)
