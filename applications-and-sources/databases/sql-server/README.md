@@ -1,2 +1,2 @@
-# Microsoft SQL Server
-...
+# SQL Server
+

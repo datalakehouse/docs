@@ -1,0 +1,2 @@
+# Basic SQL Server setup
+
