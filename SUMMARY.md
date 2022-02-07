@@ -1,7 +1,9 @@
 # Table of contents
+
 * [Data Analytics as a Service](README.md)
 
 ## Getting Started
+
 * [Our Business-Value Focus](getting-started/our-business-value-focus.md)
 * [Learn the Basic Concepts](getting-started/learn-the-basic-concepts/README.md)
   * [What is a Target Connection?](getting-started/learn-the-basic-concepts/what-is-a-target-connection.md)
@@ -18,16 +20,18 @@
   * [What are Analytic Models?](getting-started/learn-the-basic-concepts/what-are-analytic-models.md)
 * [Architecture](getting-started/architecture/README.md)
   * [Our Grantlist IP Addresses](getting-started/architecture/our-grantlist-ip-addresses.md)
-
-* [Get Started](getting-started/README.md)
+* [Get Started](getting-started/get-started/README.md)
   * [Connect your Target](getting-started/get-started/connect-your-target.md)
-  * [Connect your Source](getting-started/first-steps/README.md)
+  * [Connect your Source](getting-started/get-started/connect-your-source.md)
 
 ## Data Warehouse Models
+
 * [All DW Models](analytic-dw-models/all/README.md)
   * [McLeod Analytics](analytic-dw-models/mcleod-software/README.md)
 
+
 ## Applications & Sources
+
 * [Operations Applications](applications-and-sources/operations/README.md)
   * [McLeod Transportation Software](applications-and-sources/operations/mcleod-transportation-software.md)
   * [QuickBooks](applications-and-sources/operations/quickbooks.md)
@@ -35,36 +39,36 @@
     * [Setup Overview](applications-and-sources/operations/square/setup-overview.md)
     * [Change Log & Notes](applications-and-sources/operations/square/change-log-notes.md)
   * [Xero](applications-and-sources/operations/xero.md)
-
 * [Databases](applications-and-sources/databases/README.md)
   * [MongoDB](applications-and-sources/databases/mongodb/README.md)
-    * [Basic MongoDB setup](applications-and-sources/databases/mongodb/setup-basic-mongodb.md)
-    * [MongoDB FAQs](applications-and-sources/databases/mongodb/faq.md)
-
+    * [Basic MongoDB setup](applications-and-sources/databases/mongodb/basic-mongodb-setup.md)
+    * [MongoDB FAQs](applications-and-sources/databases/mongodb/mongodb-faqs.md)
   * [MySQL](applications-and-sources/databases/mysql/README.md)
-    * [Basic MySQL setup](applications-and-sources/databases/mysql/setup-basic-mysql.md)
-    * [MySQL FAQs](applications-and-sources/databases/mysql/faq.md)
-
+    * [Basic MySQL setup](applications-and-sources/databases/mysql/basic-mysql-setup.md)
+    * [MySQL FAQs](applications-and-sources/databases/mysql/mysql-faqs.md)
   * [PostgreSQL](applications-and-sources/databases/postgresql/README.md)
-    * [Basic PostgreSQL setup](applications-and-sources/databases/postgresql/setup-basic-postgresql.md)
-    * [PostgreSQL FAQs](applications-and-sources/databases/postgresql/faq.md)
-
+    * [Basic PostgreSQL setup](applications-and-sources/databases/postgresql/basic-postgresql-setup.md)
+    * [PostgreSQL FAQs](applications-and-sources/databases/postgresql/postgresql-faqs.md)
   * [SQL Server](applications-and-sources/databases/sql-server/README.md)
-    * [Basic SQL Server setup](applications-and-sources/databases/sql-server/setup-basic-sql-server.md)
-    * [SQL Server Change Log](applications-and-sources/databases/sql-server/change-log.md)
-    * [SQL Server FAQs](applications-and-sources/databases/sql-server/faq.md)
+    * [Basic SQL Server setup](applications-and-sources/databases/sql-server/basic-sql-server-setup.md)
+    * [SQL Server Change Log](applications-and-sources/databases/sql-server/sql-server-change-log.md)
+    * [SQL Server FAQs](applications-and-sources/databases/sql-server/sql-server-faqs.md)
 
 ## Data Warehouses
-* [Snowflake](data-warehouse/snowflake.md)
+
+* [Snowflake](data-warehousing/snowflake.md)
 
 ## Transformations
+
 * [SQL Transformations](data-transformation/README.md)
 
 ## Use Cases
+
 * [CFO & VP of Finance](use-cases/cfo-and-vp-of-finance/README.md)
   * [Why a Finance DataLakeHouse?](use-cases/cfo-and-vp-of-finance/why-a-finance-datalakehouse.md)
-  * [Case Study](use-cases/cfo-and-vp-of-finance/README.md)
+  * [Case Study](use-cases/cfo-and-vp-of-finance/case-study.md)
 * [CMO & VP of Marketing](use-cases/cmo-and-vp-of-marketing/README.md)
+  * [GitHub Integration](use-cases/cmo-and-vp-of-marketing/github-integration.md)
 
 ## Extras
 
