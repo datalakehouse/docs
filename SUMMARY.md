@@ -18,7 +18,8 @@
   * [What are Analytic Models?](getting-started/learn-the-basic-concepts/what-are-analytic-models.md)
 * [Architecture](getting-started/architecture/README.md)
   * [Our Grantlist IP Addresses](getting-started/architecture/our-grantlist-ip-addresses.md)
-* [Get Started](getting-started/get-started/README.md)
+
+* [Get Started](getting-started/README.md)
   * [Connect your Target](getting-started/get-started/connect-your-target.md)
   * [Connect your Source](getting-started/get-started/connect-your-source.md)
 
@@ -35,7 +36,7 @@
     * [Change Log / Notes](applications-and-sources/operations/square/change-log-notes.md)
   * [Xero](applications-and-sources/operations/xero.md)
 
-* [Databases](applications-and-sources/README.md)
+* [Databases](applications-and-sources/databases/README.md)
   * [MongoDB](datababses/mongodb/README.md)
     * [Basic MongoDB setup](datababses/mongodb/setup-basic-mongodb.md)
     * [MongoDB FAQs](datababses/mongodb/faq.md)
