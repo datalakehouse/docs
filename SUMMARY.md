@@ -26,8 +26,9 @@
 
 ## Data Warehouse Models
 
-* [All](analytic-dw-models/all/README.md)
-  * [McLeod Analytics](analytic-dw-models/all/mcleod-analytics.md)
+* [All DW Models](analytic-dw-models/all/README.md)
+  * [McLeod Analytics](analytic-dw-models/mcleod-software/README.md)
+
 
 ## Applications & Sources
 
@@ -36,7 +37,7 @@
   * [QuickBooks](applications-and-sources/operations/quickbooks.md)
   * [Square](applications-and-sources/operations/square/README.md)
     * [Setup Overview](applications-and-sources/operations/square/setup-overview.md)
-    * [Change Log / Notes](applications-and-sources/operations/square/change-log-notes.md)
+    * [Change Log & Notes](applications-and-sources/operations/square/change-log-notes.md)
   * [Xero](applications-and-sources/operations/xero.md)
 * [Databases](applications-and-sources/databases/README.md)
   * [MongoDB](applications-and-sources/databases/mongodb/README.md)
