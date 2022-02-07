@@ -21,11 +21,11 @@
 
 * [Get Started](getting-started/README.md)
   * [Connect your Target](getting-started/get-started/connect-your-target.md)
-  * [Connect your Source](getting-started/get-started/connect-your-source.md)
+  * [Connect your Source](getting-started/first-steps/README.md)
 
 ## Data Warehouse Models
 * [All](analytic-dw-models/all/README.md)
-  * [McLeod Analytics](analytic-dw-models/all/mcleod-analytics.md)
+  * [McLeod Analytics](analytic-dw-models/all/README.md)
 
 ## Applications & Sources
 * [Operations Applications](applications-and-sources/operations/README.md)
@@ -37,22 +37,22 @@
   * [Xero](applications-and-sources/operations/xero.md)
 
 * [Databases](applications-and-sources/databases/README.md)
-  * [MongoDB](datababses/mongodb/README.md)
-    * [Basic MongoDB setup](datababses/mongodb/setup-basic-mongodb.md)
-    * [MongoDB FAQs](datababses/mongodb/faq.md)
+  * [MongoDB](applications-and-sources/databases/mongodb/README.md)
+    * [Basic MongoDB setup](applications-and-sources/databases/mongodb/setup-basic-mongodb.md)
+    * [MongoDB FAQs](applications-and-sources/databases/mongodb/faq.md)
 
-  * [MySQL](datababses/mysql/README.md)
-    * [Basic MySQL setup](datababses/mysql/setup-basic-mysql.md)
-    * [MySQL FAQs](datababses/mysql/faq.md)
+  * [MySQL](applications-and-sources/databases/mysql/README.md)
+    * [Basic MySQL setup](applications-and-sources/databases/mysql/setup-basic-mysql.md)
+    * [MySQL FAQs](applications-and-sources/databases/mysql/faq.md)
 
-  * [PostgreSQL](datababses/postgresql/README.md)
-    * [Basic PostgreSQL setup](datababses/postgresql/setup-basic-postgresql.md)
-    * [PostgreSQL FAQs](datababses/postgresql/faq.md)
+  * [PostgreSQL](applications-and-sources/databases/postgresql/README.md)
+    * [Basic PostgreSQL setup](applications-and-sources/databases/postgresql/setup-basic-postgresql.md)
+    * [PostgreSQL FAQs](applications-and-sources/databases/postgresql/faq.md)
 
-  * [SQL Server](datababses/sql-server/README.md)
-    * [Basic SQL Server setup](datababses/sql-server/setup-basic-sql-server.md)
-    * [SQL Server Change Log](datababses/sql-server/change-log.md)
-    * [SQL Server FAQs](datababses/sql-server/faq.md)
+  * [SQL Server](applications-and-sources/databases/sql-server/README.md)
+    * [Basic SQL Server setup](applications-and-sources/databases/sql-server/setup-basic-sql-server.md)
+    * [SQL Server Change Log](applications-and-sources/databases/sql-server/change-log.md)
+    * [SQL Server FAQs](applications-and-sources/databases/sql-server/faq.md)
 
 ## Data Warehouses
 * [Snowflake](data-warehouse/snowflake.md)
