@@ -7,11 +7,4 @@ Transformations allow logic to be executed against a target connection based on 
 
 ## Add a Transformation
 1. Click on **Transformation** from the header menu
-1. Click on **New Transformation** or **Add a Transformation** to show the Transformation creation form.
-    * Buttons are always in the same place:
-
-    &#x20;               ![](../_assets/img/transformation-add-new.png "New Transformation")
-
-1. In the Transformation creation form enter all required fields and click the **Save** button when ready to finish or test the transformation.
-
-&#x20;               ![](../_assets/img/transformation-add-form.png "New Transformation Form")
+2. Click on **New Transformation** or **Add a Transformation** to show the Transformation creation form.
