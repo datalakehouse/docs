@@ -1,9 +1,7 @@
 # Table of contents
-
-* [Data Warehousing as a Service](README.md)
+* [Data Analytics as a Service](README.md)
 
 ## Getting Started
-
 * [Our Business-Value Focus](getting-started/our-business-value-focus.md)
 * [Learn the Basic Concepts](getting-started/learn-the-basic-concepts/README.md)
   * [What is a Target Connection?](getting-started/learn-the-basic-concepts/what-is-a-target-connection.md)
@@ -25,11 +23,8 @@
   * [Connect your Source](getting-started/get-started/connect-your-source.md)
 
 ## Data Warehouse Models
-
 * [All](analytic-dw-models/all/README.md)
   * [McLeod Analytics](analytic-dw-models/all/mcleod-analytics.md)
-### [testing](analytic-dw-models/all/README.md)
-* nothing
 
 ## Applications & Sources
 * [Operations Applications](applications-and-sources/operations/README.md)
@@ -62,7 +57,7 @@
 * [Snowflake](data-warehousing/snowflake.md)
 
 ## Transformations
-* [SQL Transformations]()
+* [SQL Transformations](data-transformation/README.md)
 
 ## Use Cases
 * [CFO & VP of Finance](use-cases/cfo-and-vp-of-finance/README.md)
