@@ -4,7 +4,7 @@ description: >-
   Information Delivery
 ---
 
-# Data Warehousing as a Service
+# Data Analytics as a Service
 
 {% hint style="info" %}
 **Why DataLakeHouse.io:** ........Wha
