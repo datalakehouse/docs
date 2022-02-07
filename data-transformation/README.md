@@ -3,8 +3,6 @@ description: >-
 Transformations allow logic to be executed against a target connection based on a scheduled frequency or triggered event of new data on tables updated via DataLakeHouse.io.
 ---
 
-[var_page_top]: Transformations
-
 # Transformations
 
 ## Add a Transformation
