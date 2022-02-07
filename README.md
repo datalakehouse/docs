@@ -4,7 +4,7 @@ description: >-
   Information Delivery
 ---
 
-# Data Analytics as a Service
+# Data Warehousing as a Service
 
 {% hint style="info" %}
 **Why DataLakeHouse.io:** ........Wha
@@ -35,7 +35,7 @@ description: >-
 Follow our handy guides to get started on the basics as quickly as possible:
 
 {% content-ref url="getting-started/get-started/connect-your-source.md" %}
-[connect-your-source.md](getting-started/first-steps/README.md)
+[connect-your-source.md](getting-started/get-started/connect-your-source.md)
 {% endcontent-ref %}
 
 {% content-ref url="getting-started/get-started/connect-your-target.md" %}

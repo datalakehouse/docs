@@ -1,6 +1,2 @@
 # MongoDB
 
-## {{page.title}} DataLakeHouse
-
-##
-...
