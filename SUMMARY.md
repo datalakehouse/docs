@@ -55,7 +55,7 @@
     * [SQL Server FAQs](datababses/sql-server/faq.md)
 
 ## Data Warehouses
-* [Snowflake](data-warehousing/snowflake.md)
+* [Snowflake](data-warehouse/snowflake.md)
 
 ## Transformations
 * [SQL Transformations](data-transformation/README.md)
@@ -63,9 +63,8 @@
 ## Use Cases
 * [CFO & VP of Finance](use-cases/cfo-and-vp-of-finance/README.md)
   * [Why a Finance DataLakeHouse?](use-cases/cfo-and-vp-of-finance/why-a-finance-datalakehouse.md)
-  * [Case Study](use-cases/cfo-and-vp-of-finance/case-study.md)
+  * [Case Study](use-cases/cfo-and-vp-of-finance/README.md)
 * [CMO & VP of Marketing](use-cases/cmo-and-vp-of-marketing/README.md)
-  * [GitHub Integration](use-cases/cmo-and-vp-of-marketing/github-integration.md)
 
 ## Extras
 
