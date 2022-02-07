@@ -35,7 +35,7 @@ description: >-
 Follow our handy guides to get started on the basics as quickly as possible:
 
 {% content-ref url="getting-started/get-started/connect-your-source.md" %}
-[connect-your-source.md](getting-started/first-steps/README.md.md)
+[connect-your-source.md](getting-started/first-steps/README.md)
 {% endcontent-ref %}
 
 {% content-ref url="getting-started/get-started/connect-your-target.md" %}
