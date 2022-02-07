@@ -1,6 +1,6 @@
 # MongoDB
 
-## {{page.title}} DataLakeHouse
+## MongoDB on DataLakeHouse
 
 ##
 ...
