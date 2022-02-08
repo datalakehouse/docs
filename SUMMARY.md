@@ -30,17 +30,17 @@
   * [McLeod Analytics](./analytic-dw-models/mcleod-software/README.md)
 
 ## INTEGRATE
-* [Operations Applications](integrate/applications.md)
-  * [McLeod Transportation Software](integrate/mcleod-software/README.md)
+* [Operations Applications](./integrate/applications/README.md)
+  * [McLeod Transportation Software](./integrate/mcleod-software/README.md)
   * [QuickBooks](integrate/quickbooks.md)
   * [Square](integrate/square/README.md)
     * [Setup Overview](integrate/square/setup-overview.md)
     * [Change Log & Notes](integrate/square/change-log-notes.md)
   * [Xero](integrate/xero.md)
-* [Databases](integrate/databases.md)
-  * [MongoDB](integrate/mongodb/README.md)
-    * [Basic MongoDB setup](integrate/mongodb/setup-basic-mongodb.md)
-    * [MongoDB FAQs](integrate/mongodb/faq.md)
+* [Databases](./integrate/databases/README.md)
+  * [MongoDB](./integrate/mongodb/README.md)
+    * [Basic MongoDB setup](./integrate/mongodb/setup-basic-mongodb.md)
+    * [MongoDB FAQs](./integrate/mongodb/faq.md)
   * [MySQL](integrate/mysql/README.md)
     * [Basic MySQL setup](integrate/mysql/setup-basic-mysql.md)
     * [MySQL FAQs](integrate/mysql/faq.md)
@@ -53,8 +53,8 @@
     * [SQL Server FAQs](integrate/sql-server/faq.md)
 * [SQL Transformations](data-transformation/README.md)
 
-## Data Warehouses
-* [Snowflake](data-warehouse/snowflake.md)
+## Data Warehousing
+* [Snowflake](./data-warehousing/snowflake/README.md)
 
 
 ## Use Cases
