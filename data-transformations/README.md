@@ -5,6 +5,7 @@ Transformations allow logic to be executed against a target connection based on 
 ## Add a Transformation
 1. Click on **Transformation** from the header menu
 1. Click on **New Transformation** or **Add a Transformation** to show the Transformation creation form.
-<img src="../_assets/img/transformation-add-new.png" style="min-width: 400px; width: 600px; max-width: 650px;" alt="Add a Transformation for the Data Warehouse Sync">
+
+    ![Add a Transformation for the Data Warehouse Sync](../_assets/img/transformation-add-new.png "New Transformation")
 
 1. Update the form and determine what
