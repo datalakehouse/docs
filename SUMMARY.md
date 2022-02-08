@@ -32,7 +32,7 @@
     * [QuickBooks](integrate/applications/quickbooks.md)
     * [Square](integrate/applications/square/README.md)
       * [Setup Overview](integrate/applications/square/setup-overview.md)
-      * [Change Log & Notes](integrate/applications/square/change-log-notes.md)
+      * [Change Log & Notes](integrate/applications/square/change-log-and-notes.md)
     * [Xero](integrate/applications/xero.md)
   * [Databases](integrate/databases/README.md)
     * [MongoDB](integrate/databases/mongodb/README.md)
@@ -53,9 +53,10 @@
       * [SQL Server FAQ](integrate/databases/sql-server/faq/README.md)
       * [Change Log & Notes](integrate/databases/sql-server/change-log.md)
 * [SQL Transformations](data-transformations/README.md)
-* [Data Catalog (Glossary)](data-cataog/README.md)
+* [Data Catalog (Glossary)](data-catalog-glossary.md)
 
 ## Data Warehousing
+
 * [Snowflake](data-warehousing/snowflake.md)
 * [Open Source DW Models](data-warehouses/README.md)
   * [McLeod Analytics](data-warehouses/mcleod-analytics/README.md)
