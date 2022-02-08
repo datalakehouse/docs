@@ -1,4 +1,4 @@
-# QuickBooks
+# Application :: QuickBooks
 
 QuickBooks Online is a cloud solution for accounting developed and marketed by Intuit. DataLakeHouse supports only QuickBooks Online, it does not support the desktop version of QuickBooks.&#x20;
 

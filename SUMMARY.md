@@ -27,10 +27,20 @@
 * [All DW Models](analytic-dw-models/all/README.md)
   * [McLeod Analytics](analytic-dw-models/mcleod-software/README.md)
 
+## Databases
+* [Databases](databases/README.md)
+  * [MongoDB](databases/mongodb/README.md)
+    * [Basic MongoDB setup](databases/mongodb/setup-basic-mongodb.md)
+    * [MongoDB FAQs](databases/mongodb/faq.md)
+
+  * [MySQL](databases/mysql/README.md)
+    * [Basic MySQL setup](databases/mysql/setup-basic-mysql.md)
+    * [MySQL FAQs](databases/mysql/faq.md)
+    
 ## Applications & Databases
-* [Operations Applications](./applications/README.md)
-  * [McLeod Transportation Software](./applications/mcleod-transportation-software.md)
-  * [QuickBooks](./applications/quickbooks.md)
+* [Operations Applications](applications/README.md)
+  * [McLeod Transportation Software](applications/mcleod-transportation-software.md)
+  * [QuickBooks](applications/quickbooks.md)
   * [Square](applications/square/README.md)
     * [Setup Overview](applications/square/setup-overview.md)
     * [Change Log & Notes](applications/square/change-log-notes.md)
