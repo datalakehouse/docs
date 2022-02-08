@@ -53,10 +53,12 @@
       * [SQL Server FAQ](integrate/databases/sql-server/faq/README.md)
       * [Change Log & Notes](integrate/databases/sql-server/change-log.md)
 * [SQL Transformations](data-transformations/README.md)
-* [Data Catalog (Glossary)](data-cataog/README.md)
+* [Data Catalog (Glossary)](data-catalog/README.md)
 
 ## Data Warehousing
 * [Snowflake](data-warehousing/snowflake.md)
+
+## Data Warehouses
 * [Open Source DW Models](data-warehouses/README.md)
   * [McLeod Analytics](data-warehouses/mcleod-analytics/README.md)
   * [Salesforce Analytics](data-warehouses/salesforce-analytics/README.md)
