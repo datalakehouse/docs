@@ -51,8 +51,11 @@
       * [SQL Server FAQs](integrate/databases/sql-server/faq/README.md)
 * [SQL Transformations](data-transformations/README.md)
 * [Data Catalog (Glossary)](data-cataog/README.md)
-* [Open Source DW Models](analytic-dw-models/README.md)
-  * [McLeod Analytics](analytic-dw-models/mcleod-software.md)
 
 ## Data Warehousing
 * [Snowflake](data-warehousing/snowflake.md)
+* [Open Source DW Models](data-warehouses/README.md)
+  * [McLeod Analytics](data-warehouses/mcleod-analytics/README.md)
+  * [Salesforce Analytics](data-warehouses/salesforce-analytics/README.md)
+  * [Square Analytics](data-warehouses/square-analytics/README.md)
+  * [Stripe Analytics](data-warehouses/stripe-analytics/README.md)
