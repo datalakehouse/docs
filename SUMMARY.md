@@ -26,9 +26,7 @@
 
 ***
 
-* [Open Source DW Models](analytic-dw-models/README.md)
-  * [McLeod Analytics](analytic-dw-models/mcleod-software.md)
-* [Integrations/Connectors/Test](integrate/README.md)
+* [Integrations/Connectors](integrate/README.md)
   * [Operations Applications](integrate/applications/README.md)
     * [McLeod Transportation Software](integrate/applications/mcleod-software.md)
     * [QuickBooks](integrate/applications/quickbooks.md)
@@ -38,7 +36,8 @@
     * [Xero](integrate/applications/xero.md)
   * [Databases](integrate/databases/README.md)
     * [MongoDB](integrate/databases/mongodb/README.md)
-      * [Basic MongoDB setup](integrate/databases/mongodb/basic-mongodb-setup.md)
+      * [Basic MongoDB setup](integrate/databases/mongodb/setup-mongodb-generic.md)
+      * [MongoDB Sharded setup](integrate/databases/mongodb/setup-sharded-mongodb.md)
       * [MongoDB FAQs](integrate/databases/mongodb/mongodb-faqs.md)
     * [MySQL](integrate/databases/mysql/README.md)
       * [Basic MySQL setup](integrate/databases/mysql/basic-mysql-setup.md)
@@ -51,13 +50,9 @@
       * [SQL Server Change Log](integrate/databases/sql-server/sql-server-change-log.md)
       * [SQL Server FAQs](integrate/databases/sql-server/sql-server-faqs.md)
 * [SQL Transformations](data-transformations/README.md)
+* [Open Source DW Models](analytic-dw-models/README.md)
+  * [McLeod Analytics](analytic-dw-models/mcleod-software.md)
 
 ## Data Warehousing
 
 * [Snowflake](data-warehousing/snowflake.md)
-
-## Use Cases
-
-* [CFO & VP of Finance](use-cases/cfo-and-vp-of-finance/README.md)
-  * [Why a Finance DataLakeHouse?](use-cases/cfo-and-vp-of-finance/why-a-finance-datalakehouse.md)
-* [CMO & VP of Marketing](use-cases/cmo-and-vp-of-marketing.md)
