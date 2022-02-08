@@ -1,3 +1,0 @@
-# MongoDB
-
-## MongoDB on DataLakeHouse
