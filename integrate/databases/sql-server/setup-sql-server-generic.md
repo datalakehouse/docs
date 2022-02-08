@@ -91,4 +91,6 @@ To verify or setup port configuration on your instance via the SQL Server Config
 11. Return to the main area of the SQL Server Configuration Manager, and in the left side find, one of the top options, "SQL Server Services".
 12. Right-click on "SQL Server Services", then click the "Restart" option. This will confirm all the above especially if any settings were modified. The restart should be complete under 90 seconds typically.
 
-Reference for the above from [Microsoft SQL Server documentation](https://docs.microsoft.com/en-us/sql/database-engine/configure-windows/configure-a-server-to-listen-on-a-specific-tcp-port?view=sql-server-ver15)
+Reference for the above from [Microsoft SQL Server documentation](https://docs.microsoft.com/en-us/sql/database-engine/configure-windows/configure-a-server-to-listen-on-a-specific-tcp-port?view=sql-server-ver15).
+
+
