@@ -56,7 +56,6 @@
 * [Data Catalog (Glossary)](data-catalog-glossary.md)
 
 ## Data Warehousing
-
 * [Snowflake](data-warehousing/snowflake.md)
 * [Open Source DW Models](data-warehouses/README.md)
   * [McLeod Analytics](data-warehouses/mcleod-analytics/README.md)
