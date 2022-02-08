@@ -36,3 +36,14 @@ DataLakeHouse is the only _**full-modern-data-stack**_ platform that focuses on 
     * Aiven.io PostgreSQL
   * Snowflake
   * SQL Server
+
+### Adding a Source Connection
+
+Select the desired Source and enter in the appropriate details.
+
+&#x20;      ![](<../../.gitbook/assets/image (1).png>)
+
+### Editing a Source Connection
+
+
+
