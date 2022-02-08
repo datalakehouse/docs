@@ -30,7 +30,7 @@
   * [McLeod Analytics](./analytic-dw-models/mcleod-software/README.md)
 
 ## INTEGRATE
-* [All Integrations](applications/README.md)
+* [Integrations Rolodex](integrate/README.md)
   * [Operations Applications](applications/README.md)
     * [McLeod Transportation Software](applications/mcleod-transportation-software.md)
     * [QuickBooks](applications/quickbooks.md)
