@@ -1,8 +1,6 @@
 ---
 description: >-
-  Applications that run your business. These are usually SaaS applications and
-  tools that are based in the cloud, but often represent on-premise software as
-  well.
+  Databases are part of almost every organization. Whether managed in the cloud or stil on-premises getting the data you need out of these system repositories in a consistent way is no longer a challenge with DataLakeHouse. Use our Change Tracking and Change Data Capture (CDC) technology to integrate your modern data platform extraction and/or synchronization with Snowflake.
 ---
 
 # Databases
