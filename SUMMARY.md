@@ -23,8 +23,6 @@
   * [Connect your Target](getting-started/get-started/connect-your-target.md)
   * [Connect your Source](getting-started/getting-started/connect-your-source.md)
 
-***
-
 * [Integrations/Connectors](integrate/README.md)
   * [Operations Applications](integrate/applications/README.md)
     * [McLeod Transportation Software](integrate/applications/mcleod-software/README.md)
@@ -50,19 +48,8 @@
 * [SQL Transformations](data-transformations/README.md)
 * [Data Catalog/Glossary](data-catalog/README.md)
 
-
-
-
 ## Data Warehouse Models
-
 * [Open Source DW Models](data-warehouses/README.md)
   * [McLeod Analytics](data-warehouses/mcleod-analytics/README.md)
   * [Square Analytics](data-warehouses/square-analytics/README.md)
   * [Salesforce Analytics](data-warehouses/salesforce-analytics/README.md)
-
-___
-
-<!-- ## Use Cases
-* [CFO & VP of Finance](use-cases/cfo-and-vp-of-finance/README.md)
-  * [Why a Finance DataLakeHouse?](use-cases/cfo-and-vp-of-finance/why-a-finance-datalakehouse.md)
-* [CMO & VP of Marketing](use-cases/cmo-and-vp-of-marketing/README.md) -->
