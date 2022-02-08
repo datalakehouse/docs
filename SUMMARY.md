@@ -28,8 +28,8 @@
   * [McLeod Analytics](analytic-dw-models/mcleod-software/README.md)
 
 ## Applications & Databases
-* [Operations Applications](applications/README.md)
-  * [McLeod Transportation Software](applications/mcleod-transportation-software.md)
+* [Operations Applications](/applications/README.md)
+  * [McLeod Transportation Software](/applications/mcleod-transportation-software.md)
   * [QuickBooks](applications/quickbooks.md)
   * [Square](applications/square/README.md)
     * [Setup Overview](applications/square/setup-overview.md)

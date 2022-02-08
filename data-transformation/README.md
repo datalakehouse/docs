@@ -8,4 +8,4 @@ Transformations allow logic to be executed against a target connection based on 
 
     ![Add a Transformation for the Data Warehouse Sync](../_assets/img/transformation-add-new.png "New Transformation")
 
-1. 
+1. Update the form and determine what
