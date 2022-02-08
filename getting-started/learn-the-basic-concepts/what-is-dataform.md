@@ -1,6 +1,6 @@
 # What is Dataform?
 
-Dataform is a platform to manage data in [Snowflake](../../applications-and-sources/snowflake.md) and other modern cloud [data warehouses](what-is-a-data-warehouse.md). It helps data teams build data pipelines that turn raw data into new tables and views that can be used for analytics such as [analytics models](what-are-analytic-models.md) for [Operations Applications](../../applications-and-sources/operations-applications/).
+Dataform is a platform to manage data in [Snowflake](../../data-warehouses/snowflake.md) and other modern cloud [data warehouses](what-is-a-data-warehouse.md). It helps data teams build data pipelines that turn raw data into new tables and views that can be used for analytics such as [analytics models](what-are-analytic-models.md) for [Operations Applications](../../applications/).
 
 Dataform **does the T in** [**ELT**](what-is-elt.md) (Extract, Load, Transform) processes. It doesn’t extract or load data in your warehouse but it’s very powerful to transform data already loaded in your warehouse.
 
