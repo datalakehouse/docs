@@ -32,7 +32,7 @@
     * [QuickBooks](integrate/applications/quickbooks.md)
     * [Square](integrate/applications/square/README.md)
       * [Setup Overview](integrate/applications/square/setup-overview.md)
-      * [Change Log & Notes](integrate/applications/square/change-log-notes.md)
+      * [Change Log & Notes](integrate/applications/square/change-log-and-notes.md)
     * [Xero](integrate/applications/xero.md)
   * [Databases](integrate/databases/README.md)
     * [MongoDB](integrate/databases/mongodb/README.md)
@@ -56,6 +56,7 @@
 * [Data Catalog (Glossary)](data-catalog/README.md)
 
 ## Data Warehousing
+
 * [Snowflake](data-warehousing/snowflake.md)
 
 ## Data Warehouses
