@@ -24,21 +24,26 @@
   * [Connect your Target](getting-started/get-started/connect-your-target.md)
   * [Connect your Source](getting-started/getting-started/connect-your-source.md)
 
+---
+
 ##### Data Warehouse Models
 
 * [Open Source DW Models](analytic-dw-models/README.md)
   * [McLeod Analytics](analytic-dw-models/mcleod-software/README.md)
 
+___
+
 ##### INTEGRATE
+
 * [Integrations/Connectors](integrate/README.md)
-  * [Operations Applications](integrate/applications/README.md)
+  * [Operations Applications](integrate/applications.md)
     * [McLeod Transportation Software](integrate/mcleod-software/README.md)
     * [QuickBooks](integrate/quickbooks.md)
     * [Square](integrate/square/README.md)
       * [Setup Overview](integrate/square/setup-overview.md)
       * [Change Log & Notes](integrate/square/change-log-notes.md)
     * [Xero](integrate/xero.md)
-  * [Databases](integrate/databases/README.md)
+  * [Databases](integrate/databases.md)
     * [MongoDB](integrate/mongodb/README.md)
       * [Basic MongoDB setup](integrate/mongodb/setup-basic-mongodb.md)
       * [MongoDB FAQs](integrate/mongodb/faq.md)
@@ -52,7 +57,7 @@
       * [Basic SQL Server setup](integrate/sql-server/setup-basic-sql-server.md)
       * [SQL Server Change Log](integrate/sql-server/change-log.md)
       * [SQL Server FAQs](integrate/sql-server/faq.md)
-* [SQL Transformations](data-transformation/README.md)
+* [SQL Transformations](data-transformations/README.md)
 
 ## Data Warehousing
 * [Snowflake](data-warehousing/snowflake/README.md)
