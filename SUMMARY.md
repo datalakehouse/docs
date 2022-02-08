@@ -24,14 +24,13 @@
   * [Connect your Target](getting-started/get-started/connect-your-target.md)
   * [Connect your Source](getting-started/getting-started/connect-your-source.md)
 
-### Data Warehouse Models
+##### Data Warehouse Models
 
 * [All DW Models](analytic-dw-models/all/README.md)
   * [McLeod Analytics](analytic-dw-models/mcleod-software/README.md)
 
-
-# Source Applications
-
+## All Integrations
+#
 * [Operations Applications](applications/README.md)
   * [McLeod Transportation Software](applications/mcleod-transportation-software.md)
   * [QuickBooks](applications/quickbooks.md)
@@ -39,8 +38,6 @@
     * [Setup Overview](applications/square/setup-overview.md)
     * [Change Log & Notes](applications/square/change-log-notes.md)
   * [Xero](applications/xero.md)
-
-# Database Connectors
 * [Databases](databases/README.md)
   * [MongoDB](databases/mongodb/README.md)
     * [Basic MongoDB setup](databases/mongodb/setup-basic-mongodb.md)
