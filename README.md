@@ -24,10 +24,10 @@ description: >-
 
 Learn the fundamentals of MyProduct to get a deeper understanding of our main features:
 
-{% content-ref url="applications/" %}
-[applications](applications/)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}
 
-{% content-ref url="data-warehouse/snowflake.md" %}
-[snowflake.md](data-warehouse/snowflake.md)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}
