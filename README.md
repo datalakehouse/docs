@@ -14,7 +14,7 @@ description: >-
 
 > With DataLakeHouse, you can reduce key strokes and remove the noise from the signal. It has allowed our data initiative to start quickly and stay on pace brining significant change to the way we work with data and analytics.
 >
-> * a Transportation/Logistics Customer
+> -Transportation/Logistics Customer
 
 ## Getting Started
 
@@ -23,11 +23,3 @@ description: >-
 ### Fundamentals: Dive a little deeper
 
 Learn the fundamentals of MyProduct to get a deeper understanding of our main features:
-
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
-{% endcontent-ref %}
-
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
-{% endcontent-ref %}
