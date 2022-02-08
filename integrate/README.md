@@ -5,7 +5,7 @@ description: >-
   well.
 ---
 
-# Integrations/Connectors/Sources/Destinations/Targets
+# Integrations/Connectors 2
 
 * Apple Pay
 * Amazon Marketplace
