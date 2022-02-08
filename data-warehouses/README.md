@@ -1,4 +1,4 @@
-# Data Catalog by DataLakeHouse.io
+# Data Warehouses by DataLakeHouse.io
 
-## Snowflake Data Cataloging
+## Data Warehouses
 
