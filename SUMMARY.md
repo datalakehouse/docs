@@ -28,7 +28,7 @@
 
 * [Open Source DW Models](analytic-dw-models/README.md)
   * [McLeod Analytics](analytic-dw-models/mcleod-software.md)
-* [Integrations/Connectors](integrate/README.md)
+* [Integrations/Connectors/Test](integrate/README.md)
   * [Operations Applications](integrate/applications/README.md)
     * [McLeod Transportation Software](integrate/applications/mcleod-software.md)
     * [QuickBooks](integrate/applications/quickbooks.md)
