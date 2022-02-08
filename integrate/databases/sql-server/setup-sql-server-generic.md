@@ -1,7 +1,7 @@
 # Basic SQL Server setup
 
 Let's connect your SQL Server database!
----------------------------------------
+---
 
 Go ahead and gather the basic details:
 
@@ -17,7 +17,7 @@ Go ahead and gather the basic details:
 * Firewalls on your database server should allow incoming connections through the public internet on your SQL Server port (typically 1433 unless your network guys have changed it).  Be sure to [whitelist our DataLakeHouse.io IP addresses](https://datalakehouse.io/whitelist-ip-addresses "DataLakeHouse IPs") for your database server network access.
 
 Instructions (Basic Connection Setup)
--------------------------------------
+---
 
 Scroll down to ensure you review all steps, as needed...
 
@@ -25,18 +25,18 @@ Remember DataLakeHouse.io connects to your database instance with credentials su
 
 1.  **Create a DataLakeHouse user on the SQL Server database**
     * Connect to the SQL Server database in question with your admin (usually sa) user.
-    * Create a user for DataLakeHouse using the following SQL logic replacing &lt;database&gt; with the name of your database, &lt;username&gt; with you a user name that you choose (we recommend 'datalakehouse_ro' to signify a read-only user), and choose a good password that complies with your security policies. 
+    * Create a user for DataLakeHouse using the following SQL logic replacing <database> with the name of your database, <username> with you a user name that you choose (we recommend 'datalakehouse_ro' to signify a read-only user), and choose a good password that complies with your security policies. 
         
-            USE [<database>];
-              CREATE LOGIN <username> WITH PASSWORD = '<password>';
-              CREATE USER <username> FOR LOGIN <username>;
+    `USE [<database>];
+        CREATE LOGIN <username> WITH PASSWORD = '<password>';
+        CREATE USER <username> FOR LOGIN <username>;`
         
 2.  **Grant the new user Permissions on Database, Schemas, Tables**
     * The new user needs **SELECT** permissions for the database, schemas, tables or any specified columns that will be synchronized.
         * We recommend granting SELECT access to everything in your specified database for this connection
         * _Remember if you need to synch more databases you need to created a separate source connection._
             
-                GRANT SELECT ON DATABASE::<database> to <username>;
+        `GRANT SELECT ON DATABASE::<database> to <username>;`
             
     * Save the credentials somewhere and use them in the next steps
     * Please see other GRANT SELECT on schema and tables in our documentation if you need to get more granular for security purposes.
@@ -60,7 +60,7 @@ Remember DataLakeHouse.io connects to your database instance with credentials su
         * If failure happens with the test connection, the connection is still saved but you will need to correct the failure based on the failure reason information provided in the message.
 
 Instructions (Continued & Final Setup)
---------------------------------------
+----
 
 This section of steps ensures you have coverage of other important steps required on your database side and in DataLakeHouse.io once you have completed the above test connection successfully.
 

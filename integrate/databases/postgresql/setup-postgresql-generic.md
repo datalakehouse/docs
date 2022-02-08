@@ -1,7 +1,7 @@
 # Basic PostgreSQL setup
 
 Let's connect your PostgreSQL database!
----------------------------------------
+---
 
 Go ahead and gather the basic details:
 
@@ -16,7 +16,7 @@ Go ahead and gather the basic details:
 * Be cognizant of using binlog\_row\_metadata settings for PostgreSQL v8+, using a value of MINIMAL to prevent any sync issues.
 
 Instructions (Basic Connection Setup)
--------------------------------------
+---
 
 Scroll down to ensure you review all steps, as needed...
 
@@ -26,10 +26,10 @@ Remember DataLakeHouse.io connects to your database instance with credentials su
     * Connect to the PostgreSQL database in question with your admin user.
     * Create a user for DataLakeHouse using the following PostgreSQL logic replacing &lt;newsername&gt; with you a user name that you choose (we recommend 'datalakehouse_ro' to signify a read-only user), and choose a good password that complies with your security policies:
         
-            
-              CREATE USER <new_username>@'%' IDENTIFIED WITH PostgreSQL_native_password BY 'tmp!password';
-              GRANT SELECT, REPLICATION CLIENT, REPLICATION SLAVE ON *.* TO <new_username>@'%';
-              
+
+    `CREATE USER <new_username>@'%' IDENTIFIED WITH PostgreSQL_native_password BY 'tmp!password';
+    GRANT SELECT, REPLICATION CLIENT, REPLICATION SLAVE ON *.* TO <new_username>@'%';`
+    
         
 2.  **Enter your Credentials and Other Information in the Fields **
     * Enter in the _**Name/Alias**_ field, the name you'll use within datalakehouse.io to differentiate this connection from others
@@ -51,7 +51,7 @@ Remember DataLakeHouse.io connects to your database instance with credentials su
         
 
 Instructions (Continued & Final Setup)
---------------------------------------
+---
 
 This section of steps ensures you have coverage of other important steps required on your database side and in DataLakeHouse.io once you have completed the above test connection successfully.
 
@@ -64,15 +64,13 @@ This section of steps ensures you have coverage of other important steps require
 * Make sure the file has the lines as follows in the \[PostgreSQLd\] section to enable ROW formatting binary log replication:
     
         
-          [PostgreSQLd]
-          binlog-format=ROW
-          log-bin=PostgreSQL-binlog
-          server-id=0000012345
-          expire-logs-days=1
-          log-slave-updates=1
-          
-    
-      
+    `[PostgreSQLd]
+    binlog-format=ROW
+    log-bin=PostgreSQL-binlog
+    server-id=0000012345
+    expire-logs-days=1
+    log-slave-updates=1`
+
     * Name the binary log, log-bin attribute, PostgreSQL-binlog
     * Make sure a server-id exists with any number between 1 and 4000000000
     * Make sure the expire-logs-days to 5, the minimum is one and most customers have a maximum of 7
@@ -80,7 +78,7 @@ This section of steps ensures you have coverage of other important steps require
 * Determine that your binlog is configured correctly, 
 
 Other Information About This Connection
----------------------------------------
+---
 
 From time to time we will update the instruction set here to inform you about this connection or how specifically we must connect to optimally synchronize your data.
 
