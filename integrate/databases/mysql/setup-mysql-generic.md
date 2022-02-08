@@ -87,3 +87,4 @@ Other Information About This Connection
 From time to time we will update the instruction set here to inform you about this connection or how specifically we must connect to optimally synchronize your data.
 
 If you require any other type of authorization to connect to your account instance please reach out to our support team via our [DataLakeHouse Support Portal](https://datalakehouse.zendesk.com).
+

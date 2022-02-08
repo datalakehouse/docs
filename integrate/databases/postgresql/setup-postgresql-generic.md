@@ -48,7 +48,6 @@ Remember DataLakeHouse.io connects to your database instance with credentials su
     * A message of success or failure will be shown
         * If success you'll be prompted with the schema objects objects of the database and will need to complete the final steps for configuration shown below.
         * If failure happens with the test connection, the connection is still saved but you will need to correct the failure based on the failure reason information provided in the message
-4.  **...**
 
 Instructions (Continued & Final Setup)
 --------------------------------------
