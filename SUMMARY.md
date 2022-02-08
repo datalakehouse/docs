@@ -3,7 +3,6 @@
 * [Data Analytics as a Service](README.md)
 
 ## Getting Started
-
 * [Our Business-Value Focus](getting-started/our-business-value-focus.md)
 * [Learn the Basic Concepts](getting-started/learn-the-basic-concepts/README.md)
   * [What is a Target Connection?](getting-started/learn-the-basic-concepts/what-is-a-target-connection.md)
@@ -24,26 +23,17 @@
   * [Connect your Target](getting-started/get-started/connect-your-target.md)
   * [Connect your Source](getting-started/getting-started/connect-your-source.md)
 
----
-
-##### Data Warehouse Models
-
-* [Open Source DW Models](analytic-dw-models/README.md)
-  * [McLeod Analytics](analytic-dw-models/mcleod-software/README.md)
-
-___
-
-##### INTEGRATE
+***
 
 * [Integrations/Connectors](integrate/README.md)
-  * [Operations Applications](integrate/applications.md)
+  * [Operations Applications](integrate/README.md)
     * [McLeod Transportation Software](integrate/mcleod-software/README.md)
     * [QuickBooks](integrate/quickbooks.md)
     * [Square](integrate/square/README.md)
       * [Setup Overview](integrate/square/setup-overview.md)
       * [Change Log & Notes](integrate/square/change-log-notes.md)
     * [Xero](integrate/xero.md)
-  * [Databases](integrate/databases.md)
+  * Databases
     * [MongoDB](integrate/mongodb/README.md)
       * [Basic MongoDB setup](integrate/mongodb/setup-basic-mongodb.md)
       * [MongoDB FAQs](integrate/mongodb/faq.md)
@@ -59,10 +49,15 @@ ___
       * [SQL Server FAQs](integrate/sql-server/faq.md)
 * [SQL Transformations](data-transformations/README.md)
 
-## Data Warehousing
-* [Snowflake](data-warehousing/snowflake/README.md)
 
-## Use Cases
+## Data Warehouse Models
+
+* [Open Source DW Models](analytic-dw-models/README.md)
+  * [McLeod Analytics](analytic-dw-models/mcleod-software/README.md)
+
+___
+
+<!-- ## Use Cases
 * [CFO & VP of Finance](use-cases/cfo-and-vp-of-finance/README.md)
   * [Why a Finance DataLakeHouse?](use-cases/cfo-and-vp-of-finance/why-a-finance-datalakehouse.md)
-* [CMO & VP of Marketing](use-cases/cmo-and-vp-of-marketing/README.md)
+* [CMO & VP of Marketing](use-cases/cmo-and-vp-of-marketing/README.md) -->
