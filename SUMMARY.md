@@ -26,39 +26,38 @@
 
 ##### Data Warehouse Models
 
-* [Open Source DW Models](./analytic-dw-models/README.md)
-  * [McLeod Analytics](./analytic-dw-models/mcleod-software/README.md)
+* [Open Source DW Models](analytic-dw-models/README.md)
+  * [McLeod Analytics](analytic-dw-models/mcleod-software/README.md)
 
-## INTEGRATE
-* [Operations Applications](./integrate/applications/README.md)
-  * [McLeod Transportation Software](./integrate/mcleod-software/README.md)
-  * [QuickBooks](integrate/quickbooks.md)
-  * [Square](integrate/square/README.md)
-    * [Setup Overview](integrate/square/setup-overview.md)
-    * [Change Log & Notes](integrate/square/change-log-notes.md)
-  * [Xero](integrate/xero.md)
-* [Databases](./integrate/databases/README.md)
-  * [MongoDB](./integrate/mongodb/README.md)
-    * [Basic MongoDB setup](./integrate/mongodb/setup-basic-mongodb.md)
-    * [MongoDB FAQs](./integrate/mongodb/faq.md)
-  * [MySQL](integrate/mysql/README.md)
-    * [Basic MySQL setup](integrate/mysql/setup-basic-mysql.md)
-    * [MySQL FAQs](integrate/mysql/faq.md)
-  * [PostgreSQL](integrate/postgresql/README.md)
-    * [Basic PostgreSQL setup](integrate/postgresql/setup-basic-postgresql.md)
-    * [PostgreSQL FAQs](integrate/postgresql/faq.md)
-  * [SQL Server](integrate/sql-server/README.md)
-    * [Basic SQL Server setup](integrate/sql-server/setup-basic-sql-server.md)
-    * [SQL Server Change Log](integrate/sql-server/change-log.md)
-    * [SQL Server FAQs](integrate/sql-server/faq.md)
+##### INTEGRATE
+* [Integrations/Connectors](integrate/README.md)
+  * [Operations Applications](integrate/applications/README.md)
+    * [McLeod Transportation Software](integrate/mcleod-software/README.md)
+    * [QuickBooks](integrate/quickbooks.md)
+    * [Square](integrate/square/README.md)
+      * [Setup Overview](integrate/square/setup-overview.md)
+      * [Change Log & Notes](integrate/square/change-log-notes.md)
+    * [Xero](integrate/xero.md)
+  * [Databases](integrate/databases/README.md)
+    * [MongoDB](integrate/mongodb/README.md)
+      * [Basic MongoDB setup](integrate/mongodb/setup-basic-mongodb.md)
+      * [MongoDB FAQs](integrate/mongodb/faq.md)
+    * [MySQL](integrate/mysql/README.md)
+      * [Basic MySQL setup](integrate/mysql/setup-basic-mysql.md)
+      * [MySQL FAQs](integrate/mysql/faq.md)
+    * [PostgreSQL](integrate/postgresql/README.md)
+      * [Basic PostgreSQL setup](integrate/postgresql/setup-basic-postgresql.md)
+      * [PostgreSQL FAQs](integrate/postgresql/faq.md)
+    * [SQL Server](integrate/sql-server/README.md)
+      * [Basic SQL Server setup](integrate/sql-server/setup-basic-sql-server.md)
+      * [SQL Server Change Log](integrate/sql-server/change-log.md)
+      * [SQL Server FAQs](integrate/sql-server/faq.md)
 * [SQL Transformations](data-transformation/README.md)
 
 ## Data Warehousing
-* [Snowflake](./data-warehousing/snowflake/README.md)
-
+* [Snowflake](data-warehousing/snowflake/README.md)
 
 ## Use Cases
 * [CFO & VP of Finance](use-cases/cfo-and-vp-of-finance/README.md)
   * [Why a Finance DataLakeHouse?](use-cases/cfo-and-vp-of-finance/why-a-finance-datalakehouse.md)
-  *
 * [CMO & VP of Marketing](use-cases/cmo-and-vp-of-marketing/README.md)

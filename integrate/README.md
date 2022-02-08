@@ -5,9 +5,7 @@ description: >-
   well.
 ---
 
-# Operations Applications
-
-### Integrations/Connectors
+# Integrations/Connectors/Sources/Destinations/Targets
 
 * Apple Pay
 * Amazon Marketplace
