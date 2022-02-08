@@ -2,7 +2,7 @@
 
 * [Data Analytics as a Service](README.md)
 
-## Getting Started
+#### Getting Started
 
 * [Our Business-Value Focus](getting-started/our-business-value-focus.md)
 * [Learn the Basic Concepts](getting-started/learn-the-basic-concepts/README.md)
@@ -29,7 +29,7 @@
 * [All DW Models](analytic-dw-models/all/README.md)
   * [McLeod Analytics](analytic-dw-models/mcleod-software/README.md)
 
-## Databases
+# Databases
 * [Databases](databases/README.md)
   * [MongoDB](databases/mongodb/README.md)
     * [Basic MongoDB setup](databases/mongodb/setup-basic-mongodb.md)
