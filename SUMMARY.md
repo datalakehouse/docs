@@ -56,7 +56,6 @@
 * [Data Catalog (Glossary)](data-catalog/README.md)
 
 ## Data Warehousing
-
 * [Snowflake](data-warehousing/snowflake.md)
 
 ## Data Warehouses
