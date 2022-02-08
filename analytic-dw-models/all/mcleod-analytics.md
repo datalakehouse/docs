@@ -1,2 +1,0 @@
-# McLeod Analytics
-
