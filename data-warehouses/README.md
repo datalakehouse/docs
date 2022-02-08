@@ -1,4 +1,3 @@
-# Data Warehouses by DataLakeHouse.io
+# Open Source DW Models
 
-## Data Warehouses
-
+## Snowflake Data Cataloging
