@@ -1,4 +1,4 @@
 # Data Catalog by DataLakeHouse.io
 
-## Open Source Data Warehouses
+## Snowflake Data Cataloging
 

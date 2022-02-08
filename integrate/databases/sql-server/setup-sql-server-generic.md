@@ -1,4 +1,4 @@
-# Add a Generic SQL Server Data Source
+# Basic SQL Server setup
 
 Let's connect your SQL Server database!
 ---------------------------------------

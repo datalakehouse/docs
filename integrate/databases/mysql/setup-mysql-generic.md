@@ -1,4 +1,4 @@
-# Add a Generic MySQL Data Source
+# Basic MySQL setup
 
 Let's connect your MySQL database!
 ----------------------------------
@@ -89,3 +89,4 @@ From time to time we will update the instruction set here to inform you about th
 If you require any other type of authorization to connect to your account instance please reach out to our support team via our [DataLakeHouse Support Portal](https://datalakehouse.zendesk.com).
 
 
+=======
