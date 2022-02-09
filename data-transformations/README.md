@@ -8,4 +8,4 @@ Transformations allow logic to be executed against a target connection based on 
 
 <img src="../_assets/img/transformation-add-new.png" style="min-width: 400px; width: 600px; max-width: 650px;" alt="Add a Transformation for the Data Warehouse Sync">
 
-1. Update the form and determine what
+1. Update the form and determine what options to select.
