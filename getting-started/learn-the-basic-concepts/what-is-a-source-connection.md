@@ -41,7 +41,7 @@ DataLakeHouse is the only _**full-modern-data-stack**_ platform that focuses on 
 
 Select the desired Source and enter in the appropriate details.
 
-&#x20;      ![](<../../.gitbook/assets/image (1).png>)
+&#x20;      ![](<../../.gitbook/assets/image (1) (1).png>)
 
 ### Editing a Source Connection
 
