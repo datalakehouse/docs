@@ -1,3 +1,3 @@
 # Open Source DW Models
 
-## Snowflake Data Cataloging
+## Accelerated Single Source of Truth Data Repositories
