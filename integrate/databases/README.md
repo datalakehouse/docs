@@ -1,6 +1,8 @@
 ---
 description: >-
-  Databases are part of almost every organization. Whether managed in the cloud or stil on-premises getting the data you need out of these system repositories in a consistent way is no longer a challenge with DataLakeHouse. Use our Change Tracking and Change Data Capture (CDC) technology to integrate your modern data platform extraction and/or synchronization with Snowflake.
+  Databases are part of almost every organization. Whether managed in the cloud
+  or stil on-premises getting the data you need out of these system repositories
+  in a consistent way is no longer a challeng
 ---
 
 # Databases
