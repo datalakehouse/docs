@@ -1,2 +1,0 @@
-# Why a Finance DataLakeHouse?
-

@@ -1,2 +1,0 @@
-# Basic MongoDB setup
-

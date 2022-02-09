@@ -1,2 +1,1 @@
 # SFDC Analytics DW Model
-
