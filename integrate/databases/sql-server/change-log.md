@@ -1,2 +1,1 @@
 # SQL Server Change Log
-

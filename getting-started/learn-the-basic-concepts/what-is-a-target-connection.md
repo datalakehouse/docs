@@ -10,19 +10,16 @@ Of the two types of connections, a Target connection provides your Source connec
 
 DataLakeHouse.io is the preferred tool for the Data Cloud and the Snowflake cloud data warehouse.
 
-### Add a new Target connection
+## Add a new Target connection
 
 &#x20;Click on **Connections**...**Targets** in the navigation pane.   &#x20;
 
-![](<../../.gitbook/assets/image (2).png>)&#x20;
+![Screenshot](<../../.gitbook/assets/image (2).png>)&#x20;
 
-### Edit a Target connection
+## Edit a Target connection
 
 Select the existing Target connection and click **Actions**...**Edit** in order to make changes.
 
-![](<../../.gitbook/assets/image (3).png>)
+![Screenshot](<../../.gitbook/assets/image (3).png>)
 
-
-
-![](<../../.gitbook/assets/image (4).png>)
-
+![Screenshot](<../../.gitbook/assets/image (4).png>)

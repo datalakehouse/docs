@@ -4,7 +4,7 @@ Data Vault is a method and architecture for delivering a Data Analytics Service 
 
 Data Vault modeling makes no distinction between good and bad data ("bad" meaning not conforming to business rules). This is summarized in the statement that a data vault stores "a single version of the facts" (also expressed by Dan Linstedt, pioneer of Data Vault, as "all the data, all of the time") as opposed to the practice in other data warehouse methods of storing "a single version of the truth" where data that does not conform to the definitions is removed or "cleansed".
 
-### Why is Data Vault so useful?
+## Why is Data Vault so useful?
 
 The Data Vault is designed specifically for organizations that need to run agile Data Warehouse projects where scalability, integration, development speed and business orientation are important. With enterprise scale in mind, it embraces and improves on the best of traditional Data Warehouse design.
 

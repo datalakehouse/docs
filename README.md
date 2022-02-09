@@ -10,7 +10,7 @@ description: >-
 **Why DataLakeHouse.io:** Because it is a proven accelerator to delivering intelligence to any organization that uses data to make business decisions. Our platform provides end-to-end no-code data pipelines and open-source completely customizable data warehouse dimensional and data vault models, to level the playing field so that any company needs to start with best practices, and not build from scratch, for their data-driven initiatives. Use the DataLakeHouse Data Catalog to democratize data within your organization fast with mimimal setup, and full collaboration.
 {% endhint %}
 
-### What a few DataLakeHouse.io users are say
+## What a few DataLakeHouse.io users are say
 
 > With DataLakeHouse, you can reduce key strokes and remove the noise from the signal. It has allowed our data initiative to start quickly and stay on pace brining significant change to the way we work with data and analytics.
 >

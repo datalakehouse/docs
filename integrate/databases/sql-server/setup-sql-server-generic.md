@@ -1,6 +1,6 @@
 # Basic SQL Server setup
 
-## Let's connect your SQL Server database!
+## Let's connect your SQL Server database
 
 Go ahead and gather the basic details:
 
@@ -23,24 +23,26 @@ Remember DataLakeHouse.io connects to your database instance with credentials su
 
 1. **Create a DataLakeHouse user on the SQL Server database**
    * Connect to the SQL Server database in question with your admin (usually sa) user.
-   *   Create a user for DataLakeHouse using the following SQL logic replacing \<database> with the name of your database, \<username> with you a user name that you choose (we recommend 'datalakehouse\_ro' to signify a read-only user), and choose a good password that complies with your security policies.&#x20;
+   * Create a user for DataLakeHouse using the following SQL logic replacing \<database> with the name of your database, \<username> with you a user name that you choose (we recommend 'datalakehouse\_ro' to signify a read-only user), and choose a good password that complies with your security policies.&#x20;
 
-       ```
-         USE [<database>];
-           CREATE LOGIN <username> WITH PASSWORD = '<password>';
-           CREATE USER <username> FOR LOGIN <username>;
-       ```
+    ```sql
+        USE [<database>];
+        CREATE LOGIN <username> WITH PASSWORD = '<password>';
+        CREATE USER <username> FOR LOGIN <username>;
+    ```
+
 2. **Grant the new user Permissions on Database, Schemas, Tables**
    * The new user needs **SELECT** permissions for the database, schemas, tables or any specified columns that will be synchronized.
      * We recommend granting SELECT access to everything in your specified database for this connection
-     *   _Remember if you need to synch more databases you need to created a separate source connection._
+     * _Remember if you need to synch more databases you need to created a separate source connection._
 
-         ```
-           GRANT SELECT ON DATABASE::<database> to <username>;
-         ```
+        ```sql
+        GRANT SELECT ON DATABASE::<database> to <username>;
+        ```
+
    * Save the credentials somewhere and use them in the next steps
    * Please see other GRANT SELECT on schema and tables in our documentation if you need to get more granular for security purposes.
-3. \*\*Enter your Credentials and Other Information in the Fields \*\*
+3. **Enter your Credentials and Other Information in the Fields**
    * Enter in the _**Name/Alias**_ field, the name you'll use within datalakehouse.io to differentiate this connection from others
    * Enter in the _**Target Schema Prefix**_ field, is the prefix of schema(s) that gets created on your destination target connection database for each of the schemas you load in this connection. So if your database has a schema named 'dbo' the target connection when synced will have a schema in that target database named the value of this field + '\_dbo'.
      * Alphanumeric characters only. It must start and end with a letter but can contain an underscore(\_).
