@@ -1,4 +1,3 @@
-# Data Catalog by DataLakeHouse.io
+# Open Source DW Models
 
-## Open Source Data Warehouses
-
+## Accelerated Single Source of Truth Data Repositories

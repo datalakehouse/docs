@@ -58,8 +58,6 @@
 ## Data Warehousing
 
 * [Snowflake](data-warehousing/snowflake.md)
-
-## Data Warehouses
 * [Open Source DW Models](data-warehouses/README.md)
   * [McLeod Analytics](data-warehouses/mcleod-analytics/README.md)
   * [Salesforce Analytics](data-warehouses/salesforce-analytics/README.md)
