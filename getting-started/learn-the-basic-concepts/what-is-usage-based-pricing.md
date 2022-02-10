@@ -10,7 +10,7 @@ Employees now find their preferred software products and start using them, usual
 
 This is why we’re seeing SaaS pricing models evolve and more and more SaaS companies—**DataLakeHouse.io**, GCP, AWS, Snowflake, and Stripe, to name a few—finding success with product led growth paired with usage-based pricing.
 
-## What is Usage-Based Pricing
+### What is Usage-Based Pricing?
 
 Usage-based pricing allows customers to pay for products according to how much they use or consume it. This approach is starting to replace more common subscription- and seat-based pricing models, especially when it comes to SaaS products.
 

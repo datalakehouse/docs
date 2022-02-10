@@ -13,3 +13,6 @@ DataLakeHouse leverages dbt for transformations within Snowflake and we absolute
 dbt is key to building a [Data Vault](https://patrickcuba.medium.com/data-vault-pitch-904511875b34) allowing you to quickly pivot as your organization changes without a large data warehouse project.&#x20;
 
 ![Image depicts where dbt fits into the data stack:](https://hackmd.io/\_uploads/BJqZomekc.png)
+
+
+

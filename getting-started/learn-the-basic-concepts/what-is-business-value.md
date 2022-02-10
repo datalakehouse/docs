@@ -10,7 +10,7 @@ So what is business value exactly? _Business value refers to the benefits a busi
 
 Therefore, how does data help drive business value?
 
-## Data helps you make better decisions
+### Data helps you make better decisions
 
 From the largest to the smallest companies, even small startups generate data. Any business with a website, a social media presence, and accepts electronic payments of any kind is collecting data about customers, user habits, web traffic, demographics, and more. All that data is filled with potential if you can learn to get at it.
 

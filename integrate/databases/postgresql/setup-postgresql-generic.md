@@ -1,6 +1,6 @@
 # Basic PostgreSQL setup
 
-## Let's connect your PostgreSQL database
+## Let's connect your PostgreSQL database!
 
 Go ahead and gather the basic details:
 
@@ -22,14 +22,14 @@ Remember DataLakeHouse.io connects to your database instance with credentials su
 
 1. **Create a DataLakeHouse user on the PostgreSQL database**
    * Connect to the PostgreSQL database in question with your admin user.
-   * Create a user for DataLakeHouse using the following PostgreSQL logic replacing \<newsername> with you a user name that you choose (we recommend 'datalakehouse\_ro' to signify a read-only user), and choose a good password that complies with your security policies:
+   *   Create a user for DataLakeHouse using the following PostgreSQL logic replacing \<newsername> with you a user name that you choose (we recommend 'datalakehouse\_ro' to signify a read-only user), and choose a good password that complies with your security policies:
 
-    ```sql
-        CREATE USER <new_username>@'%' IDENTIFIED WITH PostgreSQL_native_password BY 'tmp!password';
-        GRANT SELECT, REPLICATION CLIENT, REPLICATION SLAVE ON *.* TO <new_username>@'%';
-    ```
-
-2. **Enter your Credentials and Other Information in the Fields**
+       ```
+           CREATE USER <new_username>@'%' IDENTIFIED WITH PostgreSQL_native_password BY 'tmp!password';
+           GRANT SELECT, REPLICATION CLIENT, REPLICATION SLAVE ON *.* TO <new_username>@'%';
+           
+       ```
+2. \*\*Enter your Credentials and Other Information in the Fields \*\*
    * Enter in the _**Name/Alias**_ field, the name you'll use within datalakehouse.io to differentiate this connection from others
    * Enter in the _**Target Schema Prefix**_ field, is the prefix of schema(s) that gets created on your destination target connection database for each of the schemas you load in this connection. So if your database has a schema named 'dbo' the target connection when synced will have a schema in that target database named the value of this field + '\_dbo'.
      * Alphanumeric characters only. It must start and end with a letter but can contain an underscore(\_).
@@ -55,9 +55,9 @@ This section of steps ensures you have coverage of other important steps require
 * Connect to your PostgreSQL database server and access the file system
 * Access the PostgreSQL configuration file (Ex: /etc/my.cnf)
   * For more instructions follow the PostgreSQL binlog setup process from the PostgreSQL documentation
-* Make sure the file has the lines as follows in the \[PostgreSQLd] section to enable ROW formatting binary log replication:
+*   Make sure the file has the lines as follows in the \[PostgreSQLd] section to enable ROW formatting binary log replication:
 
-    ```sql
+    ```
         [PostgreSQLd]
         binlog-format=ROW
         log-bin=PostgreSQL-binlog
@@ -67,9 +67,9 @@ This section of steps ensures you have coverage of other important steps require
         
     ```
 
-  * Name the binary log, log-bin attribute, PostgreSQL-binlog
-  * Make sure a server-id exists with any number between 1 and 4000000000
-  * Make sure the expire-logs-days to 5, the minimum is one and most customers have a maximum of 7
+    * Name the binary log, log-bin attribute, PostgreSQL-binlog
+    * Make sure a server-id exists with any number between 1 and 4000000000
+    * Make sure the expire-logs-days to 5, the minimum is one and most customers have a maximum of 7
 * Restart your PostgreSQL server in order for the changes to propagate
 * Determine that your binlog is configured correctly,&#x20;
 

@@ -11,7 +11,7 @@ Source connections are either SaaS applications, spreadsheets, or Databases (NoS
 
 DataLakeHouse is the only _**full-modern-data-stack**_ platform that focuses on Business Value pipelines to analytics. Pick an application such as Salesforce, QuickBooks, McLeod Software, Aloha POS, Optimum HR, etc. (See all Source Connectors) and our opinionated analytics to get insights 90% faster than building custom pipelines.
 
-## Currently Available Source Connectors
+#### Currently Available Source Connectors:
 
 * Applications:
   * Aloha POS
@@ -41,6 +41,9 @@ DataLakeHouse is the only _**full-modern-data-stack**_ platform that focuses on 
 
 Select the desired Source and enter in the appropriate details.
 
-  ![Screenshot](<../../.gitbook/assets/image (1) (1).png>)
+&#x20;      ![](<../../.gitbook/assets/image (1) (1).png>)
 
 ### Editing a Source Connection
+
+
+
