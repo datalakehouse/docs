@@ -1,3 +1,0 @@
-# Square
- Analytics DW Model
-

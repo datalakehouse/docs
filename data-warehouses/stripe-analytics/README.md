@@ -1,3 +1,0 @@
-# Stripe
- Analytics DW Model
-
